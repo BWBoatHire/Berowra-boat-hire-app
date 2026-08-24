@@ -6,11 +6,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors',
   maxZoom: 19
 }).addTo(map);
+
 // Add the free OpenSeaMap nautical layer on top of the base map
 const seaMarks = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
   attribution: '© OpenSeaMap contributors',
   maxZoom: 19
 }).addTo(map);
+
 // ===== Build a simple colored icon shape for each marker type =====
 function createIcon(typeKey) {
   const t = markerTypes[typeKey];
@@ -55,10 +57,11 @@ localMarkers.forEach(function (m) {
 // ===== Place official markers on the map =====
 officialMarkers.forEach(function (m) {
   const t = officialMarkerTypes[m.type];
-  
-  // Reuse createIcon logic manually since type keys differ from local markers
+
   const shapeStyle = t.shape === "square" ? `background:${t.color}; width:16px; height:16px;`
     : t.shape === "triangle" ? `width:0; height:0; border-left:9px solid transparent; border-right:9px solid transparent; border-bottom:16px solid ${t.color};`
+    : t.shape === "cardinal_stripe" ? `background: linear-gradient(to bottom, black 30%, #f2d600 30%, #f2d600 70%, black 70%); width:16px; height:16px;`
+    : t.shape === "diamond" ? `background:${t.color}; width:14px; height:14px; transform:rotate(45deg);`
     : `background:${t.color}; width:14px; height:14px; border-radius:50%;`;
 
   const officialIcon = L.divIcon({
@@ -79,6 +82,7 @@ Object.values(markerTypes).forEach(function (t) {
   legend.innerHTML += `<div class="legend-item"><span class="legend-swatch" style="background:${t.color};"></span>${t.label}</div>`;
 });
 */
+
 // ===== Helper: build correct shape styling for legend swatches =====
 function getShapeStyle(t) {
   switch (t.shape) {
@@ -90,6 +94,8 @@ function getShapeStyle(t) {
       return `background:${t.color}; width:14px; height:14px; border-radius:50%;`;
     case "diamond":
       return `background:${t.color}; width:12px; height:12px; transform:rotate(45deg);`;
+    case "cardinal_stripe":
+      return `background: linear-gradient(to bottom, black 30%, #f2d600 30%, #f2d600 70%, black 70%); width:14px; height:14px;`;
     default:
       return `background:${t.color}; width:14px; height:14px;`;
   }
@@ -101,4 +107,3 @@ Object.values(officialMarkerTypes).forEach(function (t) {
   const shapeStyle = getShapeStyle(t);
   legend.innerHTML += `<div class="legend-item"><span class="legend-swatch" style="${shapeStyle}"></span>${t.label}</div>`;
 });
-
