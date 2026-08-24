@@ -15,3 +15,29 @@ h1 {
   height: 500px;
   margin-top: 10px;
 }
+#legend {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  font-size: 13px;
+  z-index: 1000;
+  max-width: 200px;
+}
+#legend h4 {
+  margin: 0 0 6px 0;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.legend-swatch {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  display: inline-block;
+}
