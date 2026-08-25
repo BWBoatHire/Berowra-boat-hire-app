@@ -14,10 +14,25 @@
   <div id="legend"><h4>Map Key</h4></div>
 <button id="locate-btn" onclick="toggleShowLocation()">📍 Show My Location</button>
 <button id="track-btn" onclick="toggleTrackRoute()">🧭 Track My Route</button>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+ <!-- Floating menu button -->
+<button id="menu-toggle-btn" onclick="toggleMenu()">☰</button>
+
+<!-- Bottom sheet panel -->
+<div id="bottom-sheet">
+  <div id="bottom-sheet-handle"></div>
+  <button id="bottom-sheet-close" onclick="toggleMenu()">✕</button>
+  <h3>Menu</h3>
+  <div class="menu-section">
+    <p><em>More options coming soon...</em></p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="local-markers.js"></script>
   <script src="official-markers.js"></script>
   <script src="gps.js"></script>
   <script src="map.js"></script>
+  <script src="ui-panel.js"></script>
+  
 </body>
 </html>
