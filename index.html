@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
@@ -27,7 +27,11 @@
 
     <div class="menu-section">
       <h4>🗺️ Map Layers</h4>
-      <p><em>Coming soon — toggle depth, speed zones, fishing spots, etc.</em></p>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-official" checked onchange="toggleOfficialLayer()">
+        Navigation Markers (port/starboard/cardinal)
+      </label>
+      <p><em>More layers coming soon — moorings, wharves, shallow water, boat ramps, fishing spots.</em></p>
     </div>
 
     <div class="menu-section">
@@ -58,10 +62,10 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="local-markers.js"></script>
-  <script src="official-markers.js"></script>
-  <script src="gps.js"></script>
-  <script src="map.js"></script>
-  <script src="ui-panel.js"></script>
+  <script src="local-markers.js?v=2"></script>
+  <script src="official-markers.js?v=2"></script>
+  <script src="gps.js?v=2"></script>
+  <script src="map.js?v=2"></script>
+  <script src="ui-panel.js?v=2"></script>
 </body>
 </html>

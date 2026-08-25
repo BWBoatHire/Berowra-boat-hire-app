@@ -15,3 +15,13 @@ function closeChartViewer() {
   document.getElementById("chart-viewer").classList.remove("open");
   document.getElementById("chart-viewer-frame").src = ""; // stop loading/free memory
 }
+
+// ===== Map layer toggles =====
+function toggleOfficialLayer() {
+  const checkbox = document.getElementById("layer-official");
+  if (checkbox.checked) {
+    officialMarkersLayer.addTo(map);
+  } else {
+    map.removeLayer(officialMarkersLayer);
+  }
+}

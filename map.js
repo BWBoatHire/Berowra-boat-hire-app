@@ -42,19 +42,9 @@ function createIcon(typeKey) {
   });
 }
 
-/*
-// ===== Place each marker on the map with a popup =====
-localMarkers.forEach(function (m) {
-  const icon = createIcon(m.type);
-  const typeLabel = markerTypes[m.type].label;
+// ===== OFFICIAL NAVIGATION MARKERS - now a toggleable layer =====
+const officialMarkersLayer = L.layerGroup();
 
-  L.marker([m.lat, m.lng], { icon: icon })
-    .addTo(map)
-    .bindPopup(`<strong>${m.id}</strong><br>${typeLabel}<br>${m.description}`);
-});
-*/
-
-// ===== Place official markers on the map =====
 officialMarkers.forEach(function (m) {
   const t = officialMarkerTypes[m.type];
 
@@ -71,17 +61,12 @@ officialMarkers.forEach(function (m) {
   });
 
   L.marker([m.lat, m.lng], { icon: officialIcon })
-    .addTo(map)
+    .addTo(officialMarkersLayer)
     .bindPopup(`<strong>${m.id} — ${t.label}</strong><br>Official NSW Maritime marker (code ${m.typeCode})`);
 });
 
-/*
-// ===== Auto-build the legend from markerTypes =====
-const legend = document.getElementById("legend");
-Object.values(markerTypes).forEach(function (t) {
-  legend.innerHTML += `<div class="legend-item"><span class="legend-swatch" style="background:${t.color};"></span>${t.label}</div>`;
-});
-*/
+// ON by default - core safety information
+officialMarkersLayer.addTo(map);
 
 // ===== Helper: build correct shape styling for legend swatches =====
 function getShapeStyle(t) {
@@ -101,7 +86,7 @@ function getShapeStyle(t) {
   }
 }
 
-// ===== Auto-build the legend from officialMarkerTypes =====
+// ===== Auto-build the legend from officialMarkerTypes (currently hidden, ready for later) =====
 const legend = document.getElementById("legend");
 Object.values(officialMarkerTypes).forEach(function (t) {
   const shapeStyle = getShapeStyle(t);

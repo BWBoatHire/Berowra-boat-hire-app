@@ -139,6 +139,18 @@ h1 {
   cursor: pointer;
 }
 
+.layer-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.layer-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
 /* ===== Full-screen PDF chart viewer ===== */
 #chart-viewer {
   display: none;
@@ -170,4 +182,3 @@ h1 {
   border-radius: 6px;
   font-size: 15px;
 }
-
