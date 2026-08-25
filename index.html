@@ -10,30 +10,58 @@
 </head>
 <body>
   <h1>Berowra Waters Boat Hire</h1>
-  <div id="map"></div> 
+  <div id="map"></div>
   <div id="legend"><h4>Map Key</h4></div>
-<button id="locate-btn" onclick="toggleShowLocation()">📍</button>
-<button id="track-btn" onclick="toggleTrackRoute()">🧭</button>
 
- <!-- Floating menu button -->
-<button id="menu-toggle-btn" onclick="toggleMenu()">☰</button>
+  <button id="locate-btn" onclick="toggleShowLocation()">📍</button>
+  <button id="track-btn" onclick="toggleTrackRoute()">🧭</button>
 
-<!-- Bottom sheet panel -->
-<div id="bottom-sheet">
-  <div id="bottom-sheet-handle"></div>
-  <button id="bottom-sheet-close" onclick="toggleMenu()">✕</button>
-  <h3>Menu</h3>
-  <div class="menu-section">
-    <p><em>More options coming soon...</em></p>
+  <!-- Floating menu button -->
+  <button id="menu-toggle-btn" onclick="toggleMenu()">☰</button>
+
+  <!-- Bottom sheet panel -->
+  <div id="bottom-sheet">
+    <div id="bottom-sheet-handle"></div>
+    <button id="bottom-sheet-close" onclick="toggleMenu()">✕</button>
+    <h3>Menu</h3>
+
+    <div class="menu-section">
+      <h4>🗺️ Map Layers</h4>
+      <p><em>Coming soon — toggle depth, speed zones, fishing spots, etc.</em></p>
+    </div>
+
+    <div class="menu-section">
+      <h4>📄 Official Chart</h4>
+      <button onclick="openChartViewer()" class="menu-link-btn">View Official Chart (PDF)</button>
+    </div>
+
+    <div class="menu-section">
+      <h4>🌊 Tide Timetable</h4>
+      <p><em>Coming soon</em></p>
+    </div>
+
+    <div class="menu-section">
+      <h4>☀️ Marine Weather</h4>
+      <p><em>Coming soon</em></p>
+    </div>
+
+    <div class="menu-section">
+      <h4>🛍️ Marina Shop</h4>
+      <p><em>Coming soon — offers and promotions</em></p>
+    </div>
   </div>
-</div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Full-screen PDF chart viewer -->
+  <div id="chart-viewer">
+    <button id="chart-viewer-close" onclick="closeChartViewer()">✕ Close</button>
+    <iframe id="chart-viewer-frame" src=""></iframe>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="local-markers.js"></script>
   <script src="official-markers.js"></script>
   <script src="gps.js"></script>
   <script src="map.js"></script>
   <script src="ui-panel.js"></script>
-  
 </body>
 </html>
