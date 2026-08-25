@@ -41,3 +41,18 @@ h1 {
   margin-right: 6px;
   display: inline-block;
 }
+#locate-btn, #track-btn {
+  margin-top: 10px;
+  margin-right: 8px;
+  padding: 10px 16px;
+  background-color: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+#locate-btn.active, #track-btn.active {
+  background-color: #ff6600;
+}
+
