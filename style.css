@@ -1,20 +1,29 @@
-body {
-  font-family: Arial, sans-serif;
+html, body {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
   background-color: #f4f9fc;
   color: #1a1a1a;
-  text-align: center;
+  overflow: hidden;
 }
 
 h1 {
   color: #0b5394;
+  margin: 0;
+  padding: 12px;
+  font-size: 22px;
+  text-align: center;
 }
+
 #map {
-  width: 100%;
-  height: 500px;
-  margin-top: 10px;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+
 #legend {
   display: none;
   position: fixed;
@@ -43,19 +52,29 @@ h1 {
   display: inline-block;
 }
 #locate-btn, #track-btn {
-  margin-top: 10px;
-  margin-right: 8px;
-  padding: 10px 16px;
+  position: fixed;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
   background-color: #0b5394;
   color: white;
   border: none;
-  border-radius: 6px;
-  font-size: 15px;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1100;
   cursor: pointer;
+}
+#locate-btn {
+  bottom: 150px;
+}
+#track-btn {
+  bottom: 90px;
 }
 #locate-btn.active, #track-btn.active {
   background-color: #ff6600;
 }
+
 /* ===== Floating menu button ===== */
 #menu-toggle-btn {
   position: fixed;
