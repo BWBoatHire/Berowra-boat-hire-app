@@ -31,7 +31,11 @@
         <input type="checkbox" id="layer-official" checked onchange="toggleOfficialLayer()">
         Navigation Markers (port/starboard/cardinal)
       </label>
-      <p><em>More layers coming soon — moorings, wharves, shallow water, boat ramps, fishing spots.</em></p>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-wharf-ramp" onchange="toggleWharfRampLayer()">
+        Wharves & Boat Ramps
+      </label>
+      <p><em>More layers coming soon — shallow water, fishing spots.</em></p>
     </div>
 
     <div class="menu-section">
@@ -64,8 +68,9 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="local-markers.js?v=2"></script>
   <script src="official-markers.js?v=2"></script>
+  <script src="wharves-ramps.js?v=1"></script>
   <script src="gps.js?v=2"></script>
-  <script src="map.js?v=2"></script>
-  <script src="ui-panel.js?v=2"></script>
+  <script src="map.js?v=3"></script>
+  <script src="ui-panel.js?v=3"></script>
 </body>
 </html>

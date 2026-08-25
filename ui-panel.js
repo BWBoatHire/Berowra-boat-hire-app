@@ -25,3 +25,12 @@ function toggleOfficialLayer() {
     map.removeLayer(officialMarkersLayer);
   }
 }
+
+function toggleWharfRampLayer() {
+  const checkbox = document.getElementById("layer-wharf-ramp");
+  if (checkbox.checked) {
+    wharfRampLayer.addTo(map);
+  } else {
+    map.removeLayer(wharfRampLayer);
+  }
+}
