@@ -1,4 +1,4 @@
-// ===== GPS tracking: independent "Show Location" and "Track Route" toggles =====
+// ===== GPS tracking: follow mode, heading line, speed/direction readout =====
 let userMarker = null;
 let userCircle = null;
 let hasCenteredOnUser = false;
@@ -9,7 +9,43 @@ let trackingRoute = false;
 let breadcrumbTrail = null;
 let breadcrumbPoints = [];
 
+let headingLine = null;
+let currentHeading = null;
+let lastPosition = null;
+
 const LOCATION_COLOR = "#ff6600"; // orange - high visibility over blue water
+
+// ===== Geometry helpers =====
+function toRad(deg) { return deg * Math.PI / 180; }
+function toDeg(rad) { return rad * 180 / Math.PI; }
+
+function haversineDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371000;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a = Math.sin(dLat/2)**2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+function calcBearing(lat1, lon1, lat2, lon2) {
+  const y = Math.sin(toRad(lon2-lon1)) * Math.cos(toRad(lat2));
+  const x = Math.cos(toRad(lat1)) * Math.sin(toRad(lat2)) - Math.sin(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.cos(toRad(lon2-lon1));
+  return (toDeg(Math.atan2(y, x)) + 360) % 360;
+}
+
+function destinationPoint(lat, lon, bearingDeg, distanceM) {
+  const R = 6371000;
+  const brng = toRad(bearingDeg);
+  const lat1 = toRad(lat), lon1 = toRad(lon);
+  const lat2 = Math.asin(Math.sin(lat1) * Math.cos(distanceM/R) + Math.cos(lat1) * Math.sin(distanceM/R) * Math.cos(brng));
+  const lon2 = lon1 + Math.atan2(Math.sin(brng) * Math.sin(distanceM/R) * Math.cos(lat1), Math.cos(distanceM/R) - Math.sin(lat1) * Math.sin(lat2));
+  return [toDeg(lat2), toDeg(lon2)];
+}
+
+function degToCompass(deg) {
+  const dirs = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
+  return dirs[Math.round(deg / 45) % 8];
+}
 
 function toggleShowLocation() {
   showingLocation = !showingLocation;
@@ -30,10 +66,11 @@ function toggleTrackRoute() {
   trackingRoute = !trackingRoute;
   document.getElementById("track-btn").classList.toggle("active", trackingRoute);
 
-  if (!trackingRoute && breadcrumbTrail) {
-    map.removeLayer(breadcrumbTrail);
-    breadcrumbTrail = null;
-    breadcrumbPoints = [];
+  if (!trackingRoute) {
+    if (breadcrumbTrail) { map.removeLayer(breadcrumbTrail); breadcrumbTrail = null; breadcrumbPoints = []; }
+    if (headingLine) { map.removeLayer(headingLine); headingLine = null; }
+    const badge = document.getElementById("speed-direction-badge");
+    if (badge) badge.style.display = "none";
   }
 
   ensureWatchRunning();
@@ -54,6 +91,8 @@ function ensureWatchRunning() {
     navigator.geolocation.clearWatch(watchId);
     watchId = null;
     hasCenteredOnUser = false;
+    lastPosition = null;
+    currentHeading = null;
   }
 }
 
@@ -61,37 +100,60 @@ function handlePosition(position) {
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
   const accuracy = position.coords.accuracy;
+  let heading = position.coords.heading;
+  const speedMs = position.coords.speed;
 
+  // Fallback: calculate heading from movement if device doesn't report it
+  if ((heading === null || isNaN(heading)) && lastPosition) {
+    const dist = haversineDistance(lastPosition.lat, lastPosition.lng, lat, lng);
+    if (dist > 3) {
+      heading = calcBearing(lastPosition.lat, lastPosition.lng, lat, lng);
+    }
+  }
+  if (heading !== null && !isNaN(heading)) currentHeading = heading;
+
+  // ===== Breadcrumb trail =====
   if (trackingRoute) {
     breadcrumbPoints.push([lat, lng]);
     if (!breadcrumbTrail) {
       breadcrumbTrail = L.polyline(breadcrumbPoints, {
-        color: LOCATION_COLOR,
-        weight: 3,
-        opacity: 0.7,
-        dashArray: "6, 8"
+        color: LOCATION_COLOR, weight: 3, opacity: 0.7, dashArray: "6, 8"
       }).addTo(map);
     } else {
       breadcrumbTrail.setLatLngs(breadcrumbPoints);
     }
+
+    // Direction-of-travel projection line
+    if (currentHeading !== null) {
+      const dest = destinationPoint(lat, lng, currentHeading, 150);
+      if (!headingLine) {
+        headingLine = L.polyline([[lat, lng], dest], {
+          color: LOCATION_COLOR, weight: 3, dashArray: "3, 7", opacity: 0.9
+        }).addTo(map);
+      } else {
+        headingLine.setLatLngs([[lat, lng], dest]);
+      }
+    }
+
+    // Speed / direction readout
+    const badge = document.getElementById("speed-direction-badge");
+    if (badge) {
+      const knots = (speedMs !== null && !isNaN(speedMs)) ? (speedMs * 1.94384).toFixed(1) : "--";
+      const dirText = currentHeading !== null ? degToCompass(currentHeading) : "--";
+      badge.textContent = `${knots} kn  ${dirText}`;
+      badge.style.display = "block";
+    }
   }
 
+  // ===== "You are here" marker + follow mode =====
   if (showingLocation) {
     if (!userMarker) {
       userMarker = L.circleMarker([lat, lng], {
-        radius: 8,
-        fillColor: LOCATION_COLOR,
-        fillOpacity: 1,
-        color: "#ffffff",
-        weight: 2
+        radius: 8, fillColor: LOCATION_COLOR, fillOpacity: 1, color: "#ffffff", weight: 2
       }).addTo(map).bindPopup("You are here");
 
       userCircle = L.circle([lat, lng], {
-        radius: accuracy,
-        color: LOCATION_COLOR,
-        fillColor: LOCATION_COLOR,
-        fillOpacity: 0.1,
-        weight: 1
+        radius: accuracy, color: LOCATION_COLOR, fillColor: LOCATION_COLOR, fillOpacity: 0.1, weight: 1
       }).addTo(map);
     } else {
       userMarker.setLatLng([lat, lng]);
@@ -102,8 +164,12 @@ function handlePosition(position) {
     if (!hasCenteredOnUser) {
       map.setView([lat, lng], 16);
       hasCenteredOnUser = true;
+    } else {
+      map.panTo([lat, lng], { animate: true });
     }
   }
+
+  lastPosition = { lat, lng };
 }
 
 // ===== Friendly, actionable error messages =====
