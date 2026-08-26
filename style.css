@@ -8,13 +8,31 @@ html, body {
   overflow: hidden;
 }
 
-h1 {
-  color: #0b5394;
-  margin: 0;
-  padding: 12px;
-  font-size: 22px;
-  text-align: center;
+#app-banner {
+  height: 56px;
+  background-image: url('header-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 10px;
 }
+#banner-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  background: white;
+  padding: 2px;
+  object-fit: contain;
+}
+#banner-title {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
 
 #map {
   position: absolute;
