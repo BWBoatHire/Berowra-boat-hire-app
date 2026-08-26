@@ -66,3 +66,30 @@ function toggleTowingLayer() {
   const checkbox = document.getElementById("layer-towing");
   if (checkbox.checked) { towingRestrictionLayer.addTo(map); } else { map.removeLayer(towingRestrictionLayer); }
 }
+// ===== Marine Weather viewer =====
+const weatherUrls = {
+  general: "https://www.bom.gov.au/places/nsw/terrey-hills/forecast/",
+  sheltered: "https://www.bom.gov.au/nsw/forecasts/sydneywaters.shtml",
+  open: "https://www.bom.gov.au/nsw/forecasts/sydneycoast.shtml"
+};
+
+
+function openWeatherPage() {
+  switchWeatherZone('general');
+  document.getElementById("weather-viewer").classList.add("open");
+  toggleMenu();
+}
+
+function closeWeatherPage() {
+  document.getElementById("weather-viewer").classList.remove("open");
+  document.getElementById("weather-frame").src = "";
+}
+
+function switchWeatherZone(zone) {
+  document.getElementById("weather-frame").src = weatherUrls[zone];
+ ["general", "sheltered", "open"].forEach(z => {
+  document.getElementById("weather-tab-" + z).classList.toggle("active", z === zone);
+});
+ 
+}
+

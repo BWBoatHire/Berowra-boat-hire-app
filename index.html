@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -79,12 +79,12 @@
 
     <div class="menu-section">
       <h4>🌊 Tide Timetable</h4>
-      <p><em>Coming soon</em></p>
+      <button onclick="openTidePage()" class="menu-link-btn">View Tide Timetable</button>
     </div>
 
     <div class="menu-section">
       <h4>☀️ Marine Weather</h4>
-      <p><em>Coming soon</em></p>
+      <button onclick="openWeatherPage()" class="menu-link-btn">View Marine Weather</button>
     </div>
 
     <div class="menu-section">
@@ -99,11 +99,56 @@
     <iframe id="chart-viewer-frame" src=""></iframe>
   </div>
 
+  <!-- Full-screen Tide Timetable viewer -->
+  <div id="tide-viewer">
+    <button id="tide-viewer-close" onclick="closeTidePage()">✕ Close</button>
+    <div id="tide-content">
+      <div id="tide-nav">
+        <button onclick="tidePrevDay()">◀</button>
+        <div id="tide-date-label">-</div>
+        <button onclick="tideNextDay()">▶</button>
+      </div>
+      <button id="tide-today-btn" onclick="tideToday()">Today</button>
+
+      <div id="tide-moon-row">
+        <span id="tide-moon-icon">🌑</span>
+        <span id="tide-moon-label">-</span>
+        <span id="tide-king-badge">⚠️ King Tide</span>
+      </div>
+
+      <div id="tide-chart-container"></div>
+
+      <div id="tide-summary"></div>
+
+      <p class="tide-disclaimer">
+        This product is based on Bureau of Meteorology information that has
+        subsequently been modified. The Bureau does not necessarily support or
+        endorse, or have any connection with, this product. Tide times shown are
+        for Dangar Island (nearest official reference point) and are predictions only — actual conditions may vary. Not to be used as the sole basis for
+        navigation decisions.
+      </p>
+    </div>
+  </div>
+
+  <!-- Full-screen Marine Weather viewer -->
+  <div id="weather-viewer">
+    <button id="weather-viewer-close" onclick="closeWeatherPage()">✕ Close</button>
+   <div id="weather-tabs">
+  <button id="weather-tab-general" class="weather-tab active" onclick="switchWeatherZone('general')">General Weather</button>
+  <button id="weather-tab-sheltered" class="weather-tab" onclick="switchWeatherZone('sheltered')">Sheltered Waters</button>
+  <button id="weather-tab-open" class="weather-tab" onclick="switchWeatherZone('open')">Open Water</button>
+</div>
+
+ 
+    <p class="weather-note">Live forecast from the Australian Bureau of Meteorology.</p>
+    <iframe id="weather-frame" src=""></iframe>
+  </div>
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="local-markers.js?v=2"></script>
   <script src="wharves-ramps.js?v=1"></script>
-  <script src="nsw-nav-markers.js?v=3"></script>
+  <script src="nsw-nav-markers.js?v=2"></script>
   <script src="public-moorings.js?v=1"></script>
   <script src="nsw-wharves.js?v=1"></script>
   <script src="nsw-boat-ramps.js?v=1"></script>
@@ -111,8 +156,11 @@
   <script src="speed-zones.js?v=1"></script>
   <script src="wash-restrictions.js?v=1"></script>
   <script src="towing-restrictions.js?v=1"></script>
+  <script src="tide-data.js?v=2"></script>
+  <script src="tide-page.js?v=1"></script>
   <script src="gps.js?v=2"></script>
   <script src="map.js?v=6"></script>
-  <script src="ui-panel.js?v=6"></script>
+  <script src="ui-panel.js?v=9"></script>
 </body>
 </html>
+

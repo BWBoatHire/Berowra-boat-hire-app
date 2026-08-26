@@ -182,3 +182,168 @@ h1 {
   border-radius: 6px;
   font-size: 15px;
 }
+
+/* ===== Tide Timetable page ===== */
+#tide-viewer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: white;
+  z-index: 1500;
+  overflow-y: auto;
+}
+#tide-viewer.open { display: block; }
+#tide-viewer-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  z-index: 1600;
+  padding: 8px 14px;
+  background-color: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+#tide-content {
+  padding: 60px 16px 30px 16px;
+  text-align: center;
+}
+#tide-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+#tide-nav button {
+  background: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+}
+#tide-date-label {
+  font-weight: bold;
+  font-size: 15px;
+  min-width: 200px;
+}
+#tide-today-btn {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  background: none;
+  border: 1px solid #0b5394;
+  color: #0b5394;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+#tide-moon-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+#tide-moon-icon { font-size: 22px; }
+#tide-king-badge {
+  display: none;
+  background: #ff6600;
+  color: white;
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+#tide-chart-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+#tide-readout {
+  position: absolute;
+  top: 4px;
+  background: #0b5394;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  pointer-events: none;
+}
+#tide-summary {
+  max-width: 400px;
+  margin: 16px auto 0 auto;
+  text-align: left;
+}
+.tide-summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+.tide-summary-type { font-weight: bold; color: #0b5394; }
+.tide-disclaimer {
+  max-width: 500px;
+  margin: 20px auto 0 auto;
+  font-size: 11px;
+  color: #888;
+  text-align: left;
+  line-height: 1.4;
+}
+/* ===== Marine Weather page ===== */
+#weather-viewer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: white;
+  z-index: 1500;
+}
+#weather-viewer.open {
+  display: flex;
+  flex-direction: column;
+}
+#weather-viewer-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  z-index: 1600;
+  padding: 8px 14px;
+  background-color: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+#weather-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 10px 6px 10px;
+  gap: 6px;
+}
+
+.weather-tab {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #0b5394;
+  background: white;
+  color: #0b5394;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.weather-tab.active {
+  background: #0b5394;
+  color: white;
+}
+.weather-note {
+  text-align: center;
+  font-size: 11px;
+  color: #888;
+  margin: 4px 0;
+}
+#weather-frame {
+  flex: 1;
+  width: 100%;
+  border: none;
+}
