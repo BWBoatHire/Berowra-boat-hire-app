@@ -69,9 +69,17 @@ html, body {
   display: inline-block;
 }
 
-#locate-btn, #track-btn {
+/* ===== Bottom center button group (Track / Menu / Locate) ===== */
+#bottom-nav-group {
   position: fixed;
-  right: 20px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 1100;
+}
+#bottom-nav-group button {
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -80,34 +88,15 @@ html, body {
   border: none;
   font-size: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 1100;
   cursor: pointer;
 }
-#locate-btn {
-  bottom: 150px;
-}
-#track-btn {
-  bottom: 90px;
+#menu-toggle-btn {
+  font-size: 22px;
 }
 #locate-btn.active, #track-btn.active {
   background-color: #ff6600;
 }
 
-/* ===== Floating menu button ===== */
-#menu-toggle-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background-color: #0b5394;
-  color: white;
-  border: none;
-  font-size: 22px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 1100;
-}
 
 /* ===== Bottom sheet panel ===== */
 #bottom-sheet {
@@ -509,24 +498,11 @@ html, body {
 #disclaimer-accept-btn:disabled {
   background-color: #ccc;
 }
-#speed-direction-badge {
-  display: none;
-  position: fixed;
-  bottom: 150px;
-  left: 20px;
-  background: #ff6600;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 1100;
-}
+
 #help-btn {
   position: fixed;
-  right: 20px;
-  bottom: 210px;
+  left: 20px;
+  bottom: 20px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -538,6 +514,21 @@ html, body {
   z-index: 1100;
   cursor: pointer;
 }
+#speed-direction-badge {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  left: 20px;
+  background: #ff6600;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1100;
+}
+
 
 #help-modal {
   display: none;

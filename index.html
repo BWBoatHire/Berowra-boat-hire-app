@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Berowra Waters Boat Hire</title>
+  <title>Berowra Waters Boat Hire - NaviApp</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=11">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -20,13 +20,15 @@
   <div id="legend"><h4>Map Key</h4></div>
 
 <button id="help-btn" onclick="openHelpModal()">🆘</button>
-<button id="locate-btn" onclick="toggleShowLocation()">📍</button>
-<button id="track-btn" onclick="toggleTrackRoute()">🧭</button>
 <div id="speed-direction-badge"></div>
 
-
-  <!-- Floating menu button -->
+<!-- Bottom center button group -->
+<div id="bottom-nav-group">
+  <button id="track-btn" onclick="toggleTrackRoute()">🧭</button>
   <button id="menu-toggle-btn" onclick="toggleMenu()">☰</button>
+  <button id="locate-btn" onclick="toggleShowLocation()">📍</button>
+</div>
+
 
   <!-- Bottom sheet panel -->
   <div id="bottom-sheet">
