@@ -19,9 +19,11 @@
   <div id="map"></div>
   <div id="legend"><h4>Map Key</h4></div>
 
-  <button id="locate-btn" onclick="toggleShowLocation()">📍</button>
-  <button id="track-btn" onclick="toggleTrackRoute()">🧭</button>
+<button id="help-btn" onclick="openHelpModal()">🆘</button>
+<button id="locate-btn" onclick="toggleShowLocation()">📍</button>
+<button id="track-btn" onclick="toggleTrackRoute()">🧭</button>
 <div id="speed-direction-badge"></div>
+
 
   <!-- Floating menu button -->
   <button id="menu-toggle-btn" onclick="toggleMenu()">☰</button>
@@ -105,6 +107,11 @@
       <span class="row-label">🛍️ Marina Shop</span>
       <span class="row-note">Coming soon</span>
     </div>
+
+    <div class="menu-row menu-row-nav" onclick="openHelpModal()">
+  <span class="row-label">🆘 Get Help</span>
+  <span class="chevron">›</span>
+</div>
 
     <!-- Disclaimer & Terms -->
     <div class="menu-row menu-row-nav" onclick="openDisclaimerPage()">
@@ -195,6 +202,18 @@
     </div>
   </div>
 
+  <!-- Get Help modal -->
+<div id="help-modal">
+  <div id="help-modal-card">
+    <button id="help-modal-close" onclick="closeHelpModal()">✕</button>
+    <h3>🆘 Need help?</h3>
+    <p>If you're in genuine danger, call for help. Otherwise, send your location to the marina and we'll assist you.</p>
+    <button class="help-action-btn" onclick="callMarina()">📞 Call the Marina</button>
+    <button class="help-action-btn" onclick="textLocation()">📍 Text My Location</button>
+    <p id="help-status"></p>
+  </div>
+</div>
+
   <!-- First-visit acceptance overlay -->
   <div id="disclaimer-modal">
     <div id="disclaimer-modal-card">
@@ -226,6 +245,6 @@
   <script src="tide-page.js?v=1"></script>
   <script src="gps.js?v=3"></script>
   <script src="map.js?v=9"></script>
-  <script src="ui-panel.js?v=12"></script>
+  <script src="ui-panel.js?v=13"></script>
 </body>
 </html>

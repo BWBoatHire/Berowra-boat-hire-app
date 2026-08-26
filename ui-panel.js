@@ -133,3 +133,43 @@ function checkDisclaimerAccepted() {
 }
 
 document.addEventListener("DOMContentLoaded", checkDisclaimerAccepted);
+// ===== Get Help (call / text location to marina) =====
+const MARINA_MOBILE = "+61408197558"; // PLACEHOLDER - replace with real marina mobile once confirmed
+
+function openHelpModal() {
+  document.getElementById("help-modal").classList.add("open");
+  document.getElementById("help-status").textContent = "";
+}
+
+function closeHelpModal() {
+  document.getElementById("help-modal").classList.remove("open");
+}
+
+function callMarina() {
+  window.location.href = "tel:" + MARINA_MOBILE;
+}
+
+function textLocation() {
+  const statusEl = document.getElementById("help-status");
+  statusEl.textContent = "Getting your location...";
+
+  if (!navigator.geolocation) {
+    statusEl.textContent = "Location isn't available on this device.";
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    function (position) {
+      const lat = position.coords.latitude.toFixed(6);
+      const lng = position.coords.longitude.toFixed(6);
+      const mapLink = `https://maps.google.com/?q=${lat},${lng}`;
+      const body = encodeURIComponent(`I need help. My location: ${mapLink}`);
+      window.location.href = `sms:${MARINA_MOBILE}&body=${body}`;
+      statusEl.textContent = "";
+    },
+    function () {
+      statusEl.textContent = "Couldn't get your location. Please call instead.";
+    },
+    { enableHighAccuracy: true, timeout: 10000 }
+  );
+}

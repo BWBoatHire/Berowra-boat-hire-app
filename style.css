@@ -523,4 +523,76 @@ html, body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   z-index: 1100;
 }
+#help-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 210px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  font-size: 22px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1100;
+  cursor: pointer;
+}
+
+#help-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+#help-modal.open {
+  display: flex;
+}
+#help-modal-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 320px;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+}
+#help-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #555;
+}
+#help-modal-card h3 {
+  color: #cc0000;
+  margin-top: 4px;
+}
+#help-modal-card p {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.4;
+}
+.help-action-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #0b5394;
+}
+#help-status {
+  font-size: 13px;
+  color: #cc0000;
+  margin-top: 8px;
+}
 
