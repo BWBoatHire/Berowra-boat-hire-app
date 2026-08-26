@@ -1,0 +1,3625 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "Maritime_Public_Wharf",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2326942192, -33.8384162449 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0637354806, -33.824994466 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2310609342, -33.8476856834 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0438639371, -33.8178335028 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0103725687, -33.8137452782 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1958544816, -33.8570717648 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0707272794, -33.9969356989 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.7824540117, -32.9198915728 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.1355133982, -35.2970507504 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3417000989, -33.516970096 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1740259197, -33.8531704383 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1277938057, -33.9917924392 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2011938319, -33.86982034 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2816215448, -33.8434161054 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2009672345, -33.8595698114 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 146.3921702543, -36.0068332947 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1550632178, -33.8659204892 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5457410476, -33.1188122986 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.4787372594, -33.3606629968 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.6695667272, -35.0366619523 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2860810298, -32.551105313 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6572838029, -33.0361393581 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.4394569667, -33.3409299741 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.7795765498, -35.0524451871 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3430176426, -33.4717283606 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1823982482, -33.8492119797 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1055376305, -36.220005586 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5021556921, -33.3351984999 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.4492347704, -33.3562014602 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0940233346, -33.8222150077 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2994029097, -33.5972181122 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2769845489, -33.6338207938 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.460852353, -28.2757798306 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2573131391, -33.4925289277 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8371371871, -34.5436499541 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3516921666, -33.5097063888 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1274440533, -33.8410777661 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3509011703, -33.4735799057 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.4650365878, -31.9126691143 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.111020164, -34.0697730492 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8611334528, -34.5374460662 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5931051355, -33.0268649112 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.1180811416, -35.29906698 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 146.3949389234, -36.0064095752 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1516598707, -33.4671972405 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2139160542, -33.8498346799 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9521262197, -33.9080066074 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1792333552, -35.707841282 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5403264342, -28.1868750915 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.521545428, -33.2625779521 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0383251115, -34.0271640526 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1809314437, -33.8419941258 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.1337982076, -35.2960333438 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.0618751562, -32.7051616533 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3192380424, -33.6051027482 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3606693606, -33.5238056286 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.16938813, -33.8361176284 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9057965884, -31.4292222761 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2322004289, -33.7782289777 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1724381641, -33.8497599655 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8796415037, -34.4932126109 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2247094042, -33.8440233255 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1685688931, -33.8551781925 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1465753116, -33.7997019181 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3598468161, -33.5187645314 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0791839226, -33.8225198805 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.1182274372, -35.2987426207 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2008230163, -33.866967573 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.352235067, -33.4962877985 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3107022161, -33.6663630778 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.0161762663, -32.7213290311 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 144.0334633311, -35.0908500007 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1887282271, -33.8533844973 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2383668058, -33.7980389337 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2304653514, -33.8409350593 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5313668599, -33.2622449986 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1421070765, -33.8419029736 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.307471145, -33.6601749403 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6042201989, -33.1311380672 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2847692837, -32.5513528725 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2840380065, -33.6443754783 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.7355514858, -31.452527846 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3470910083, -33.4722214318 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2187136876, -33.8449646257 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8190903758, -34.5010237389 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3059240693, -33.6348919475 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.20216284, -33.8464019074 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.7856982926, -32.9254565914 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1538299205, -33.8640108336 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3201974405, -33.4667112687 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8720470955, -34.4974379113 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8676222109, -34.4911687707 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2682815691, -33.8590642105 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.4019190158, -28.3283081298 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1655482957, -33.5144231869 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.53288101, -33.2381850023 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0898647296, -33.8210837277 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9914430405, -30.6530483347 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5019975257, -33.085408856 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1612285105, -33.8576859707 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.0335819167, -30.9248589081 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1252434928, -33.5988535296 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1988147372, -33.8683856107 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1774173924, -33.5173873451 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1597834744, -33.4601499288 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 142.1671038682, -34.1835571001 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3481640342, -33.5114688832 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2868364796, -33.6303920174 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1415820501, -33.8457575659 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.3273010685, -29.6765441855 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5227477806, -28.1934709972 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2357512092, -33.7936507263 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 146.5517438524, -34.7553027595 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.7987910609, -31.6549802013 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2325907451, -33.8432584619 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9194398431, -30.7057489399 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2412884229, -33.5366878011 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.274319981, -28.8087849049 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.6043973695, -35.1570336687 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 144.7578829881, -36.1183468482 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5019203351, -33.3369901311 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.4861641862, -33.3528081921 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.4766418322, -32.2463973426 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2879957998, -33.6279834748 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1783730555, -33.8505818472 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6184388597, -32.9637244054 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1756513492, -32.7197765065 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5098656899, -28.1900358018 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.1165754411, -35.291636306 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1786939505, -33.8325789612 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6134979751, -33.1139970104 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.609324789, -32.9985571551 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2530377314, -33.8270092483 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3034547443, -32.504854302 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.156978787, -33.8455948754 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2391319693, -33.8668392321 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.1321150019, -35.291289181 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 145.5749416668, -35.6337183341 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2409292139, -33.8632195263 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6371092682, -33.029575449 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2578047223, -33.859660915 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3637893082, -33.4902177269 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.8737864087, -31.4225716874 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.319860537, -33.5960310234 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.5290456555, -34.8560465176 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3745959574, -33.4890804305 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3013916146, -33.590701532 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3249078868, -33.4835002574 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.1118475053, -35.2911231829 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.6708975433, -35.0380207832 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.0427646736, -30.4675935954 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1534978723, -33.5255507948 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.1262132304, -35.2908706036 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1743476267, -33.8413437975 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2266904208, -33.5465837088 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1310255016, -36.2152094318 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.5938785472, -31.8772704512 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0602115142, -34.0716566092 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9079516031, -31.4278841207 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6208581514, -32.6014540314 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.6856588061, -31.8719594011 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.9682006547, -32.6553334109 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6404934229, -33.0043726556 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2423921912, -33.8735506932 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9881106756, -33.9661696532 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3550226062, -33.5224318052 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1785585686, -35.705689843 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3435314747, -33.5229420949 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.8131496824, -31.646701132 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1934032203, -32.6219262523 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1759078192, -33.8723016667 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.7792528752, -31.4373697546 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1489132451, -33.8652335035 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.7252899578, -33.5841082087 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3054435218, -33.6478066833 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1886554209, -33.8738163296 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3435640433, -33.4812681084 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8462722147, -34.4854389672 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8234011303, -33.6033206025 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1848172886, -33.8709491914 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1638621124, -33.4694633711 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5976575309, -33.0128776225 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3468142246, -33.5039832584 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.6088822914, -31.9444091075 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8856851929, -34.4933091209 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6527933301, -33.0320466637 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2727337876, -33.6565111926 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1945867126, -33.8533110016 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1820816868, -33.8693142006 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1516795035, -33.869593009 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2991167733, -33.6586552414 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1277882207, -34.0054335588 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2108918085, -33.8496198581 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2190906185, -33.8420983994 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2052961593, -33.6156759857 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6170714944, -32.9731418019 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2453037455, -33.8080916009 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3103670475, -33.4877835654 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1612241206, -32.6668184466 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.7355396564, -34.8586981722 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.4970649889, -33.338033536 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0423214148, -34.0289395262 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2169846397, -33.8517000575 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5661214164, -33.1126432662 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.4658668185, -28.9530789579 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.0669000247, -36.2174984993 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5875098773, -33.061471027 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2864141125, -33.6383960927 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.1313461991, -30.3055150324 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2790526822, -33.6384186995 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.311159365, -33.4923708846 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8892368873, -33.5584072048 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2203660773, -33.8493721762 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1432938066, -34.0572665708 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 144.9647784509, -35.5263356791 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1861049575, -33.8547797863 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.0684199401, -33.5149966536 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2941233184, -33.6062896946 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.1965835191, -29.4546314867 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3129011853, -33.4825194247 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2351032195, -33.8715818817 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6434374619, -32.9744752565 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2927890477, -33.6365072685 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3003995925, -33.6033306083 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.277597164, -33.8477745418 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.2045346941, -29.472305453 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2214206973, -32.599156747 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2398177664, -33.845893571 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6408994552, -33.0868651074 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9455284012, -31.0256946246 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6187177778, -32.9827959918 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1508740194, -34.0827017822 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1917348412, -33.8737247461 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 142.7461775993, -34.5784673684 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.119101511, -35.3007715706 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.5100477016, -32.1809742654 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5983928641, -33.0713549158 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.3571203706, -29.4355632459 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8480633334, -34.6240716676 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 142.1599915148, -34.1690432423 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.0381487489, -30.8850203439 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8635291263, -34.5364116024 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1928335713, -33.8629258826 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2867264673, -33.6412841196 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.378728588, -33.4958614389 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2493174294, -33.5504939038 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0776455279, -33.8303602923 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3086300488, -33.4948040755 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1606893655, -33.8357459893 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5642079564, -33.173827057 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2935732799, -33.6040883844 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.873513712, -31.4187625415 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5373128596, -33.1048171204 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.176053986, -33.8388709589 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.460674673, -31.9152840325 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9667680762, -33.9077072316 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.3430196987, -29.0712295053 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1281385925, -33.8440294869 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.4627136206, -31.914026578 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.1022328043, -35.2995897564 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2159677728, -32.5094609751 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1470873019, -32.7186373699 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2209948556, -33.8064675598 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.4036946426, -28.3272847074 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1551824225, -33.8597725631 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.9105820049, -36.8914805667 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8751803758, -34.4930378161 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3601607697, -33.4690936249 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.236958782, -33.8161786385 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.94436071, -29.6957802113 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2783516534, -33.6510583646 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2157690215, -33.858110168 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5675608526, -33.0685033839 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9820807345, -33.9650918273 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1718808738, -33.8429885164 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.345971867, -33.5271761893 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1265888038, -34.0803977085 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.7312336543, -34.9094916308 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2275926258, -33.5463116203 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2317723831, -33.5464953392 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.1220451127, -35.2922768934 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.534229494, -31.9302818342 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1823568982, -33.8340869504 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2746956511, -33.5512331451 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3166008556, -33.6237774547 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2253565882, -33.8548450028 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2537309028, -33.8399540642 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2954368715, -33.6415655367 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2777965316, -33.6395061071 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5555582554, -28.2265818834 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2219959346, -33.8433585122 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1237928046, -33.9954840964 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.7098868519, -32.833576051 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.2885602313, -28.9874281013 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2917299181, -33.6439004947 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3227174192, -33.6205442773 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6604645823, -33.0888042195 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.4825137721, -33.3576529922 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0591448143, -33.9845889059 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 144.4661578102, -35.9453846853 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1863089169, -33.8464337736 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2063788342, -33.8486119686 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Commuter"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5410932403, -28.185336653 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6149462571, -33.0407704404 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2705744098, -33.8034348427 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2000383079, -33.5419500194 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9265768137, -29.6936097494 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.7410820744, -32.7602882393 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.017075799, -30.8880368703 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2545144623, -33.8708233875 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1970227718, -33.8636529188 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5305348095, -28.18895407 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6387343974, -33.0858222139 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1605699302, -33.6602485424 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1626143397, -33.8617523674 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2218427274, -33.8639143828 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1535466093, -33.4551447133 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.204271927, -33.5202286076 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3689715031, -33.4936999105 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2159970849, -33.8457964275 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.5947924138, -31.9411865376 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9751535879, -33.9081598583 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6475062496, -32.7148736951 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.2234791593, -36.2511109274 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.8847327124, -36.8881134651 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 145.5765440193, -35.6334552984 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1813782976, -35.8377078462 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8669457704, -34.5873694342 ]
+			},
+			"properties" : {
+				"SYMBOL" : "804",
+				"TYPE" : "Public Wharf, Jetty or Landing"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5595950961, -28.8713851436 ]
+			},
+			"properties" : {
+				"SYMBOL" : null,
+				"TYPE" : null
+			}
+		}
+	]
+}

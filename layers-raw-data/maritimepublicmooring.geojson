@@ -1,0 +1,5910 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "MaritimePublicMooring",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2358885073, -33.8094537762 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH086",
+				"description" : "Emergency Mooring, Beauty Pt. | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3136208904, -32.6127700063 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS160",
+				"description" : "Courtesy Mooring, Broughton Island | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1798536893, -35.7062238328 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SBB041",
+				"description" : "Emergency Mooring, East of Bridge | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.110603537, -34.0680252574 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH108",
+				"description" : "Emergency Mooring, Lilli Pilli Baths | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5357171183, -33.1457831264 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM197",
+				"description" : "Emergency Mooring, Wyee Bay.Vales Poin | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.5945715861, -35.1875032031 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SSI057",
+				"description" : "Courtesy Mooring, Entr. Sussex Inlet | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1255235774, -33.5862339534 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBC735",
+				"description" : "Courtesy Mooring, Deep Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.031404701, -32.7394705879 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS190",
+				"description" : "Emergency Mooring, Tilligerry Ck | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.112471925, -33.835770403 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPR828",
+				"description" : "Emergency Mooring, Morrisons Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2771883081, -33.8393705014 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH115",
+				"description" : "Courtesy Mooring, Camp Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6034543802, -32.9959372681 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM233",
+				"description" : "Emergency Mooring, Kooroora Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1530219919, -33.8409203529 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ430",
+				"description" : "Emergency Mooring, Wrights Pt | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9803853111, -33.9621953449 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CUG240",
+				"description" : "Emergency Mooring, East Hills | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1199880939, -33.8459211105 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPR829",
+				"description" : "Courtesy Mooring, Cabarita | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2488469433, -33.8090786449 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH100",
+				"description" : "Courtesy Mooring, Chinamans Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9984703462, -33.9745403398 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CUG300",
+				"description" : "Emergency Mooring, Sandy Point | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.134238628, -33.8475704489 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPR827",
+				"description" : "Emergency Mooring, Abbotsford Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3397250746, -33.4374121969 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW274",
+				"description" : "Courtesy Mooring, Gosford Sailing club | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2313118362, -33.7791904388 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH073",
+				"description" : "Courtesy Mooring, Bantry Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.9246350937, -37.1099574452 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "STB100",
+				"description" : "Courtesy Mooring, Edrom Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.0152862407, -30.8973710879 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NMC201",
+				"description" : "Courtesy Mooring, US Matty's Boat Ramp | COURTESY 24HR, NO DISCHGE ZONE",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9070349002, -31.4249625339 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NHS115",
+				"description" : "Emergency Mooring, Looklomgbung Creek | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.063654455, -32.685103803 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS184",
+				"description" : "Courtesy Mooring, Fame Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2342950361, -33.5904118341 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CCC632",
+				"description" : "Courtesy Mooring, Fishermans Beach #1 | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2023548999, -33.8485822762 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ835",
+				"description" : "Emergency Mooring, McMahons Point | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2336735654, -33.548732121 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR405",
+				"description" : "Emergency Mooring, Parsley Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2434927471, -33.8483256334 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ432",
+				"description" : "Courtesy Mooring, Athol Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2531596939, -33.8246621408 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH112",
+				"description" : "Courtesy Mooring, Hunter Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0345253252, -33.9885152818 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR188",
+				"description" : "Courtesy Mooring, Junc. Little Salt Pan | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5941080762, -33.0953872223 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM221",
+				"description" : "Courtesy Mooring, Pulbah Island (North) | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1252552443, -33.5868556158 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBC737",
+				"description" : "Courtesy Mooring, Deep Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.0149195753, -30.8984727583 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NMC203",
+				"description" : "Emergency Mooring, US Matty's Boat Rmp | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3306038014, -32.4713031654 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML473",
+				"description" : "Courtesy Mooring, Violet Hill Psge | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.231571849, -33.7774871008 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH076",
+				"description" : "Courtesy Mooring, Bantry Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8237070216, -33.6025454264 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR966",
+				"description" : "Courtesy Mooring, Off Windsor Public W | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1198219227, -33.8462870541 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPR830",
+				"description" : "Courtesy Mooring, Cabarita | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1323102469, -34.0156502494 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB238",
+				"description" : "Emergency Mooring, Woolooware | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.0624715077, -32.6840706639 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS186",
+				"description" : "Courtesy Mooring, Fame Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2822518617, -33.7998687359 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH103",
+				"description" : "Courtesy Mooring, Manly Cove | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2426671253, -33.8469492755 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ435",
+				"description" : "Courtesy Mooring, Athol Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2499868434, -33.5988954794 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CCC631",
+				"description" : "Courtesy Mooring, America Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2413402237, -33.5707871693 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR404",
+				"description" : "Courtesy Mooring, Gunyah Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6306029718, -33.0229956519 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM189",
+				"description" : "Courtesy Mooring, Green Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2486229682, -33.8101047712 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH114",
+				"description" : "Courtesy Mooring, Chinamans Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.4486382192, -33.446587212 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CTH007",
+				"description" : "Emergency Mooring, Terrigal Haven | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.0035044719, -30.6467208134 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NNR051",
+				"description" : "Courtesy Mooring, Nambucca Heads | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0341103619, -33.9755753008 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR278",
+				"description" : "Courtesy Mooring, Alfords Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2268552303, -33.8165371224 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH085",
+				"description" : "Emergency Mooring, Long Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.247618552, -33.8675604203 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ421",
+				"description" : "Emergency Mooring, Double Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.506365607, -32.1790135214 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NWS183",
+				"description" : "Courtesy Mooring, John Wright Park | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.591729755, -33.1434223011 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM246",
+				"description" : "Courtesy Mooring, Crangan Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2536814444, -33.8243747223 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH111",
+				"description" : "Courtesy Mooring, Hunter Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2502218436, -33.5994538124 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CCC630",
+				"description" : "Courtesy Mooring, America Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3302871452, -32.4715531912 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML495",
+				"description" : "Courtesy Mooring, Violet Hill Psge | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3290371449, -32.4711365052 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML469",
+				"description" : "Courtesy Mooring, Violet Hill Psge | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1364885997, -33.5817872773 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBC734",
+				"description" : "Courtesy Mooring, Joe Crafts Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.341611702, -33.4701321409 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW287",
+				"description" : "Courtesy Mooring, Saratoga | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1346711004, -33.5827718388 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBC739",
+				"description" : "Courtesy Mooring, Neverfail Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1488710576, -32.7167035813 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS205",
+				"description" : "Courtesy Mooring, Off D'albora Marina | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1754052797, -33.851120408 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ426",
+				"description" : "Emergency Mooring, Balmain.Birchgrove | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0349719909, -33.9888536132 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR187",
+				"description" : "Courtesy Mooring, Moon Pt | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2341235693, -33.5529371259 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR413",
+				"description" : "Emergency Mooring, Parsley Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1047785633, -34.0739802704 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH083",
+				"description" : "Courtesy Mooring, Gogerleys Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.167304427, -32.6686118075 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NMR281",
+				"description" : "Courtesy Mooring, Tea Gardens | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5934716423, -33.036704906 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM222",
+				"description" : "Courtesy Mooring, Rathmines | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1687889442, -33.8446032272 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ429",
+				"description" : "Emergency Mooring, Yurulbin Point | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2717017658, -33.847528804 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH117",
+				"description" : "Courtesy Mooring, Vaucluse Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0340836604, -33.988125283 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR276",
+				"description" : "Courtesy Mooring, Moon Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9908619292, -33.3834155883 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR834",
+				"description" : "Courtesy Mooring, Wisemans Ferry | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9217040187, -30.7062543025 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NNR052",
+				"description" : "Courtesy Mooring, Macksville | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2365005789, -33.8442901622 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ423",
+				"description" : "Emergency Mooring, Little Sirius Cove | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.2107852968, -35.7239171733 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SBB051",
+				"description" : "Courtesy Mooring, Snapper Island | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink AB1300 Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2316118869, -33.8656770883 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ420",
+				"description" : "Emergency Mooring, Darling Pt. West | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.8018209514, -31.6505874509 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NCM069",
+				"description" : "Courtesy Mooring, Laurieton Channel 1 | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3035436084, -33.6392654662 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT023",
+				"description" : "Emergency Mooring, Refuge Cove (missing) | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3403050782, -33.4356538641 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW278",
+				"description" : "Courtesy Mooring, Gosford Sailing club | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2482718509, -33.8020537693 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH089",
+				"description" : "Courtesy Mooring, Fisher Bay | COURTESY SAILING 2HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 2 hrs, sailing vessel only, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3029886121, -33.6398904692 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT024",
+				"description" : "Emergency Mooring, Salt Pan Cove | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2892119097, -33.6272404559 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT062",
+				"description" : "Courtesy Mooring, Morning Bay#1 | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.0613377799, -32.6833871269 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS187",
+				"description" : "Courtesy Mooring, Fame Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1435923081, -34.0677276239 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH078",
+				"description" : "Emergency Mooring, Hungry Pt | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2566185096, -33.5946504563 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CCC625",
+				"description" : "Courtesy Mooring, America Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1479543771, -32.7170368993 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS206",
+				"description" : "Emergency Mooring, Btwn Fly Pt & Marina | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1029668968, -33.99890361 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR281",
+				"description" : "Emergency Mooring,  Oyster Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.589101395, -33.1299406231 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM234",
+				"description" : "Emergency Mooring, Taylors Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5948714097, -33.0953972211 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM252",
+				"description" : "Courtesy Mooring, Nth Face Pulbah Isl | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.243798132, -33.8488860684 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ433",
+				"description" : "Courtesy Mooring, Athol Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2315852213, -33.8663637549 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ422",
+				"description" : "Emergency Mooring, Darling Pt. West | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.4170036136, -32.4444866148 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML482",
+				"description" : "Courtesy Mooring, Kataway Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1602280902, -34.0017007508 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB222",
+				"description" : "Courtesy Mooring, Seagrass F, Towra Pt | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.4171869552, -32.443836636 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML481",
+				"description" : "Courtesy Mooring, Kataway Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0845642111, -33.9930921964 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR274",
+				"description" : "Emergency Mooring, Oatley Point | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.0622877977, -32.6848705035 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS183",
+				"description" : "Courtesy Mooring, Fame Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2667618627, -33.8641721044 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH122",
+				"description" : "Courtesy Mooring, Rose Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1416319371, -34.0003119584 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB212",
+				"description" : "Courtesy Mooring, GR Sailing Club Adj | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3566850794, -33.5196454463 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW276",
+				"description" : "Courtesy Mooring, Hardy's Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.064671082, -32.684620631 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS185",
+				"description" : "Courtesy Mooring, Fame Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2255218717, -33.8036538088 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH084",
+				"description" : "Emergency Mooring, Sailors Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.300920579, -32.5055531485 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML468",
+				"description" : "Courtesy Mooring, Bombah Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2014385842, -33.5448037828 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR462",
+				"description" : "Emergency Mooring, Sandbrook Inlet | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.0768061699, -32.7153030191 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS189",
+				"description" : "Emergency Mooring, Wanda Beach | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9112553757, -34.4737440221 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SPK030",
+				"description" : "Emergency Mooring, Opp Water Police S | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2825635286, -33.799923737 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH102",
+				"description" : "Courtesy Mooring, Manly Cove | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3211452474, -33.610591979 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT038",
+				"description" : "Emergency Mooring, Careel Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2915372276, -32.4797365048 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML467",
+				"description" : "Courtesy Mooring, Professors Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5868663991, -33.0945405654 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM253",
+				"description" : "Courtesy Mooring, South Face Pulbah Isl | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9813202812, -33.3782372581 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR836",
+				"description" : "Emergency Mooring, Wisemans Ferry | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.23117184, -33.7763704331 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH078",
+				"description" : "Courtesy Mooring, Bantry Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2486071372, -33.8097888204 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH099",
+				"description" : "Courtesy Mooring, Chinamans Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2896852419, -33.6271371211 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT063",
+				"description" : "Courtesy Mooring, Morning Bay#2 | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1592986187, -34.0029003133 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB218",
+				"description" : "Courtesy Mooring, Seagrass F, Towra Pt | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2474386203, -33.8450204204 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH125",
+				"description" : "Courtesy Mooring, Taylors Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1260352191, -34.0042435809 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR186",
+				"description" : "Emergency Mooring, Sans Souci | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1538210892, -32.6818369459 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS182",
+				"description" : "Courtesy Mooring, Barnes Rock | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3885537017, -32.4449699295 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML476",
+				"description" : "Courtesy Mooring, Long Point Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3370800697, -33.4314905368 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW273",
+				"description" : "Emergency Mooring, Nr. Grahame Park | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.6787336689, -35.0679123922 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SJB033",
+				"description" : "Courtesy Mooring, Holden St. Boat Ramp | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3860870358, -32.4451032684 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML479",
+				"description" : "Courtesy Mooring, Long Point Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3112148777, -33.627714107 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT021",
+				"description" : "Emergency Mooring, Clareville Beach | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.0998203787, -32.7231538323 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS039",
+				"description" : "Courtesy Mooring, Salmander Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2161876186, -32.5133362264 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML463",
+				"description" : "Courtesy Mooring, Nerong | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2662185319, -33.8652171013 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH124",
+				"description" : "Courtesy Mooring, Rose Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2490718446, -33.6007204834 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CCC624",
+				"description" : "Courtesy Mooring, Refuge Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1029885794, -33.8348037299 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPR833",
+				"description" : "Emergency Mooring, Mortlake Point | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2314885033, -33.7780037721 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH075",
+				"description" : "Courtesy Mooring, Bantry Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6340179407, -33.005652327 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM194",
+				"description" : "Emergency Mooring, Croudace Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.5063139386, -32.1786318542 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NWS182",
+				"description" : "Courtesy Mooring, John Wright Park | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.5243722919, -32.330905262 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NWS186",
+				"description" : "Courtesy Mooring, Pacific Palms | COURTESY 24HR, NO DISCHGE ZONE",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8212353583, -33.6034154259 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR925",
+				"description" : "Courtesy Mooring, Off Windsor Public W | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2909372266, -32.4796031709 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML494",
+				"description" : "Courtesy Mooring, Professors Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6395979321, -33.002745666 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM251",
+				"description" : "Courtesy Mooring, Croudace Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.1438877569, -30.3045304458 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NCH020",
+				"description" : "Courtesy Mooring, Coffs Harbour South E | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6434647177, -33.0858255581 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM161",
+				"description" : "Courtesy Mooring, Swansea Chnl East | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2662585321, -33.8646404349 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH123",
+				"description" : "Courtesy Mooring, Rose Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2975918716, -33.6002619942 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT064",
+				"description" : "Courtesy Mooring, Currawong #1 | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3018872579, -32.5053198333 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML470",
+				"description" : "Courtesy Mooring, Bombah Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0356986561, -33.9895752762 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR190",
+				"description" : "Courtesy Mooring, Picnic Pt | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2308385641, -33.986935335 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB224",
+				"description" : "Courtesy Mooring, Frenchmans Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2862034724, -33.8145554254 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH106",
+				"description" : "Courtesy Mooring, Quarantine Beach | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0352319903, -33.9891952794 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR184",
+				"description" : "Courtesy Mooring, Lugarno | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8725723844, -34.6062869994 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SSH005",
+				"description" : "Courtesy Mooring, The Farm Beach | EMERGENCY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2863296013, -33.8139270649 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH107",
+				"description" : "Courtesy Mooring, Quarantine Beach | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1257002436, -33.5868406168 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBC738",
+				"description" : "Courtesy Mooring, Deep Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1209398374, -33.5930372425 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBC741",
+				"description" : "Emergency Mooring, Woolwash Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2314384959, -33.7785204544 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH074",
+				"description" : "Courtesy Mooring, Bantry Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6398180113, -33.0525655992 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM193",
+				"description" : "Emergency Mooring, Marks Point | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1757052604, -33.833337081 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ428",
+				"description" : "Emergency Mooring, Woodford Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2654218628, -33.8499371208 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH118",
+				"description" : "Courtesy Mooring, Shark Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.223888544, -33.7955038565 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH096",
+				"description" : "Courtesy Mooring, Sugarloaf Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2916038952, -32.4794031683 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML466",
+				"description" : "Courtesy Mooring, Professors Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.5251126807, -32.3305603744 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NWS185",
+				"description" : "Courtesy Mooring, Pacific Palms | COURTESY 24HR, NO DISCHGE ZONE",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2963904091, -33.6525522144 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT044",
+				"description" : "Emergency Mooring, Bayview | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3310038382, -32.4716863672 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML474",
+				"description" : "Courtesy Mooring, Violet Hill Psge | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2863201483, -33.8134170889 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH108",
+				"description" : "Courtesy Mooring, Quarantine Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3867703716, -32.4449365983 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML475",
+				"description" : "Courtesy Mooring, Long Point Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.275777009, -33.6472655422 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT028",
+				"description" : "Emergency Mooring, McCarrs Creek | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1718738496, -32.7180093214 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS188",
+				"description" : "Courtesy Mooring, Shoal Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2544488671, -33.8241226778 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH110",
+				"description" : "Courtesy Mooring, Hunter Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1004041829, -34.0647086698 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH105",
+				"description" : "Courtesy Mooring, Dark Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2816318642, -33.7997454019 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH105",
+				"description" : "Courtesy Mooring, Manly Cove | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2993718789, -33.6015753239 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT006",
+				"description" : "Emergency Mooring, Coasters Retreat | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0993665308, -34.0625395142 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH106",
+				"description" : "Courtesy Mooring, Deer Park | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6387630639, -33.0845972271 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM209",
+				"description" : "Courtesy Mooring, Swansea Channel East | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8845572928, -33.4374105941 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR964",
+				"description" : "Courtesy Mooring, Colo | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2426885132, -33.8054537768 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH087",
+				"description" : "Courtesy Mooring, Pearl Bay | COURTESY SAILING 2HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 2 hrs, sailing vessel only, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6431880509, -33.0859688925 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM208",
+				"description" : "Courtesy Mooring, Swansea Channel East | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2563000236, -33.8241930769 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH090",
+				"description" : "Emergency Mooring, Hunter Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2861535908, -33.630878807 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT027",
+				"description" : "Emergency Mooring, Little Lovett Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue AB1300 Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1602302812, -34.0020936475 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB221",
+				"description" : "Courtesy Mooring, Seagrass F, Towra Pt | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2660052027, -33.8565704561 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH119",
+				"description" : "Courtesy Mooring, Hermit Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1598719513, -34.0024119799 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB220",
+				"description" : "Courtesy Mooring, Seagress F, Towra Pt | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1198702601, -33.9927019432 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR251",
+				"description" : "Emergency Mooring, Kogarah Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2671401926, -33.8633371064 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH121",
+				"description" : "Courtesy Mooring, Rose Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.8018459489, -31.6501674511 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NCM070",
+				"description" : "Courtesy Mooring, Laurieton Channel 2 | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2276916238, -33.8459329404 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ424",
+				"description" : "Emergency Mooring, Shell Cove | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.895771965, -34.5936870003 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SSH006",
+				"description" : "Courtesy Mooring, Beauty Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1256535537, -34.0037235829 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR185",
+				"description" : "Emergency Mooring, Sans Souci | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.0518145177, -30.8777561528 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NSW050",
+				"description" : "Emergency Mooring, Trail Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2957104078, -33.6517988803 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT033",
+				"description" : "Emergency Mooring, Bayview | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0337036586, -33.9878836182 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR277",
+				"description" : "Courtesy Mooring, Moon Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2775849871, -33.843273832 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH116",
+				"description" : "Courtesy Mooring, Watsons Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2602219019, -33.8694870822 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH093",
+				"description" : "Emergency Mooring, Rose Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2482197189, -33.810609952 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH098",
+				"description" : "Courtesy Mooring, Chinamans Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9072232329, -31.4253192015 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NHS118",
+				"description" : "Courtesy Mooring, East of Pelican Isln | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3333700518, -33.4388388674 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW279",
+				"description" : "Emergency Mooring, Point Clare | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5548730827, -33.0933922912 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM196",
+				"description" : "Emergency Mooring, Balcolyn | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1200902611, -33.992318611 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR280",
+				"description" : "Emergency Mooring,  Kogarah Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1403719367, -33.8435037092 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPR826",
+				"description" : "Emergency Mooring, Henley | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2543385989, -33.8413204218 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH126",
+				"description" : "Courtesy Mooring, Chowder Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2429385144, -33.8056704422 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH097",
+				"description" : "Courtesy Mooring, Pearl Bay | COURTESY SAILING 2HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 2 hrs, sailing vessel only, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2979385414, -33.5998386602 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT065",
+				"description" : "Courtesy Mooring, Currawong #2 | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.0151195762, -30.8978044243 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NMC202",
+				"description" : "Courtesy Mooring, US Matty's Boat Ramp | COURTESY 24HR, NO DISCHGE ZONE",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.9250573522, -36.8982190372 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SML100",
+				"description" : "Courtesy Mooring, Merimbula | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2430552172, -33.8474178653 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ434",
+				"description" : "Courtesy Mooring, Athol Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1321374992, -32.7183035573 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS018",
+				"description" : "Courtesy Mooring, Dutchmans Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.58415142, -33.0650422063 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM195",
+				"description" : "Emergency Mooring, Wangi Wangi Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2488235314, -33.8095754399 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH113",
+				"description" : "Courtesy Mooring, Chinamans Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1190385998, -34.0142536158 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR192",
+				"description" : "Emergency Mooring, Gwawley Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1494210547, -32.7161535753 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS204",
+				"description" : "Courtesy Mooring, Btwn Fly Pt & Marina | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3300371297, -32.4709865028 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML472",
+				"description" : "Courtesy Mooring, Violet Hill Psge | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1597102851, -34.0026736473 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB219",
+				"description" : "Courtesy Mooring, Seagrass F, Towra Pt | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1192786054, -33.846558729 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPR836",
+				"description" : "Emergency Mooring, Hen & Chicken Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2825872352, -32.4823364922 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML492",
+				"description" : "Courtesy Mooring, Nosworthys | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.312445231, -33.6256453918 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT020",
+				"description" : "Emergency Mooring, Clareville Beach | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2477885168, -33.8020587699 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH088",
+				"description" : "Courtesy Mooring, Fisher Bay | COURTESY SAILING 2HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 2 hrs, sailing vessel only, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1127412426, -34.0636057538 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH127",
+				"description" : "Emergency Mooring, Great Turriel Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2241052006, -33.7949538373 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH095",
+				"description" : "Courtesy Mooring, Sugarloaf Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.20203856, -33.848803781 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ436",
+				"description" : "Courtesy Mooring, McMahons Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.0093212844, -30.8920377279 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NMC200",
+				"description" : "Emergency Mooring, US Matty's Boat Ramp | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1646055644, -34.0798446452 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH080",
+				"description" : "Courtesy Mooring, Jibbon B | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.273605189, -33.8037870799 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH091",
+				"description" : "Emergency Mooring, North Harbour | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2715884352, -33.8479204711 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH092",
+				"description" : "Emergency Mooring, Vaucluse Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2819351956, -33.799848736 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH104",
+				"description" : "Courtesy Mooring, Manly Cove | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2299202308, -33.9855269981 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB225",
+				"description" : "Courtesy Mooring, Frenchmans Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2340241833, -33.5907461039 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CCC633",
+				"description" : "Courtesy Mooring, Fishermans Beach #2 | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2488551773, -33.6002871502 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CCC623",
+				"description" : "Courtesy Mooring, Refuge Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5936763908, -33.0361272225 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM250",
+				"description" : "Courtesy Mooring, Rathmines | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1254385554, -34.0034702512 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR191",
+				"description" : "Emergency Mooring, Sans Souci | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.4742865247, -33.3620572239 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CTL110",
+				"description" : "Emergency Mooring, Long Jetty | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2361051531, -33.7912541194 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH081",
+				"description" : "Emergency Mooring, Pickering Pt | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.4166369536, -32.4451032881 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML483",
+				"description" : "Courtesy Mooring, Kataway Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3345433459, -33.5182370594 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW270",
+				"description" : "Emergency Mooring, Ettalong | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2015347812, -33.8471669631 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ425",
+				"description" : "Emergency Mooring, Blues Pt, Lavender | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.135940268, -33.5796772693 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBC733",
+				"description" : "Courtesy Mooring, Joe Crafts Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5865780426, -33.0328972212 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM255",
+				"description" : "Emergency Mooring, Kilaben Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9079532282, -31.4259091985 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NHS116",
+				"description" : "Courtesy Mooring, East of Pelican Isln | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2234052001, -33.794153837 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH082",
+				"description" : "Courtesy Mooring, Sugarloaf Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3572722947, -33.519369098 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW277",
+				"description" : "Courtesy Mooring, Hardy's Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6025931132, -33.1469139582 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM254",
+				"description" : "Courtesy Mooring, Crangan Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8261851788, -35.0089689298 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SCU008",
+				"description" : "Courtesy Mooring, Abrahams Bosom Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5888430458, -33.0332772244 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM190",
+				"description" : "Courtesy Mooring, Styles Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.5263019756, -32.3301573713 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NWS184",
+				"description" : "Courtesy Mooring, Pacific Palms | COURTESY 24HR, NO DISCHGE ZONE",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.213276804, -34.0039352589 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB223",
+				"description" : "Courtesy Mooring, Kurnell;east refin | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2433286006, -33.8478670944 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ431",
+				"description" : "Courtesy Mooring, Athol Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3879203921, -32.4449366021 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML478",
+				"description" : "Courtesy Mooring, Long Point Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.290920562, -32.4790198379 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML464",
+				"description" : "Courtesy Mooring, Professors Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3076519024, -33.6306237694 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT025",
+				"description" : "Emergency Mooring, Clareville Beach | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.248922267, -35.7145201803 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SBB050",
+				"description" : "Courtesy Mooring, Maloneys Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink AB1300 Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1250919099, -33.5865039522 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBC736",
+				"description" : "Courtesy Mooring, Deep Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5871880643, -33.0949372325 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM192",
+				"description" : "Courtesy Mooring, Pulbah Island (South | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6393430594, -33.0844838941 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM210",
+				"description" : "Courtesy Mooring, Swansea Channel East | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.9256566058, -37.1097966919 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "STB101",
+				"description" : "Emergency Mooring, Edrom Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2395185113, -33.8066387792 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH094",
+				"description" : "Emergency Mooring, Pearl Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2307216403, -33.7752870544 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH080",
+				"description" : "Courtesy Mooring, Bantry Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9641402933, -33.4126222512 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR835",
+				"description" : "Courtesy Mooring, Del Rio Riverside Re | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1077543873, -32.7165203539 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS207",
+				"description" : "Emergency Mooring, Corlette | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2827872406, -32.4827698225 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML493",
+				"description" : "Courtesy Mooring, Nosworthys | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9075665627, -31.4256708652 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NHS117",
+				"description" : "Courtesy Mooring, East of Pelican Isln | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.339973413, -33.4355055295 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW289",
+				"description" : "Courtesy Mooring, Gosford Sailing Club | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.149837723, -32.7156702373 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS203",
+				"description" : "Courtesy Mooring, Btwn Fly Pt & Marina | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1027078047, -34.0682605133 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH103",
+				"description" : "Courtesy Mooring, Carruthers Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6120697753, -33.1152938875 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM223",
+				"description" : "Courtesy Mooring, Murrays Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2309885594, -33.7758204971 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH079",
+				"description" : "Courtesy Mooring, Bantry Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.2912372226, -32.4792198414 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML465",
+				"description" : "Courtesy Mooring, Professors Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.9683047438, -32.6560374983 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS192",
+				"description" : "Courtesy Mooring, Karuah | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9052803511, -34.420912443 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SWO006",
+				"description" : "Courtesy Mooring, Wollongong Basin | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.911343708, -34.4732356888 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SPK029",
+				"description" : "Emergency Mooring, Opp Water Police S | COURTESY 24HR",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6123031073, -33.1143255503 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM224",
+				"description" : "Courtesy Mooring, Murrays Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3023205899, -32.5049365141 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML480",
+				"description" : "Courtesy Mooring, Bombah Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.4172036208, -32.4434366298 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML491",
+				"description" : "Courtesy Mooring, Kataway Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2949020749, -33.6512622139 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT032",
+				"description" : "Emergency Mooring, Bayview | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6428347184, -33.0863055585 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM162",
+				"description" : "Courtesy Mooring, Swansea Chnl East | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2574501771, -33.5952671188 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CCC626",
+				"description" : "Courtesy Mooring, America Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.8851039571, -33.4373472598 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR963",
+				"description" : "Courtesy Mooring, Colo | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2314220343, -33.7768536774 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH077",
+				"description" : "Courtesy Mooring, Bantry Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5870747688, -33.0678088785 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM191",
+				"description" : "Courtesy Mooring, Wangi Wangi Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2237552017, -33.794470513 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH083",
+				"description" : "Courtesy Mooring, Sugarloaf Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.1435927546, -30.3043087788 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NCH019",
+				"description" : "Courtesy Mooring, Coffs Harbour North W | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.7300205483, -34.900715595 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SSR129",
+				"description" : "Courtesy Mooring, Greenwell Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0331703576, -33.9755919683 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CGR279",
+				"description" : "Courtesy Mooring, Alfords Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3590567279, -33.4868671304 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW275",
+				"description" : "Courtesy Mooring, Nr. Saratoga | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2941404168, -33.6506287732 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT026",
+				"description" : "Emergency Mooring, Bayview | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3872870359, -32.4449532582 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML477",
+				"description" : "Courtesy Mooring, Long Point Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2829585277, -33.8000520714 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH101",
+				"description" : "Courtesy Mooring, Manly Cove | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2136034736, -34.0019235982 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB260",
+				"description" : "Emergency Mooring, Kurnell | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3381766863, -33.5159537384 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW286",
+				"description" : "Courtesy Mooring, Ettalong | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1430332326, -34.0675800729 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH126",
+				"description" : "Courtesy Mooring, Gunnamatta Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2663052014, -33.8569537893 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH120",
+				"description" : "Courtesy Mooring, Hermit Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0978934582, -34.0604626525 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH107",
+				"description" : "Courtesy Mooring, Deer Park | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3215001916, -33.5820720302 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT004",
+				"description" : "Emergency Mooring, Station Beach | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.3295371166, -32.4713031685 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NML471",
+				"description" : "Courtesy Mooring, Violet Hill Psge | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.8022226143, -31.6499091175 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NCM071",
+				"description" : "Emergency Mooring, Laurieton Channel | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2135885302, -33.7807537984 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CMH072",
+				"description" : "Emergency Mooring, Killarney Pt | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1661236634, -33.8572383359 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ427",
+				"description" : "Emergency Mooring, Iron Cove-off Birke | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.9904119353, -33.3824989219 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CHR833",
+				"description" : "Courtesy Mooring, Trollope Reach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2960487421, -33.6521905473 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT031",
+				"description" : "Emergency Mooring, Bayview | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1023286967, -34.0679807549 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH102",
+				"description" : "Courtesy Mooring, Carruthers Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0976319038, -34.0600336022 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH125",
+				"description" : "Courtesy Mooring, Dark Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1039269003, -34.0744119378 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH082",
+				"description" : "Courtesy Mooring, Gogerleys Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1021147127, -34.0684359318 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH104",
+				"description" : "Courtesy Mooring, Carruthers Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0971635689, -34.058978603 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH079",
+				"description" : "Emergency Mooring, Lightning Pt | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1337222683, -34.0652039353 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH109",
+				"description" : "Emergency Mooring, Burraneer Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1649229859, -34.0802488324 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH081",
+				"description" : "Courtesy Mooring, Jibbon B | COURTESY 24HR, ENVIRO FRIENDLY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : "Yes"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1003019268, -34.0643233671 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH124",
+				"description" : "Courtesy Mooring, Dark Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1154433974, -36.2213824883 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SWR100",
+				"description" : "Courtesy Mooring, Wagona Inlet",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1136110192, -36.2199723405 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SWR101",
+				"description" : "Courtesy Mooring, Wagona Inlet",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1200501126, -36.2252341822 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SWR102",
+				"description" : "Courtesy Mooring, Forsters Bay",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5473555349, -28.8705354199 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NRR201",
+				"description" : "Courtesy Mooring, Richmond River | COURTESY 24HR, NO DISCHGE ZONE",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5453655456, -28.8683287463 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NRR202",
+				"description" : "Emergency Mooring, Adj. North Creek | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5513888304, -28.186147252 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NTR200",
+				"description" : "Courtesy Mooring, Ukerebagh Island | COURTESY 24HR, NO DISCHGE ZONE",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5512246803, -28.1865179489 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NTR201",
+				"description" : "Courtesy Mooring, Ukerebagh Island | COURTESY 24HR, NO DISCHGE ZONE",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5421788826, -28.1857210071 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NTR203",
+				"description" : "Courtesy Mooring, Terranora Creek | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5437572127, -28.1869460022 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NTR204",
+				"description" : "Courtesy Mooring, Terranora Inlet | COURTESY 24HR, NO DISCHGE ZONE",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.8993102932, -37.0722605299 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "STB103",
+				"description" : "Courtesy Mooring, Snug Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink AB1300 Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5398888946, -28.181256005 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NTR205",
+				"description" : "Emergency Mooring, Southern Boat Harbo | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.8987052922, -37.0726338631 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "STB104",
+				"description" : "Courtesy Mooring, Snug Cove | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink AB1300 Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6398546778, -33.0528255993 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM280",
+				"description" : "Emergency Mooring, Marks Point | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6406730116, -33.0532355993 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM281",
+				"description" : "Emergency Mooring, Marks Point | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6040046719, -32.9961674814 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM282",
+				"description" : "Emergency Mooring, Kooroora Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.598191389, -33.059615535 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM283",
+				"description" : "Emergency Mooring, Kooroora Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.899970289, -37.0725338634 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "STB102",
+				"description" : "Emergency Mooring, Snug Cove | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1385368474, -35.6567323308 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SCY043",
+				"description" : "Courtesy Mooring, Nelligen | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1811270234, -35.7063754999 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SBB054",
+				"description" : "Courtesy Mooring, East of Bridge | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1802703594, -35.7050405042 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SBB055",
+				"description" : "Courtesy Mooring, East of Bridge | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.333150049, -33.4401588691 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW292",
+				"description" : "Emergency Mooring, Point Clare | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.338815021, -33.5158270744 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW294",
+				"description" : "Courtesy Mooring, Hardy's Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3216080721, -33.6109738961 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT071",
+				"description" : "Emergency Mooring, Carrell Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3225600141, -33.4681888324 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW293",
+				"description" : "Emergency Mooring, Murphys Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3120618974, -33.6264453971 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT070",
+				"description" : "Emergency Mooring, Clareville | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2973718706, -33.6006986601 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPT072",
+				"description" : "Courtesy Mooring, Currawong | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1756918199, -32.7190279391 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS312",
+				"description" : "Courtesy Mooring, Shoal Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink AB1300 Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1781217169, -32.7176381373 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS313",
+				"description" : "Courtesy Mooring, Shoal Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink AB1300 Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1808982917, -32.7154602128 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS314",
+				"description" : "Courtesy Mooring, Shoal Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink AB1300 Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.1725961221, -32.7174187078 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NPS311",
+				"description" : "Courtesy Mooring, Shoal Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink AB1300 Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1531718677, -34.0815369621 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH131",
+				"description" : "Courtesy Mooring, Bundeena | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0091819753, -33.9823770112 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CUG241",
+				"description" : "Courtesy Mooring, Aurora Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0099169724, -33.982330346 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CUG242",
+				"description" : "Courtesy Mooring, Aurora Beach | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.7866711857, -32.8951539352 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NHR150",
+				"description" : "Courtesy Mooring, Stockton | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.7869211869, -32.8961539352 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NHR151",
+				"description" : "Courtesy Mooring, Stockton | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.7867711853, -32.8948039359 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NHR152",
+				"description" : "Courtesy Mooring, Stockton | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.7872045191, -32.8955872691 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NHR153",
+				"description" : "Courtesy Mooring, Stockton | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6020714462, -33.1466872912 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM350",
+				"description" : "Courtesy Mooring, Crangan Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5238880361, -33.1274873579 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM351",
+				"description" : "Courtesy Mooring, Wyee Bay North | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5649047482, -33.172370673 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM352",
+				"description" : "Courtesy Mooring, Chain Valley Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6169046133, -32.9896206439 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM354",
+				"description" : "Courtesy Mooring, Bolton Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5935380736, -33.0950038891 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM355",
+				"description" : "Courtesy Mooring, Pulbah Island | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6008215618, -33.0134872981 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM356",
+				"description" : "Emergency Mooring, Toronto | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.630846303, -33.0235373181 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM357",
+				"description" : "Courtesy Mooring, Green Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6401713447, -33.0522756003 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM358",
+				"description" : "Emergency Mooring, Marks Point | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.6394729342, -33.0023323324 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM359",
+				"description" : "Courtesy Mooring, Croudace Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.582159722, -33.1096989359 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM360",
+				"description" : "Courtesy Mooring, Pt Wolstonecraft West | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5817513874, -33.1087722693 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM361",
+				"description" : "Courtesy Mooring, Pt Wolstonecraft West | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5820263878, -33.1092356031 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM362",
+				"description" : "Courtesy Mooring, Pt Wolstonecraft We | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5874714351, -33.0675372119 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM363",
+				"description" : "Courtesy Mooring, Wangi Bay | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5892880469, -33.0333205573 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM364",
+				"description" : "Courtesy Mooring, Styles Point Rathmines | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.589654715, -33.0335038902 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM365",
+				"description" : "Courtesy Mooring, Styles Point Rathmines | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.477195353, -35.3560191931 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SUD050",
+				"description" : "Courtesy Mooring, Ulladulla Harbour | COURTESY 24HR-MAXIMUM VESSEL L",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes, max length 10m",
+				"type" : "Pink Tyre Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.2193651726, -33.8522587588 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ442",
+				"description" : "Emergency Mooring, Kirribilli | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 152.9925865573, -30.8689376595 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NMC204",
+				"description" : "Emergency Mooring, Fisherman's Reach | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1334872196, -34.0160454054 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBB409",
+				"description" : "Emergency Mooring, Woolooware Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0989985728, -34.0619185999 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH134",
+				"description" : "Courtesy Mooring, Wants Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.0974869022, -34.0595719352 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH135",
+				"description" : "Courtesy Mooring, Lightning Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1045552314, -34.0743369378 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH133",
+				"description" : "Courtesy Mooring, Gogerleys Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1043085648, -34.0749886054 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPH132",
+				"description" : "Courtesy Mooring, Gogerleys Point | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 153.5465988732, -28.8706237515 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NRR200",
+				"description" : "Courtesy Mooring, Richmond River | COURTESY 24HR, NO DISCHGE ZONE",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.190803522, -33.8592320591 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ443",
+				"description" : "Camerons Cove Emergency Mooring | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.1908268567, -33.859493726 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CPJ444",
+				"description" : "Camerons Cove Emergency Mooring | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1795586978, -35.7023355143 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SBB057",
+				"description" : "Courtesy Mooring, East of Bridge",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 150.1795470296, -35.7029555113 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "SBB058",
+				"description" : "Courtesy Mooring, East of Bridge",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3340333948, -33.4355621962 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW318",
+				"description" : "Emergency Mooring, Pt Clare",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3328317651, -33.4405774 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW319",
+				"description" : "Emergency Mooring, Pt Clare",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.3343033969, -33.435185528 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW320",
+				"description" : "Emergency Mooring, Pt Clare",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.334260064, -33.4346921959 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "CBW321",
+				"description" : "Emergency Mooring, Pt Clare",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.9043069339, -37.0723571871 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "STB105",
+				"description" : "Emergency Mooring, Twofold Bay | EMERGENCY",
+				"purpose" : "Emergency Mooring",
+				"conditions_of_use" : "Unauthorised use prohibited",
+				"type" : "Blue Beehive Emerg Police",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.9044002608, -37.0728771832 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "STB106",
+				"description" : "Courtesy Mooring, Twofold Bay | COURTESY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.9049052658, -37.0721238531 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "STB107",
+				"description" : "Courtesy Mooring, Twofold Bay | COURTESY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.9049002604, -37.0726505172 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "STB108",
+				"description" : "Courtesy Mooring, Twofold Bay | COURTESY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 149.9054169264, -37.0724421842 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "STB109",
+				"description" : "Courtesy Mooring, Twofold Bay | COURTESY",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 151.5935147246, -33.0370388875 ]
+			},
+			"properties" : {
+				"maritime_asset_id" : "NLM366",
+				"description" : "Courtesy Mooring, F Jetty Rathmines | COURTESY 24HR",
+				"purpose" : "Courtesy Mooring",
+				"conditions_of_use" : "Max 24 hrs, max vessel displacement 20 tonnes",
+				"type" : "Pink Beehive Public Mooring",
+				"asset_owner" : "Transport (Maritime)",
+				"efm" : null
+			}
+		}
+	]
+}

@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 </head>
 <body>
   <h1>Berowra Waters Boat Hire</h1>
@@ -26,20 +28,54 @@
     <h3>Menu</h3>
 
     <div class="menu-section">
-      <h4>🗺️ Map Layers</h4>
+      <h4>🗺️ Map Layers — Local (verified)</h4>
       <label class="layer-toggle">
         <input type="checkbox" id="layer-official" checked onchange="toggleOfficialLayer()">
         Navigation Markers (port/starboard/cardinal)
       </label>
       <label class="layer-toggle">
         <input type="checkbox" id="layer-wharf-ramp" onchange="toggleWharfRampLayer()">
-        Wharves & Boat Ramps
+        Wharves & Boat Ramps (local)
       </label>
       <label class="layer-toggle">
         <input type="checkbox" id="layer-seamarks" onchange="toggleSeaMarksLayer()">
         OpenSeaMap Reference Layer (optional)
       </label>
-      <p><em>More layers coming soon — shallow water, fishing spots.</em></p>
+
+      <h4>🗺️ Map Layers — NSW Wide</h4>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-nsw-nav" onchange="toggleNswNavLayer()">
+        NSW Navigation Markers (unverified type)
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-moorings" onchange="toggleMooringsLayer()">
+        Public Moorings (NSW wide)
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-nsw-wharves" onchange="toggleNswWharvesLayer()">
+        Public Wharves (NSW wide)
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-nsw-ramps" onchange="toggleNswRampsLayer()">
+        Boat Ramps (NSW wide)
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-shallow" onchange="toggleShallowLayer()">
+        Shallow Water Areas (Hawkesbury region)
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-speed" onchange="toggleSpeedLayer()">
+        Speed Zones (Hawkesbury region)
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-wash" onchange="toggleWashLayer()">
+        No Wash Zones (Hawkesbury region)
+      </label>
+      <label class="layer-toggle">
+        <input type="checkbox" id="layer-towing" onchange="toggleTowingLayer()">
+        No Towing Zones (Hawkesbury region)
+      </label>
+      <p><em>More layers coming soon — fishing spots.</em></p>
     </div>
 
     <div class="menu-section">
@@ -70,11 +106,20 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="local-markers.js?v=2"></script>
   <script src="official-markers.js?v=2"></script>
   <script src="wharves-ramps.js?v=1"></script>
+  <script src="nsw-nav-markers.js?v=1"></script>
+  <script src="public-moorings.js?v=1"></script>
+  <script src="nsw-wharves.js?v=1"></script>
+  <script src="nsw-boat-ramps.js?v=1"></script>
+  <script src="shallow-water.js?v=1"></script>
+  <script src="speed-zones.js?v=1"></script>
+  <script src="wash-restrictions.js?v=1"></script>
+  <script src="towing-restrictions.js?v=1"></script>
   <script src="gps.js?v=2"></script>
   <script src="map.js?v=4"></script>
-  <script src="ui-panel.js?v=4"></script>
+  <script src="ui-panel.js?v=5"></script>
 </body>
 </html>

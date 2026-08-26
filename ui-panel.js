@@ -8,38 +8,67 @@ function toggleMenu() {
 function openChartViewer() {
   document.getElementById("chart-viewer-frame").src = "nsw-maritime-chart.pdf";
   document.getElementById("chart-viewer").classList.add("open");
-  toggleMenu(); // close the bottom sheet menu at the same time
+  toggleMenu();
 }
 
 function closeChartViewer() {
   document.getElementById("chart-viewer").classList.remove("open");
-  document.getElementById("chart-viewer-frame").src = ""; // stop loading/free memory
+  document.getElementById("chart-viewer-frame").src = "";
 }
 
-// ===== Map layer toggles =====
+// ===== Local map layer toggles =====
 function toggleOfficialLayer() {
   const checkbox = document.getElementById("layer-official");
-  if (checkbox.checked) {
-    officialMarkersLayer.addTo(map);
-  } else {
-    map.removeLayer(officialMarkersLayer);
-  }
+  if (checkbox.checked) { officialMarkersLayer.addTo(map); } else { map.removeLayer(officialMarkersLayer); }
 }
 
 function toggleWharfRampLayer() {
   const checkbox = document.getElementById("layer-wharf-ramp");
-  if (checkbox.checked) {
-    wharfRampLayer.addTo(map);
-  } else {
-    map.removeLayer(wharfRampLayer);
-  }
+  if (checkbox.checked) { wharfRampLayer.addTo(map); } else { map.removeLayer(wharfRampLayer); }
 }
 
 function toggleSeaMarksLayer() {
   const checkbox = document.getElementById("layer-seamarks");
-  if (checkbox.checked) {
-    seaMarks.addTo(map);
-  } else {
-    map.removeLayer(seaMarks);
-  }
+  if (checkbox.checked) { seaMarks.addTo(map); } else { map.removeLayer(seaMarks); }
+}
+
+// ===== NSW-wide map layer toggles =====
+function toggleNswNavLayer() {
+  const checkbox = document.getElementById("layer-nsw-nav");
+  if (checkbox.checked) { nswNavMarkersLayer.addTo(map); } else { map.removeLayer(nswNavMarkersLayer); }
+}
+
+function toggleMooringsLayer() {
+  const checkbox = document.getElementById("layer-moorings");
+  if (checkbox.checked) { publicMooringsLayer.addTo(map); } else { map.removeLayer(publicMooringsLayer); }
+}
+
+function toggleNswWharvesLayer() {
+  const checkbox = document.getElementById("layer-nsw-wharves");
+  if (checkbox.checked) { nswWharvesLayer.addTo(map); } else { map.removeLayer(nswWharvesLayer); }
+}
+
+function toggleNswRampsLayer() {
+  const checkbox = document.getElementById("layer-nsw-ramps");
+  if (checkbox.checked) { nswBoatRampsLayer.addTo(map); } else { map.removeLayer(nswBoatRampsLayer); }
+}
+
+function toggleShallowLayer() {
+  const checkbox = document.getElementById("layer-shallow");
+  if (checkbox.checked) { shallowWaterLayer.addTo(map); } else { map.removeLayer(shallowWaterLayer); }
+}
+
+function toggleSpeedLayer() {
+  const checkbox = document.getElementById("layer-speed");
+  if (checkbox.checked) { speedZoneLayer.addTo(map); } else { map.removeLayer(speedZoneLayer); }
+}
+
+function toggleWashLayer() {
+  const checkbox = document.getElementById("layer-wash");
+  if (checkbox.checked) { washRestrictionLayer.addTo(map); } else { map.removeLayer(washRestrictionLayer); }
+}
+
+function toggleTowingLayer() {
+  const checkbox = document.getElementById("layer-towing");
+  if (checkbox.checked) { towingRestrictionLayer.addTo(map); } else { map.removeLayer(towingRestrictionLayer); }
 }
