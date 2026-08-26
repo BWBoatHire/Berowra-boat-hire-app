@@ -105,3 +105,31 @@ function switchWeatherZone(zone) {
     document.getElementById("weather-tab-" + z).classList.toggle("active", z === zone);
   });
 }
+// ===== Disclaimer & Terms =====
+function openDisclaimerPage() {
+  document.getElementById("disclaimer-viewer").classList.add("open");
+  toggleMenu();
+}
+
+function closeDisclaimerPage() {
+  document.getElementById("disclaimer-viewer").classList.remove("open");
+}
+
+function updateAcceptButton() {
+  const checkbox = document.getElementById("disclaimer-checkbox");
+  const btn = document.getElementById("disclaimer-accept-btn");
+  btn.disabled = !checkbox.checked;
+}
+
+function acceptDisclaimer() {
+  localStorage.setItem("disclaimerAccepted", "true");
+  document.getElementById("disclaimer-modal").classList.remove("open");
+}
+
+function checkDisclaimerAccepted() {
+  if (!localStorage.getItem("disclaimerAccepted")) {
+    document.getElementById("disclaimer-modal").classList.add("open");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", checkDisclaimerAccepted);

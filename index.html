@@ -14,6 +14,7 @@
   <header id="app-banner">
     <img src="logo-header.png" alt="Berowra Waters Boat Hire logo" id="banner-logo">
     <span id="banner-title">Berowra Waters Boat Hire</span>
+    <span id="beta-badge">BETA</span>
   </header>
   <div id="map"></div>
   <div id="legend"><h4>Map Key</h4></div>
@@ -104,6 +105,12 @@
       <span class="row-note">Coming soon</span>
     </div>
 
+    <!-- Disclaimer & Terms -->
+    <div class="menu-row menu-row-nav" onclick="openDisclaimerPage()">
+      <span class="row-label">⚠️ Disclaimer & Terms</span>
+      <span class="chevron">›</span>
+    </div>
+
   </div>
 
   <!-- Full-screen PDF chart viewer -->
@@ -156,6 +163,52 @@
     <iframe id="weather-frame" src=""></iframe>
   </div>
 
+  <!-- Full-screen Disclaimer & Terms viewer (also used as first-visit content) -->
+  <div id="disclaimer-viewer">
+    <button id="disclaimer-viewer-close" onclick="closeDisclaimerPage()">✕ Close</button>
+    <div id="disclaimer-content">
+      <span class="disclaimer-beta-tag">BETA VERSION</span>
+      <h2>Important Information</h2>
+      <p>This app is currently in <strong>beta testing</strong>. This disclaimer is a draft pending review by Berowra Waters Boat Hire's solicitor and is subject to change.</p>
+
+      <h3>1. Not a substitute for navigation charts or seamanship</h3>
+      <p>This app is intended for general orientation and information purposes only. It is not a certified navigational aid and must not be relied upon as your sole source of information for navigating any waterway. Always exercise caution, maintain a proper lookout, and follow the safety briefing provided at the time of hire.</p>
+
+      <h3>2. Third-party data</h3>
+      <p>This app displays information sourced from third parties, including Transport for NSW (Maritime NSW open data), the Bureau of Meteorology, OpenStreetMap, and OpenSeaMap contributors. Berowra Waters Boat Hire does not create, verify, or control this data and cannot guarantee its accuracy, completeness, or currency. Each data provider's own disclaimers apply to their respective data as displayed within this app.</p>
+
+      <h3>3. GPS and location accuracy</h3>
+      <p>Your device's GPS position shown in this app is provided by your device's own hardware and operating system. Location accuracy may be reduced in narrow gorges, near cliffs, under bridges, or in areas with poor satellite visibility or mobile signal. Do not rely on GPS positioning alone for critical navigational decisions.</p>
+
+      <h3>4. Tide, weather, and water conditions</h3>
+      <p>Tide predictions, weather information, and any related data shown in this app are predictions only, based on average conditions. Actual conditions may vary due to wind, rainfall, barometric pressure, or other factors. This information should not be the sole basis for decisions about whether it is safe to be on the water.</p>
+
+      <h3>5. No liability for reliance on this app</h3>
+      <p>To the maximum extent permitted by law, Berowra Waters Boat Hire excludes all liability for any loss, injury, damage, or cost arising directly or indirectly from the use of, or reliance on, this app or any information displayed within it. This app does not replace the responsibilities of the vessel operator, who remains solely responsible for the safe operation of the hired vessel at all times.</p>
+
+      <h3>6. App availability</h3>
+      <p>This app depends on your device's GPS, internet connectivity, and battery. Berowra Waters Boat Hire does not guarantee the app will be available, accurate, or functional at all times, including while on the water where connectivity may be limited or unavailable.</p>
+
+      <h3>7. Acceptance</h3>
+      <p>By using this app, you acknowledge that you have read and understood this disclaimer, and that Berowra Waters Boat Hire's standard hire agreement terms and conditions continue to apply in full.</p>
+    </div>
+  </div>
+
+  <!-- First-visit acceptance overlay -->
+  <div id="disclaimer-modal">
+    <div id="disclaimer-modal-card">
+      <span class="disclaimer-beta-tag">BETA VERSION</span>
+      <h3>Before you get started</h3>
+      <p>This app is a general information tool and is not a certified navigational aid. Tide, weather, GPS position, and map data are provided for guidance only and may not always be accurate or up to date. Always follow your safety briefing and use your own judgement on the water.</p>
+      <p><a href="#" onclick="openDisclaimerPage(); return false;">Read the full disclaimer</a></p>
+      <label id="disclaimer-checkbox-row">
+        <input type="checkbox" id="disclaimer-checkbox" onchange="updateAcceptButton()">
+        I have read and understood this notice
+      </label>
+      <button id="disclaimer-accept-btn" disabled onclick="acceptDisclaimer()">Accept & Continue</button>
+    </div>
+  </div>
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="local-markers.js?v=2"></script>
@@ -164,7 +217,7 @@
   <script src="public-moorings.js?v=1"></script>
   <script src="nsw-wharves.js?v=1"></script>
   <script src="nsw-boat-ramps.js?v=1"></script>
-  <script src="shallow-water.js?v=3"></script>
+  <script src="shallow-water.js?v=2"></script>
   <script src="speed-zones.js?v=1"></script>
   <script src="wash-restrictions.js?v=1"></script>
   <script src="towing-restrictions.js?v=1"></script>
@@ -172,6 +225,6 @@
   <script src="tide-page.js?v=1"></script>
   <script src="gps.js?v=2"></script>
   <script src="map.js?v=9"></script>
-  <script src="ui-panel.js?v=11"></script>
+  <script src="ui-panel.js?v=12"></script>
 </body>
 </html>

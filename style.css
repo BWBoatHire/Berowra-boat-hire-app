@@ -395,4 +395,118 @@ html, body {
   fill: url(#shallowHatch) !important;
   fill-opacity: 1 !important;
 }
+#beta-badge {
+  background: #ff6600;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+/* ===== Disclaimer & Terms page ===== */
+#disclaimer-viewer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: white;
+  z-index: 1500;
+  overflow-y: auto;
+}
+#disclaimer-viewer.open { display: block; }
+#disclaimer-viewer-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  z-index: 1600;
+  padding: 8px 14px;
+  background-color: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+#disclaimer-content {
+  padding: 60px 20px 30px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#disclaimer-content h2 {
+  color: #0b5394;
+  margin-top: 8px;
+}
+#disclaimer-content h3 {
+  color: #0b5394;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+#disclaimer-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+.disclaimer-beta-tag {
+  display: inline-block;
+  background: #ff6600;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* ===== First-visit acceptance modal ===== */
+#disclaimer-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+#disclaimer-modal.open {
+  display: flex;
+}
+#disclaimer-modal-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 340px;
+  margin: 20px;
+}
+#disclaimer-modal-card h3 {
+  color: #0b5394;
+  margin-top: 8px;
+}
+#disclaimer-modal-card p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333;
+}
+#disclaimer-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin: 12px 0;
+}
+#disclaimer-checkbox-row input {
+  width: 18px;
+  height: 18px;
+}
+#disclaimer-accept-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+}
+#disclaimer-accept-btn:disabled {
+  background-color: #ccc;
+}
 
