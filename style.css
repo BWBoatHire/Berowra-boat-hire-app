@@ -9,7 +9,7 @@ html, body {
 }
 
 #app-banner {
-  height: 56px;
+  height: 90px;
   background-image: url('header-banner.jpg');
   background-size: cover;
   background-position: center;
@@ -33,10 +33,9 @@ html, body {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
-
 #map {
   position: absolute;
-  top: 56px;
+  top: 90px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -140,33 +139,60 @@ html, body {
   cursor: pointer;
 }
 
-.menu-section {
-  margin-top: 16px;
-}
-
-.menu-link-btn {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 10px 16px;
-  background-color: #0b5394;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
+/* ===== Unified menu row style ===== */
+.menu-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4px;
+  border-bottom: 1px solid #eee;
   font-size: 15px;
-  cursor: pointer;
 }
-
-.layer-toggle {
+.row-label {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 15px;
-  margin-top: 8px;
 }
-.layer-toggle input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+.menu-row-header {
+  cursor: pointer;
+  font-weight: bold;
+}
+.chevron {
+  font-size: 20px;
+  color: #0b5394;
+  transition: transform 0.2s ease;
+}
+.chevron.expanded {
+  transform: rotate(90deg);
+}
+.menu-row-nav {
+  cursor: pointer;
+}
+.menu-row-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.menu-row-disabled {
+  color: #aaa;
+}
+.row-note {
+  font-size: 13px;
+  color: #aaa;
+  font-style: italic;
+}
+.layers-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 6px;
+}
+.layers-list.expanded {
+  max-height: 700px;
+}
+.menu-note {
+  font-size: 13px;
+  color: #888;
+  padding: 6px 4px;
 }
 
 /* ===== Full-screen PDF chart viewer ===== */
@@ -311,6 +337,7 @@ html, body {
   text-align: left;
   line-height: 1.4;
 }
+
 /* ===== Marine Weather page ===== */
 #weather-viewer {
   display: none;
@@ -340,7 +367,6 @@ html, body {
   padding: 60px 10px 6px 10px;
   gap: 6px;
 }
-
 .weather-tab {
   flex: 1;
   padding: 10px;
@@ -365,3 +391,8 @@ html, body {
   width: 100%;
   border: none;
 }
+.shallow-water-fill {
+  fill: url(#shallowHatch) !important;
+  fill-opacity: 1 !important;
+}
+

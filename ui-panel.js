@@ -4,6 +4,14 @@ function toggleMenu() {
   sheet.classList.toggle("open");
 }
 
+// ===== Map Layers collapsible section =====
+function toggleLayersSection() {
+  const list = document.getElementById("layers-list");
+  const chevron = document.getElementById("layers-chevron");
+  list.classList.toggle("expanded");
+  chevron.classList.toggle("expanded");
+}
+
 // ===== Full-screen PDF chart viewer =====
 function openChartViewer() {
   document.getElementById("chart-viewer-frame").src = "nsw-maritime-chart.pdf";
@@ -57,22 +65,28 @@ function toggleSpeedLayer() {
   if (checkbox.checked) { speedZoneLayer.addTo(map); } else { map.removeLayer(speedZoneLayer); }
 }
 
-function toggleWashLayer() {
-  const checkbox = document.getElementById("layer-wash");
-  if (checkbox.checked) { washRestrictionLayer.addTo(map); } else { map.removeLayer(washRestrictionLayer); }
+function toggleShallowLayer() {
+  const checkbox = document.getElementById("layer-shallow");
+  if (checkbox.checked) {
+    shallowWaterLayer.addTo(map);
+    ensureShallowHatchPattern();
+  } else {
+    map.removeLayer(shallowWaterLayer);
+  }
 }
+
 
 function toggleTowingLayer() {
   const checkbox = document.getElementById("layer-towing");
   if (checkbox.checked) { towingRestrictionLayer.addTo(map); } else { map.removeLayer(towingRestrictionLayer); }
 }
+
 // ===== Marine Weather viewer =====
 const weatherUrls = {
   general: "https://www.bom.gov.au/places/nsw/terrey-hills/forecast/",
   sheltered: "https://www.bom.gov.au/nsw/forecasts/sydneywaters.shtml",
   open: "https://www.bom.gov.au/nsw/forecasts/sydneycoast.shtml"
 };
-
 
 function openWeatherPage() {
   switchWeatherZone('general');
@@ -87,9 +101,7 @@ function closeWeatherPage() {
 
 function switchWeatherZone(zone) {
   document.getElementById("weather-frame").src = weatherUrls[zone];
- ["general", "sheltered", "open"].forEach(z => {
-  document.getElementById("weather-tab-" + z).classList.toggle("active", z === zone);
-});
- 
+  ["general", "sheltered", "open"].forEach(z => {
+    document.getElementById("weather-tab-" + z).classList.toggle("active", z === zone);
+  });
 }
-
