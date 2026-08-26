@@ -28,9 +28,9 @@
     <h3>Menu</h3>
 
     <div class="menu-section">
-      <h4>🗺️ Map Layers — Local (verified)</h4>
+      <h4>🗺️ Map Layers</h4>
       <label class="layer-toggle">
-        <input type="checkbox" id="layer-official" checked onchange="toggleOfficialLayer()">
+        <input type="checkbox" id="layer-nsw-nav" checked onchange="toggleNswNavLayer()">
         Navigation Markers (port/starboard/cardinal)
       </label>
       <label class="layer-toggle">
@@ -40,12 +40,6 @@
       <label class="layer-toggle">
         <input type="checkbox" id="layer-seamarks" onchange="toggleSeaMarksLayer()">
         OpenSeaMap Reference Layer (optional)
-      </label>
-
-      <h4>🗺️ Map Layers — NSW Wide</h4>
-      <label class="layer-toggle">
-        <input type="checkbox" id="layer-nsw-nav" onchange="toggleNswNavLayer()">
-        NSW Navigation Markers (unverified type)
       </label>
       <label class="layer-toggle">
         <input type="checkbox" id="layer-moorings" onchange="toggleMooringsLayer()">
@@ -108,9 +102,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="local-markers.js?v=2"></script>
-  <script src="official-markers.js?v=2"></script>
   <script src="wharves-ramps.js?v=1"></script>
-  <script src="nsw-nav-markers.js?v=1"></script>
+  <script src="nsw-nav-markers.js?v=3"></script>
   <script src="public-moorings.js?v=1"></script>
   <script src="nsw-wharves.js?v=1"></script>
   <script src="nsw-boat-ramps.js?v=1"></script>
@@ -119,7 +112,7 @@
   <script src="wash-restrictions.js?v=1"></script>
   <script src="towing-restrictions.js?v=1"></script>
   <script src="gps.js?v=2"></script>
-  <script src="map.js?v=4"></script>
-  <script src="ui-panel.js?v=5"></script>
+  <script src="map.js?v=6"></script>
+  <script src="ui-panel.js?v=6"></script>
 </body>
 </html>

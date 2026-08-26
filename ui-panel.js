@@ -16,10 +16,10 @@ function closeChartViewer() {
   document.getElementById("chart-viewer-frame").src = "";
 }
 
-// ===== Local map layer toggles =====
-function toggleOfficialLayer() {
-  const checkbox = document.getElementById("layer-official");
-  if (checkbox.checked) { officialMarkersLayer.addTo(map); } else { map.removeLayer(officialMarkersLayer); }
+// ===== Map layer toggles =====
+function toggleNswNavLayer() {
+  const checkbox = document.getElementById("layer-nsw-nav");
+  if (checkbox.checked) { nswNavMarkersLayer.addTo(map); } else { map.removeLayer(nswNavMarkersLayer); }
 }
 
 function toggleWharfRampLayer() {
@@ -30,12 +30,6 @@ function toggleWharfRampLayer() {
 function toggleSeaMarksLayer() {
   const checkbox = document.getElementById("layer-seamarks");
   if (checkbox.checked) { seaMarks.addTo(map); } else { map.removeLayer(seaMarks); }
-}
-
-// ===== NSW-wide map layer toggles =====
-function toggleNswNavLayer() {
-  const checkbox = document.getElementById("layer-nsw-nav");
-  if (checkbox.checked) { nswNavMarkersLayer.addTo(map); } else { map.removeLayer(nswNavMarkersLayer); }
 }
 
 function toggleMooringsLayer() {
