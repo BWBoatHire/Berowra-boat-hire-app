@@ -7,11 +7,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19
 }).addTo(map);
 
-// Add the free OpenSeaMap nautical layer on top of the base map
+// OpenSeaMap nautical symbol layer - OFF by default (we use official NSW Maritime data instead)
 const seaMarks = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
   attribution: '© OpenSeaMap contributors',
   maxZoom: 19
-}).addTo(map);
+});
 
 // ===== Build a simple colored icon shape for each marker type =====
 function createIcon(typeKey) {
@@ -42,7 +42,7 @@ function createIcon(typeKey) {
   });
 }
 
-// ===== OFFICIAL NAVIGATION MARKERS - now a toggleable layer =====
+// ===== OFFICIAL NAVIGATION MARKERS - toggleable layer =====
 const officialMarkersLayer = L.layerGroup();
 
 officialMarkers.forEach(function (m) {

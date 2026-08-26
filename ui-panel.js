@@ -34,3 +34,12 @@ function toggleWharfRampLayer() {
     map.removeLayer(wharfRampLayer);
   }
 }
+
+function toggleSeaMarksLayer() {
+  const checkbox = document.getElementById("layer-seamarks");
+  if (checkbox.checked) {
+    seaMarks.addTo(map);
+  } else {
+    map.removeLayer(seaMarks);
+  }
+}
