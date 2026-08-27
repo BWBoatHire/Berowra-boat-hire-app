@@ -9,33 +9,58 @@ html, body {
 }
 
 #app-banner {
-  height: 90px;
-  background-image: url('header-banner.jpg');
-  background-size: cover;
-  background-position: center;
+  height: 72px;
+  background: linear-gradient(160deg, #0a3d63 0%, #1a6fa8 60%, #4fa8d8 100%);
   display: flex;
   align-items: center;
-  padding: 0 12px;
+  padding: 0 14px;
   gap: 10px;
+  position: relative;
 }
 #banner-logo {
-  height: 40px;
-  width: 40px;
-  border-radius: 8px;
+  width: 38px;
+  height: 38px;
   background: white;
-  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   object-fit: contain;
+  padding: 2px;
+}
+#banner-titles {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 #banner-title {
   color: white;
   font-weight: bold;
-  font-size: 16px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  font-size: 15px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+#banner-subtitle {
+  color: rgba(255,255,255,0.85);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+#beta-badge {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.4);
 }
 
 #map {
   position: absolute;
-  top: 90px;
+  top: 72px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -69,36 +94,131 @@ html, body {
   display: inline-block;
 }
 
-/* ===== Bottom center button group (Track / Menu / Locate) ===== */
+#layers-icon-btn {
+  position: fixed;
+  top: 150px;
+  left: 22px;
+  width: 34px;
+  height: 34px;
+  background: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  color: #0a3d63;
+  font-size: 16px;
+  z-index: 1100;
+}
+
+#help-btn {
+  position: fixed;
+  top: 84px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 25%, #ff8a7a, #c0281a 65%, #8f1a10 100%);
+  box-shadow: inset 0 2px 3px rgba(255,255,255,0.6), inset 0 -4px 8px rgba(0,0,0,0.35), 0 2px 6px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  z-index: 1100;
+  cursor: pointer;
+}
+
 #bottom-nav-group {
   position: fixed;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 8px;
+  align-items: center;
+  gap: 12px;
   z-index: 1100;
 }
 #bottom-nav-group button {
-  width: 52px;
-  height: 52px;
   border-radius: 50%;
-  background-color: #0b5394;
+  border: 1px solid rgba(255,255,255,0.4);
   color: white;
-  border: none;
-  font-size: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   cursor: pointer;
 }
+#track-btn, #locate-btn {
+  width: 48px;
+  height: 48px;
+  font-size: 21px;
+  background: radial-gradient(circle at 35% 25%, #7fc4e8, #1a6fa8 65%, #0a3d63 100%);
+  box-shadow: inset 0 2px 4px rgba(255,255,255,0.6), inset 0 -6px 10px rgba(0,0,0,0.3), 0 3px 8px rgba(0,0,0,0.25);
+}
 #menu-toggle-btn {
-  font-size: 22px;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  background: radial-gradient(circle at 35% 25%, #3a7fa8, #0a3d63 65%, #052540 100%);
+  box-shadow: inset 0 2px 4px rgba(255,255,255,0.5), inset 0 -6px 10px rgba(0,0,0,0.4), 0 3px 10px rgba(0,0,0,0.35);
 }
-#locate-btn.active, #track-btn.active {
-  background-color: #ff6600;
+#track-btn.active, #locate-btn.active {
+  background: radial-gradient(circle at 35% 25%, #ffb199, #c0281a 65%, #8f1a10 100%);
 }
 
+#speed-direction-badge {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  left: 20px;
+  background: #ff6600;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1100;
+}
 
-/* ===== Bottom sheet panel ===== */
+#layers-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -70%;
+  height: 65%;
+  background: white;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+  padding: 10px 20px 20px 20px;
+  transition: bottom 0.3s ease;
+  z-index: 1250;
+  text-align: left;
+  overflow-y: auto;
+}
+#layers-sheet.open {
+  bottom: 0;
+}
+#layers-sheet-handle {
+  width: 40px;
+  height: 5px;
+  background: #ccc;
+  border-radius: 3px;
+  margin: 0 auto 10px auto;
+}
+#layers-sheet-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+}
+#layers-sheet h4 {
+  color: #0a3d63;
+  font-size: 13px;
+  margin: 16px 0 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 #bottom-sheet {
   position: fixed;
   left: 0;
@@ -127,8 +247,14 @@ html, body {
   color: #555;
   cursor: pointer;
 }
+#bottom-sheet h4 {
+  color: #0a3d63;
+  font-size: 13px;
+  margin: 16px 0 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 
-/* ===== Unified menu row style ===== */
 .menu-row {
   display: flex;
   align-items: center;
@@ -142,22 +268,15 @@ html, body {
   align-items: center;
   gap: 8px;
 }
-.menu-row-header {
-  cursor: pointer;
-  font-weight: bold;
-}
 .chevron {
   font-size: 20px;
   color: #0b5394;
-  transition: transform 0.2s ease;
-}
-.chevron.expanded {
-  transform: rotate(90deg);
 }
 .menu-row-nav {
   cursor: pointer;
 }
-.menu-row-checkbox input[type="checkbox"] {
+.menu-row-checkbox input[type="checkbox"],
+.menu-row-checkbox input[type="radio"] {
   width: 20px;
   height: 20px;
 }
@@ -169,22 +288,7 @@ html, body {
   color: #aaa;
   font-style: italic;
 }
-.layers-list {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding-left: 6px;
-}
-.layers-list.expanded {
-  max-height: 700px;
-}
-.menu-note {
-  font-size: 13px;
-  color: #888;
-  padding: 6px 4px;
-}
 
-/* ===== Full-screen PDF chart viewer ===== */
 #chart-viewer {
   display: none;
   position: fixed;
@@ -216,7 +320,6 @@ html, body {
   font-size: 15px;
 }
 
-/* ===== Tide Timetable page ===== */
 #tide-viewer {
   display: none;
   position: fixed;
@@ -327,7 +430,6 @@ html, body {
   line-height: 1.4;
 }
 
-/* ===== Marine Weather page ===== */
 #weather-viewer {
   display: none;
   position: fixed;
@@ -380,21 +482,7 @@ html, body {
   width: 100%;
   border: none;
 }
-.shallow-water-fill {
-  fill: url(#shallowHatch) !important;
-  fill-opacity: 1 !important;
-}
-#beta-badge {
-  background: #ff6600;
-  color: white;
-  font-size: 10px;
-  font-weight: bold;
-  padding: 2px 6px;
-  border-radius: 4px;
-  margin-left: 4px;
-}
 
-/* ===== Disclaimer & Terms page ===== */
 #disclaimer-viewer {
   display: none;
   position: fixed;
@@ -445,7 +533,6 @@ html, body {
   margin-bottom: 8px;
 }
 
-/* ===== First-visit acceptance modal ===== */
 #disclaimer-modal {
   display: none;
   position: fixed;
@@ -498,37 +585,6 @@ html, body {
 #disclaimer-accept-btn:disabled {
   background-color: #ccc;
 }
-
-#help-btn {
-  position: fixed;
-  left: 20px;
-  bottom: 20px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background-color: #cc0000;
-  color: white;
-  border: none;
-  font-size: 22px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 1100;
-  cursor: pointer;
-}
-#speed-direction-badge {
-  display: none;
-  position: fixed;
-  bottom: 90px;
-  left: 20px;
-  background: #ff6600;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 1100;
-}
-
 
 #help-modal {
   display: none;
@@ -587,3 +643,7 @@ html, body {
   margin-top: 8px;
 }
 
+.shallow-water-fill {
+  fill: url(#shallowHatch) !important;
+  fill-opacity: 1 !important;
+}

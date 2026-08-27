@@ -1,11 +1,31 @@
 // Initialize the map, centered on Berowra Waters, NSW
 const map = L.map('map').setView([-33.5988, 151.1207], 15);
 
-// Add the free OpenStreetMap base layer
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// ===== Base map layers =====
+const defaultBaseLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors',
   maxZoom: 19
-}).addTo(map);
+});
+
+const satelliteBaseLayer = L.tileLayer('https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Imagery © NSW Department of Customer Service (Spatial Services), Creative Commons Attribution 4.0',
+  maxZoom: 21
+});
+
+
+// Default view starts active
+defaultBaseLayer.addTo(map);
+let currentBaseLayer = defaultBaseLayer;
+
+// OpenSeaMap nautical symbol layer - OFF by default (we use official NSW Maritime data instead)
+const seaMarks = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
+  attribution: '© OpenSeaMap contributors',
+  maxZoom: 19
+});
+
+// Navigation markers layer is ON by default - core safety information
+nswNavMarkersLayer.addTo(map);
+
 // Reusable function to create the shallow water hatch pattern once needed
 function ensureShallowHatchPattern() {
   const svg = document.querySelector('.leaflet-overlay-pane svg') || document.querySelector('svg.leaflet-zoom-animated');
@@ -24,12 +44,40 @@ function ensureShallowHatchPattern() {
   }
 }
 
+// ===== Placeholder Fishing Spots layer (empty for now, content coming later) =====
+const fishingSpotsLayer = L.layerGroup();
 
-// OpenSeaMap nautical symbol layer - OFF by default (we use official NSW Maritime data instead)
-const seaMarks = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
-  attribution: '© OpenSeaMap contributors',
-  maxZoom: 19
-});
+// ===== Map Type switching (Default / Satellite / Fishing) =====
+function setMapType(type) {
+  // Remove current base layer first
+  map.removeLayer(currentBaseLayer);
 
-// Navigation markers layer is ON by default - core safety information
-nswNavMarkersLayer.addTo(map);
+  if (type === 'default' || type === 'fishing') {
+    currentBaseLayer = defaultBaseLayer;
+  } else if (type === 'satellite') {
+    currentBaseLayer = satelliteBaseLayer;
+  }
+  currentBaseLayer.addTo(map);
+
+  if (type === 'fishing') {
+    // Turn off every overlay layer except fishing spots
+    [nswNavMarkersLayer, wharfRampLayer, seaMarks, publicMooringsLayer, nswWharvesLayer,
+     nswBoatRampsLayer, shallowWaterLayer, speedZoneLayer, washRestrictionLayer, towingRestrictionLayer]
+      .forEach(layer => { if (map.hasLayer(layer)) map.removeLayer(layer); });
+
+    // Uncheck their checkboxes to keep the UI in sync
+    ["layer-nsw-nav","layer-wharf-ramp","layer-seamarks","layer-moorings","layer-nsw-wharves",
+     "layer-nsw-ramps","layer-shallow","layer-speed","layer-wash","layer-towing"].forEach(id => {
+      const cb = document.getElementById(id);
+      if (cb) cb.checked = false;
+    });
+
+    fishingSpotsLayer.addTo(map);
+  } else {
+    // Leaving fishing view - remove the fishing layer again
+    if (map.hasLayer(fishingSpotsLayer)) map.removeLayer(fishingSpotsLayer);
+  }
+}
+
+// ===== Legend placeholder (rebuilt properly when Map Key feature is added) =====
+const legend = document.getElementById("legend");

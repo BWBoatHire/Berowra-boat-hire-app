@@ -3,119 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Berowra Waters Boat Hire - NaviApp</title>
+  <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=12">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" />
 </head>
 <body>
   <header id="app-banner">
     <img src="logo-header.png" alt="Berowra Waters Boat Hire logo" id="banner-logo">
-    <span id="banner-title">Berowra Waters Boat Hire</span>
+    <div id="banner-titles">
+      <div id="banner-title">Berowra Waters Boat Hire</div>
+      <div id="banner-subtitle">NaviGuide</div>
+    </div>
     <span id="beta-badge">BETA</span>
   </header>
+
   <div id="map"></div>
   <div id="legend"><h4>Map Key</h4></div>
 
-<button id="help-btn" onclick="openHelpModal()">🆘</button>
-<div id="speed-direction-badge"></div>
+  <button id="layers-icon-btn" onclick="toggleLayersSheet()"><i class="ti ti-copy"></i></button>
 
-<!-- Bottom center button group -->
-<div id="bottom-nav-group">
-  <button id="track-btn" onclick="toggleTrackRoute()">🧭</button>
-  <button id="menu-toggle-btn" onclick="toggleMenu()">☰</button>
-  <button id="locate-btn" onclick="toggleShowLocation()">📍</button>
-</div>
+  <button id="help-btn" onclick="openHelpModal()">SOS</button>
 
+  <div id="bottom-nav-group">
+    <button id="track-btn" onclick="toggleTrackRoute()"><i class="ti ti-route"></i></button>
+    <button id="menu-toggle-btn" onclick="toggleMenu()"><i class="ti ti-menu-2"></i></button>
+    <button id="locate-btn" onclick="toggleShowLocation()"><i class="ti ti-current-location"></i></button>
+  </div>
 
-  <!-- Bottom sheet panel -->
+  <div id="speed-direction-badge"></div>
+
+  <div id="layers-sheet">
+    <div id="layers-sheet-handle"></div>
+    <button id="layers-sheet-close" onclick="toggleLayersSheet()">✕</button>
+    <h3>Map Layers</h3>
+
+    <h4>Map Type</h4>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Default</span>
+      <input type="radio" name="mapType" value="default" checked onchange="setMapType('default')">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Satellite</span>
+      <input type="radio" name="mapType" value="satellite" onchange="setMapType('satellite')">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Fishing</span>
+      <input type="radio" name="mapType" value="fishing" onchange="setMapType('fishing')">
+    </label>
+
+    <h4>Map Details</h4>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Navigation Markers (port/starboard/cardinal)</span>
+      <input type="checkbox" id="layer-nsw-nav" checked onchange="toggleNswNavLayer()">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Wharves & Boat Ramps (local)</span>
+      <input type="checkbox" id="layer-wharf-ramp" onchange="toggleWharfRampLayer()">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">OpenSeaMap Reference Layer (optional)</span>
+      <input type="checkbox" id="layer-seamarks" onchange="toggleSeaMarksLayer()">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Public Moorings (NSW wide)</span>
+      <input type="checkbox" id="layer-moorings" onchange="toggleMooringsLayer()">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Public Wharves (NSW wide)</span>
+      <input type="checkbox" id="layer-nsw-wharves" onchange="toggleNswWharvesLayer()">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Boat Ramps (NSW wide)</span>
+      <input type="checkbox" id="layer-nsw-ramps" onchange="toggleNswRampsLayer()">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Shallow Water Areas (Hawkesbury region)</span>
+      <input type="checkbox" id="layer-shallow" onchange="toggleShallowLayer()">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Speed Zones (Hawkesbury region)</span>
+      <input type="checkbox" id="layer-speed" onchange="toggleSpeedLayer()">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">No Wash Zones (Hawkesbury region)</span>
+      <input type="checkbox" id="layer-wash" onchange="toggleWashLayer()">
+    </label>
+    <label class="menu-row menu-row-checkbox">
+      <span class="row-label">No Towing Zones (Hawkesbury region)</span>
+      <input type="checkbox" id="layer-towing" onchange="toggleTowingLayer()">
+    </label>
+  </div>
+
   <div id="bottom-sheet">
     <div id="bottom-sheet-handle"></div>
     <button id="bottom-sheet-close" onclick="toggleMenu()">✕</button>
     <h3>Menu</h3>
 
-    <!-- Map Layers - collapsible -->
-    <div class="menu-row menu-row-header" onclick="toggleLayersSection()">
-      <span class="row-label">🗺️ Map Layers</span>
-      <span class="chevron" id="layers-chevron">›</span>
+    <h4>🗺️ Map</h4>
+    <div class="menu-row menu-row-nav" onclick="openChartViewer()">
+      <span class="row-label">📄 View NSW Maritime Chart (PDF)</span>
+      <span class="chevron">›</span>
     </div>
-    <div class="layers-list" id="layers-list">
-
-      <label class="menu-row menu-row-checkbox">
-        <span class="row-label">Navigation Markers (port/starboard/cardinal)</span>
-        <input type="checkbox" id="layer-nsw-nav" checked onchange="toggleNswNavLayer()">
-      </label>
-      <label class="menu-row menu-row-checkbox">
-        <span class="row-label">Wharves & Boat Ramps (local)</span>
-        <input type="checkbox" id="layer-wharf-ramp" onchange="toggleWharfRampLayer()">
-      </label>
-      <label class="menu-row menu-row-checkbox">
-        <span class="row-label">OpenSeaMap Reference Layer (optional)</span>
-        <input type="checkbox" id="layer-seamarks" onchange="toggleSeaMarksLayer()">
-      </label>
-      <label class="menu-row menu-row-checkbox">
-        <span class="row-label">Public Moorings (NSW wide)</span>
-        <input type="checkbox" id="layer-moorings" onchange="toggleMooringsLayer()">
-      </label>
-      <label class="menu-row menu-row-checkbox">
-        <span class="row-label">Public Wharves (NSW wide)</span>
-        <input type="checkbox" id="layer-nsw-wharves" onchange="toggleNswWharvesLayer()">
-      </label>
-      <label class="menu-row menu-row-checkbox">
-        <span class="row-label">Boat Ramps (NSW wide)</span>
-        <input type="checkbox" id="layer-nsw-ramps" onchange="toggleNswRampsLayer()">
-      </label>
-      <label class="menu-row menu-row-checkbox">
-        <span class="row-label">Shallow Water Areas (Hawkesbury region)</span>
-        <input type="checkbox" id="layer-shallow" onchange="toggleShallowLayer()">
-      </label>
-      <label class="menu-row menu-row-checkbox">
-        <span class="row-label">Speed Zones (Hawkesbury region)</span>
-        <input type="checkbox" id="layer-speed" onchange="toggleSpeedLayer()">
-      </label>
-      <label class="menu-row menu-row-checkbox">
-        <span class="row-label">No Wash Zones (Hawkesbury region)</span>
-        <input type="checkbox" id="layer-wash" onchange="toggleWashLayer()">
-      </label>
-      <label class="menu-row menu-row-checkbox">
-        <span class="row-label">No Towing Zones (Hawkesbury region)</span>
-        <input type="checkbox" id="layer-towing" onchange="toggleTowingLayer()">
-      </label>
-
-      <p class="menu-note"><em>More layers coming soon — fishing spots.</em></p>
-
-      <div class="menu-row menu-row-nav" onclick="openChartViewer()">
-        <span class="row-label">📄 View NSW Maritime Chart (PDF)</span>
-        <span class="chevron">›</span>
-      </div>
+    <div class="menu-row menu-row-disabled">
+      <span class="row-label">🔑 Map Key</span>
+      <span class="row-note">Coming soon</span>
     </div>
 
-    <!-- Tide Timetable -->
     <div class="menu-row menu-row-nav" onclick="openTidePage()">
       <span class="row-label">🌊 Tide Timetable</span>
       <span class="chevron">›</span>
     </div>
 
-    <!-- Marine Weather -->
     <div class="menu-row menu-row-nav" onclick="openWeatherPage()">
       <span class="row-label">☀️ Marine Weather</span>
       <span class="chevron">›</span>
     </div>
 
-    <!-- Marina Shop -->
     <div class="menu-row menu-row-disabled">
       <span class="row-label">🛍️ Marina Shop</span>
       <span class="row-note">Coming soon</span>
     </div>
 
     <div class="menu-row menu-row-nav" onclick="openHelpModal()">
-  <span class="row-label">🆘 Get Help</span>
-  <span class="chevron">›</span>
-</div>
+      <span class="row-label">🆘 Get Help</span>
+      <span class="chevron">›</span>
+    </div>
 
-    <!-- Disclaimer & Terms -->
     <div class="menu-row menu-row-nav" onclick="openDisclaimerPage()">
       <span class="row-label">⚠️ Disclaimer & Terms</span>
       <span class="chevron">›</span>
@@ -123,13 +140,11 @@
 
   </div>
 
-  <!-- Full-screen PDF chart viewer -->
   <div id="chart-viewer">
     <button id="chart-viewer-close" onclick="closeChartViewer()">✕ Close</button>
     <iframe id="chart-viewer-frame" src=""></iframe>
   </div>
 
-  <!-- Full-screen Tide Timetable viewer -->
   <div id="tide-viewer">
     <button id="tide-viewer-close" onclick="closeTidePage()">✕ Close</button>
     <div id="tide-content">
@@ -161,7 +176,6 @@
     </div>
   </div>
 
-  <!-- Full-screen Marine Weather viewer -->
   <div id="weather-viewer">
     <button id="weather-viewer-close" onclick="closeWeatherPage()">✕ Close</button>
     <div id="weather-tabs">
@@ -173,7 +187,6 @@
     <iframe id="weather-frame" src=""></iframe>
   </div>
 
-  <!-- Full-screen Disclaimer & Terms viewer (also used as first-visit content) -->
   <div id="disclaimer-viewer">
     <button id="disclaimer-viewer-close" onclick="closeDisclaimerPage()">✕ Close</button>
     <div id="disclaimer-content">
@@ -185,7 +198,7 @@
       <p>This app is intended for general orientation and information purposes only. It is not a certified navigational aid and must not be relied upon as your sole source of information for navigating any waterway. Always exercise caution, maintain a proper lookout, and follow the safety briefing provided at the time of hire.</p>
 
       <h3>2. Third-party data</h3>
-      <p>This app displays information sourced from third parties, including Transport for NSW (Maritime NSW open data), the Bureau of Meteorology, OpenStreetMap, and OpenSeaMap contributors. Berowra Waters Boat Hire does not create, verify, or control this data and cannot guarantee its accuracy, completeness, or currency. Each data provider's own disclaimers apply to their respective data as displayed within this app.</p>
+<p>This app displays information sourced from third parties, including Transport for NSW (Maritime NSW open data), the Bureau of Meteorology, OpenStreetMap, and the NSW Department of Customer Service (Spatial Services aerial imagery). Berowra Waters Boat Hire does not create, verify, or control this data and cannot guarantee its accuracy, completeness, or currency. Each data provider's own disclaimers apply to their respective data as displayed within this app.</p>
 
       <h3>3. GPS and location accuracy</h3>
       <p>Your device's GPS position shown in this app is provided by your device's own hardware and operating system. Location accuracy may be reduced in narrow gorges, near cliffs, under bridges, or in areas with poor satellite visibility or mobile signal. Do not rely on GPS positioning alone for critical navigational decisions.</p>
@@ -204,19 +217,6 @@
     </div>
   </div>
 
-  <!-- Get Help modal -->
-<div id="help-modal">
-  <div id="help-modal-card">
-    <button id="help-modal-close" onclick="closeHelpModal()">✕</button>
-    <h3>🆘 Need help?</h3>
-    <p>If you're in genuine danger, call for help. Otherwise, send your location to the marina and we'll assist you.</p>
-    <button class="help-action-btn" onclick="callMarina()">📞 Call the Marina</button>
-    <button class="help-action-btn" onclick="textLocation()">📍 Text My Location</button>
-    <p id="help-status"></p>
-  </div>
-</div>
-
-  <!-- First-visit acceptance overlay -->
   <div id="disclaimer-modal">
     <div id="disclaimer-modal-card">
       <span class="disclaimer-beta-tag">BETA VERSION</span>
@@ -228,6 +228,17 @@
         I have read and understood this notice
       </label>
       <button id="disclaimer-accept-btn" disabled onclick="acceptDisclaimer()">Accept & Continue</button>
+    </div>
+  </div>
+
+  <div id="help-modal">
+    <div id="help-modal-card">
+      <button id="help-modal-close" onclick="closeHelpModal()">✕</button>
+      <h3>🆘 Need help?</h3>
+      <p>If you're in genuine danger, call for help. Otherwise, send your location to the marina and we'll assist you.</p>
+      <button class="help-action-btn" onclick="callMarina()">📞 Call the Marina</button>
+      <button class="help-action-btn" onclick="textLocation()">📍 Text My Location</button>
+      <p id="help-status"></p>
     </div>
   </div>
 
@@ -246,7 +257,7 @@
   <script src="tide-data.js?v=2"></script>
   <script src="tide-page.js?v=1"></script>
   <script src="gps.js?v=3"></script>
-  <script src="map.js?v=9"></script>
-  <script src="ui-panel.js?v=13"></script>
+  <script src="map.js?v=10"></script>
+  <script src="ui-panel.js?v=14"></script>
 </body>
 </html>

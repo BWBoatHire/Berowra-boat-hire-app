@@ -4,12 +4,10 @@ function toggleMenu() {
   sheet.classList.toggle("open");
 }
 
-// ===== Map Layers collapsible section =====
-function toggleLayersSection() {
-  const list = document.getElementById("layers-list");
-  const chevron = document.getElementById("layers-chevron");
-  list.classList.toggle("expanded");
-  chevron.classList.toggle("expanded");
+// ===== Layers sheet control =====
+function toggleLayersSheet() {
+  const sheet = document.getElementById("layers-sheet");
+  sheet.classList.toggle("open");
 }
 
 // ===== Full-screen PDF chart viewer =====
@@ -57,16 +55,6 @@ function toggleNswRampsLayer() {
 
 function toggleShallowLayer() {
   const checkbox = document.getElementById("layer-shallow");
-  if (checkbox.checked) { shallowWaterLayer.addTo(map); } else { map.removeLayer(shallowWaterLayer); }
-}
-
-function toggleSpeedLayer() {
-  const checkbox = document.getElementById("layer-speed");
-  if (checkbox.checked) { speedZoneLayer.addTo(map); } else { map.removeLayer(speedZoneLayer); }
-}
-
-function toggleShallowLayer() {
-  const checkbox = document.getElementById("layer-shallow");
   if (checkbox.checked) {
     shallowWaterLayer.addTo(map);
     ensureShallowHatchPattern();
@@ -75,6 +63,15 @@ function toggleShallowLayer() {
   }
 }
 
+function toggleSpeedLayer() {
+  const checkbox = document.getElementById("layer-speed");
+  if (checkbox.checked) { speedZoneLayer.addTo(map); } else { map.removeLayer(speedZoneLayer); }
+}
+
+function toggleWashLayer() {
+  const checkbox = document.getElementById("layer-wash");
+  if (checkbox.checked) { washRestrictionLayer.addTo(map); } else { map.removeLayer(washRestrictionLayer); }
+}
 
 function toggleTowingLayer() {
   const checkbox = document.getElementById("layer-towing");
@@ -105,6 +102,7 @@ function switchWeatherZone(zone) {
     document.getElementById("weather-tab-" + z).classList.toggle("active", z === zone);
   });
 }
+
 // ===== Disclaimer & Terms =====
 function openDisclaimerPage() {
   document.getElementById("disclaimer-viewer").classList.add("open");
@@ -133,6 +131,7 @@ function checkDisclaimerAccepted() {
 }
 
 document.addEventListener("DOMContentLoaded", checkDisclaimerAccepted);
+
 // ===== Get Help (call / text location to marina) =====
 const MARINA_MOBILE = "+61408197558"; // PLACEHOLDER - replace with real marina mobile once confirmed
 
