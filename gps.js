@@ -69,15 +69,20 @@ function toggleTrackRoute() {
   document.getElementById("track-btn").classList.toggle("active", trackingRoute);
 
   if (!trackingRoute) {
+    const pointsBeforeClear = breadcrumbPoints.slice();
+
     if (breadcrumbTrail) { map.removeLayer(breadcrumbTrail); breadcrumbTrail = null; breadcrumbPoints = []; }
     if (headingLine) { map.removeLayer(headingLine); headingLine = null; }
     if (headingArrow) { map.removeLayer(headingArrow); headingArrow = null; }
     const badge = document.getElementById("speed-direction-badge");
     if (badge) badge.style.display = "none";
+
+    maybeSaveTrack(pointsBeforeClear);
   }
 
   ensureWatchRunning();
 }
+
 
 function ensureWatchRunning() {
   if ((showingLocation || trackingRoute) && watchId === null) {

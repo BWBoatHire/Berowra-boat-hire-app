@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="style.css?v=14">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -152,10 +152,11 @@
       <span class="chevron">›</span>
     </div>
 
-    <div class="menu-row menu-row-disabled">
-      <span class="row-label">🛍️ Marina Shop</span>
-      <span class="row-note">Coming soon</span>
-    </div>
+  <div class="menu-row menu-row-nav" onclick="openMyTracksPage()">
+  <span class="row-label">🧭 My Tracks</span>
+  <span class="chevron">›</span>
+</div>
+
 
     <div class="menu-row menu-row-nav" onclick="openHelpModal()">
       <span class="row-label">🆘 Get Help</span>
@@ -260,6 +261,24 @@
     </div>
   </div>
 
+  <!-- My Tracks viewer -->
+<div id="my-tracks-viewer">
+  <button id="my-tracks-close" onclick="closeMyTracksPage()">✕ Close</button>
+  <h3>My Tracks</h3>
+  <div id="my-tracks-list"></div>
+</div>
+
+<div id="help-modal">
+  <div id="help-modal-card">
+    <button id="help-modal-close" onclick="closeHelpModal()">✕</button>
+    <h3>🆘 Need help?</h3>
+    <p>If you're in genuine danger, call for help. Otherwise, send your location to the marina and we'll assist you.</p>
+    <button class="help-action-btn" onclick="callMarina()">📞 Call the Marina</button>
+    <button class="help-action-btn" onclick="textLocation()">📍 Text My Location</button>
+    <p id="help-status"></p>
+  </div>
+</div>
+
   <div id="help-modal">
     <div id="help-modal-card">
       <button id="help-modal-close" onclick="closeHelpModal()">✕</button>
@@ -285,10 +304,11 @@
   <script src="towing-restrictions.js?v=1"></script>
   <script src="tide-data.js?v=2"></script>
   <script src="tide-page.js?v=1"></script>
-<script src="gps.js?v=4"></script>
+<script src="gps.js?v=5"></script>
 <script src="weather-page.js?v=1"></script>
 <script src="map.js?v=10"></script>
 <script src="crosshair.js?v=1"></script>
+<script src="my-tracks.js?v=2"></script>
 <script src="ui-panel.js?v=14"></script>
 
 </body>
