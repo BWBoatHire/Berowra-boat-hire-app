@@ -647,3 +647,261 @@ html, body {
   fill: url(#shallowHatch) !important;
   fill-opacity: 1 !important;
 }
+
+/* ===== Map crosshair ===== */
+#crosshair-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 900;
+  pointer-events: none;
+  text-align: center;
+}
+#crosshair-container.visible {
+  display: block;
+}
+#crosshair-title {
+  display: none;
+  background: rgba(10,61,99,0.9);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+}
+#crosshair-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  pointer-events: none;
+}
+#crosshair-cross {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.crosshair-line-h {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: black;
+  transform: translateY(-50%);
+}
+.crosshair-line-v {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 1.5px;
+  background: black;
+  transform: translateX(-50%);
+}
+.crosshair-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+#crosshair-info-btn, #crosshair-weather-btn {
+  pointer-events: auto;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: #0a3d63;
+  font-size: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+/* ===== Crosshair info modal ===== */
+#crosshair-info-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+#crosshair-info-modal.open { display: flex; }
+#crosshair-info-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 320px;
+  margin: 20px;
+  position: relative;
+}
+#crosshair-info-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #555;
+}
+#crosshair-info-content {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+/* ===== Crosshair weather viewer ===== */
+#crosshair-weather-viewer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #f4f9fc;
+  z-index: 1500;
+  overflow-y: auto;
+}
+#crosshair-weather-viewer.open { display: block; }
+#crosshair-weather-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  z-index: 1600;
+  padding: 8px 14px;
+  background-color: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+#crosshair-weather-location {
+  text-align: center;
+  color: #0a3d63;
+  padding: 60px 16px 0 16px;
+  margin: 0 0 10px 0;
+}
+
+/* ===== Weather dashboard (shared by menu + crosshair) ===== */
+#weather-dashboard {
+  padding: 0 16px 30px 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.weather-loading, .weather-error {
+  text-align: center;
+  color: #888;
+  padding: 40px 0;
+}
+#weather-hero {
+  background: linear-gradient(160deg, #4a7ba8, #6f9cc4);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+#weather-hero-main {
+  text-align: center;
+  position: relative;
+}
+#weather-wind-bubble {
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  background: rgba(10,61,99,0.85);
+  border-radius: 50px;
+  padding: 6px 10px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#weather-wind-arrow {
+  display: inline-block;
+}
+#weather-icon-big { font-size: 40px; margin-top: 16px; }
+#weather-desc { font-size: 14px; margin-top: 4px; }
+#weather-temp-big { font-size: 42px; font-weight: bold; }
+#weather-hero-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.weather-stat { text-align: right; }
+.weather-stat-label { display: block; font-size: 11px; opacity: 0.85; }
+.weather-stat-value { font-size: 18px; font-weight: bold; }
+.weather-stat-value small { font-size: 11px; font-weight: normal; }
+
+#weather-sun-row {
+  display: flex;
+  justify-content: space-around;
+  background: #0a3d63;
+  color: white;
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 12px;
+}
+.weather-sun-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+.weather-sun-label { font-size: 10px; opacity: 0.7; }
+
+.weather-section-title {
+  color: #0a3d63;
+  font-size: 13px;
+  margin: 16px 0 6px 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+#weather-hourly-strip {
+  display: flex;
+  overflow-x: auto;
+  gap: 14px;
+  padding-bottom: 8px;
+}
+.weather-hour-col {
+  text-align: center;
+  min-width: 50px;
+  font-size: 12px;
+}
+.weather-hour-time { color: #666; }
+.weather-hour-icon { font-size: 20px; margin: 4px 0; }
+.weather-hour-temp { font-weight: bold; }
+.weather-hour-wind { color: #888; font-size: 11px; }
+
+#weather-daily-strip {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.weather-day-col {
+  text-align: center;
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.weather-day-name { font-size: 12px; color: #666; }
+.weather-day-icon { font-size: 22px; margin: 4px 0; }
+.weather-day-temps strong { font-size: 14px; }
+.weather-day-temps span { font-size: 12px; color: #888; margin-left: 4px; }
+
+.weather-attribution {
+  text-align: center;
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 16px;
+}
+.weather-attribution a { color: #888; }

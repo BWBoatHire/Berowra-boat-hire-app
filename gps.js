@@ -10,10 +10,12 @@ let breadcrumbTrail = null;
 let breadcrumbPoints = [];
 
 let headingLine = null;
+let headingArrow = null;
 let currentHeading = null;
 let lastPosition = null;
 
-const LOCATION_COLOR = "#ff6600"; // orange - high visibility over blue water
+const LOCATION_COLOR = "#ff6600"; // orange - used for "you are here" dot and breadcrumb trail
+const HEADING_LINE_COLOR = "#000000"; // black - direction of travel line
 
 // ===== Geometry helpers =====
 function toRad(deg) { return deg * Math.PI / 180; }
@@ -69,6 +71,7 @@ function toggleTrackRoute() {
   if (!trackingRoute) {
     if (breadcrumbTrail) { map.removeLayer(breadcrumbTrail); breadcrumbTrail = null; breadcrumbPoints = []; }
     if (headingLine) { map.removeLayer(headingLine); headingLine = null; }
+    if (headingArrow) { map.removeLayer(headingArrow); headingArrow = null; }
     const badge = document.getElementById("speed-direction-badge");
     if (badge) badge.style.display = "none";
   }
@@ -96,6 +99,35 @@ function ensureWatchRunning() {
   }
 }
 
+// ===== Direction-of-travel line + arrowhead =====
+function updateHeadingLine(lat, lng) {
+  if (currentHeading === null) return;
+
+  const dest = destinationPoint(lat, lng, currentHeading, 300); // longer projection
+
+  if (!headingLine) {
+    headingLine = L.polyline([[lat, lng], dest], {
+      color: HEADING_LINE_COLOR, weight: 2, dashArray: "3, 7", opacity: 0.85
+    }).addTo(map);
+  } else {
+    headingLine.setLatLngs([[lat, lng], dest]);
+  }
+
+  const arrowIcon = L.divIcon({
+    className: "heading-arrow-icon",
+    html: `<div style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:13px solid ${HEADING_LINE_COLOR};transform:rotate(${currentHeading}deg);"></div>`,
+    iconSize: [13, 13],
+    iconAnchor: [6, 6]
+  });
+
+  if (!headingArrow) {
+    headingArrow = L.marker(dest, { icon: arrowIcon, interactive: false }).addTo(map);
+  } else {
+    headingArrow.setLatLng(dest);
+    headingArrow.setIcon(arrowIcon);
+  }
+}
+
 function handlePosition(position) {
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
@@ -112,7 +144,7 @@ function handlePosition(position) {
   }
   if (heading !== null && !isNaN(heading)) currentHeading = heading;
 
-  // ===== Breadcrumb trail =====
+  // ===== Breadcrumb trail (unchanged - orange dashed) =====
   if (trackingRoute) {
     breadcrumbPoints.push([lat, lng]);
     if (!breadcrumbTrail) {
@@ -123,17 +155,7 @@ function handlePosition(position) {
       breadcrumbTrail.setLatLngs(breadcrumbPoints);
     }
 
-    // Direction-of-travel projection line
-    if (currentHeading !== null) {
-      const dest = destinationPoint(lat, lng, currentHeading, 150);
-      if (!headingLine) {
-        headingLine = L.polyline([[lat, lng], dest], {
-          color: LOCATION_COLOR, weight: 3, dashArray: "3, 7", opacity: 0.9
-        }).addTo(map);
-      } else {
-        headingLine.setLatLngs([[lat, lng], dest]);
-      }
-    }
+    updateHeadingLine(lat, lng);
 
     // Speed / direction readout
     const badge = document.getElementById("speed-direction-badge");
