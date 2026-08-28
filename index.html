@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=14">
+  <link rel="stylesheet" href="style.css?v=15">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -127,10 +127,65 @@
     </label>
   </div>
 
-  <div id="bottom-sheet">
-    <div id="bottom-sheet-handle"></div>
-    <button id="bottom-sheet-close" onclick="toggleMenu()">✕</button>
-    <h3>Menu</h3>
+<div id="bottom-sheet">
+  <div id="bottom-sheet-handle"></div>
+  <button id="bottom-sheet-close" onclick="toggleMenu()">✕</button>
+  <h3>Menu</h3>
+
+  <p class="tile-row-label">Tools</p>
+  <div class="tile-row">
+    <div class="menu-tile tile-active" onclick="openTidePage()">
+      <i class="ti ti-wave-saw-tool"></i>
+      <div class="tile-label">Tide</div>
+    </div>
+    <div class="menu-tile tile-active" onclick="openWeatherPage()">
+      <i class="ti ti-cloud"></i>
+      <div class="tile-label">Weather</div>
+    </div>
+    <div class="menu-tile tile-active" onclick="openMyTracksPage()">
+      <i class="ti ti-route"></i>
+      <div class="tile-label">My Tracks</div>
+    </div>
+  </div>
+
+  <p class="tile-row-label">Marina</p>
+  <div class="tile-row">
+    <div class="menu-tile tile-disabled">
+      <i class="ti ti-anchor"></i>
+      <div class="tile-label">Boat Hire</div>
+      <div class="tile-soon">Coming soon</div>
+    </div>
+    <div class="menu-tile tile-disabled">
+      <i class="ti ti-shopping-bag"></i>
+      <div class="tile-label">Shop</div>
+      <div class="tile-soon">Coming soon</div>
+    </div>
+    <div class="menu-tile tile-disabled">
+      <i class="ti ti-fish"></i>
+      <div class="tile-label">Fishing</div>
+      <div class="tile-soon">Coming soon</div>
+    </div>
+  </div>
+
+  <p class="tile-row-label">Support</p>
+  <div class="tile-row">
+    <div class="menu-tile tile-help" onclick="openHelpModal()">
+      <i class="ti ti-phone"></i>
+      <div class="tile-label">Get Help</div>
+    </div>
+    <div class="menu-tile tile-neutral" onclick="openDisclaimerPage()">
+      <i class="ti ti-alert-triangle"></i>
+      <div class="tile-label">Disclaimer</div>
+    </div>
+    <div class="menu-tile tile-disabled">
+      <i class="ti ti-book"></i>
+      <div class="tile-label">Boating Guide</div>
+      <div class="tile-soon">Coming soon</div>
+    </div>
+  </div>
+
+</div>
+
 
     <h4>🗺️ Map</h4>
     <div class="menu-row menu-row-nav" onclick="openChartViewer()">
@@ -292,24 +347,24 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-  <script src="local-markers.js?v=2"></script>
-  <script src="wharves-ramps.js?v=1"></script>
-  <script src="nsw-nav-markers.js?v=2"></script>
-  <script src="public-moorings.js?v=1"></script>
-  <script src="nsw-wharves.js?v=1"></script>
-  <script src="nsw-boat-ramps.js?v=1"></script>
-  <script src="shallow-water.js?v=2"></script>
-  <script src="speed-zones.js?v=1"></script>
-  <script src="wash-restrictions.js?v=1"></script>
-  <script src="towing-restrictions.js?v=1"></script>
-  <script src="tide-data.js?v=2"></script>
-  <script src="tide-page.js?v=1"></script>
-<script src="gps.js?v=5"></script>
-<script src="weather-page.js?v=1"></script>
-<script src="map.js?v=10"></script>
-<script src="crosshair.js?v=1"></script>
-<script src="my-tracks.js?v=2"></script>
-<script src="ui-panel.js?v=14"></script>
-
+  <script src="js/local-markers.js?v=2"></script>
+  <script src="js/wharves-ramps.js?v=1"></script>
+  <script src="js/nsw-nav-markers.js?v=2"></script>
+  <script src="js/public-moorings.js?v=1"></script>
+  <script src="js/nsw-wharves.js?v=1"></script>
+  <script src="js/nsw-boat-ramps.js?v=1"></script>
+  <script src="js/shallow-water.js?v=2"></script>
+  <script src="js/speed-zones.js?v=1"></script>
+  <script src="js/wash-restrictions.js?v=1"></script>
+  <script src="js/towing-restrictions.js?v=1"></script>
+  <script src="js/tide-data.js?v=2"></script>
+  <script src="js/tide-page.js?v=1"></script>
+  <script src="js/gps.js?v=5"></script>
+  <script src="js/weather-page.js?v=1"></script>
+  <script src="js/map.js?v=10"></script>
+  <script src="js/crosshair.js?v=1"></script>
+  <script src="js/my-tracks.js?v=2"></script>
+  <script src="js/ui-panel.js?v=14"></script>
 </body>
 </html>
+

@@ -976,3 +976,53 @@ html, body {
 .my-track-delete {
   background: #cc0000 !important;
 }
+/* ===== Tile-style main menu ===== */
+.tile-row-label {
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 16px 0 8px 4px;
+}
+.tile-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+.menu-tile {
+  min-width: 88px;
+  border-radius: 14px;
+  padding: 14px 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.menu-tile i {
+  font-size: 24px;
+}
+.tile-label {
+  font-size: 11px;
+  margin-top: 6px;
+  font-weight: bold;
+}
+.tile-soon {
+  font-size: 8px;
+  margin-top: 2px;
+}
+.tile-active {
+  background: linear-gradient(160deg, #3a7fa8, #0a3d63);
+}
+.tile-help {
+  background: linear-gradient(160deg, #e05a3a, #a3341d);
+}
+.tile-neutral {
+  background: #f4f4f4;
+  color: #555;
+}
+.tile-disabled {
+  background: #e8eef3;
+  color: #8fa0ae;
+  cursor: default;
+}
