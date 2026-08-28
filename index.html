@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=15">
+  <link rel="stylesheet" href="style.css?v=17">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -315,6 +315,13 @@
       <button id="disclaimer-accept-btn" disabled onclick="acceptDisclaimer()">Accept & Continue</button>
     </div>
   </div>
+<!-- Weather day detail modal -->
+<div id="weather-day-modal">
+  <div id="weather-day-modal-card">
+    <button id="weather-day-modal-close" onclick="closeDayDetail()">✕</button>
+    <div id="weather-day-modal-content"></div>
+  </div>
+</div>
 
   <!-- My Tracks viewer -->
 <div id="my-tracks-viewer">
@@ -360,7 +367,7 @@
   <script src="js/tide-data.js?v=2"></script>
   <script src="js/tide-page.js?v=1"></script>
   <script src="js/gps.js?v=5"></script>
-  <script src="js/weather-page.js?v=1"></script>
+  <script src="js/weather-page.js?v=2"></script>
   <script src="js/map.js?v=10"></script>
   <script src="js/crosshair.js?v=1"></script>
   <script src="js/my-tracks.js?v=2"></script>

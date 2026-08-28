@@ -2,6 +2,7 @@
 // Uses OpenWeatherMap free tier (commercial use permitted, 1000 calls/day)
 
 const OWM_API_KEY = "79216372c34f4c5bf55142fdd18fdd8c";
+let lastForecastData = null;
 
 function degToCompassShort(deg) {
   const dirs = ["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"];
@@ -44,6 +45,7 @@ async function loadWeatherDashboardAt(lat, lon) {
       return;
     }
 
+    lastForecastData = forecast;
     renderWeatherDashboard(current, forecast);
   } catch (err) {
     container.innerHTML = `<p class='weather-error'>Couldn't load weather right now. Check your connection and try again.</p>`;
@@ -52,7 +54,8 @@ async function loadWeatherDashboardAt(lat, lon) {
 
 function renderWeatherDashboard(current, forecast) {
   const container = document.getElementById("weather-dashboard");
-  const moon = getMoonPhase(new Date()); // reuses the moon phase function from tide-page.js
+  const moon = getMoonPhase(new Date());
+
 
   const icon = weatherIconEmoji(current.weather[0].icon);
   const desc = current.weather[0].description;
@@ -69,20 +72,25 @@ function renderWeatherDashboard(current, forecast) {
 
   let html = `
     <div id="weather-hero">
-      <div id="weather-hero-main">
-        <div id="weather-wind-bubble">
-          <span id="weather-wind-arrow" style="transform: rotate(${current.wind.deg}deg)">↑</span>
-          <span>${windKnots} kts ${windDir}</span>
-        </div>
+      <div id="weather-hero-top">
         <div id="weather-icon-big">${icon}</div>
         <div id="weather-desc">${descCapitalized}</div>
         <div id="weather-temp-big">${temp}°</div>
       </div>
+      <div id="weather-wind-pill">
+        <span style="display:inline-block; transform: rotate(${current.wind.deg}deg)">↑</span>
+        <span>${windKnots} kts ${windDir}</span>
+      </div>
       <div id="weather-hero-stats">
         <div class="weather-stat"><span class="weather-stat-label">Pressure</span><span class="weather-stat-value">${pressure} <small>mBar</small></span></div>
         <div class="weather-stat"><span class="weather-stat-label">Visibility</span><span class="weather-stat-value">${visibilityNm} <small>NM</small></span></div>
-        <div class="weather-stat"><span class="weather-stat-label">Rain chance</span><span class="weather-stat-value">${rainChance} <small>%</small></span></div>
+        <div class="weather-stat"><span class="weather-stat-label">Rain</span><span class="weather-stat-value">${rainChance} <small>%</small></span></div>
       </div>
+    </div>
+
+    <div id="weather-official-links">
+      <button onclick="openOfficialWeatherTab('sheltered')">Sheltered Waters</button>
+      <button onclick="openOfficialWeatherTab('open')">Open Waters</button>
     </div>
 
     <div id="weather-sun-row">
@@ -112,25 +120,28 @@ function renderWeatherDashboard(current, forecast) {
 
   html += `</div>
 
-    <h4 class="weather-section-title">5-Day Outlook</h4>
+    <h4 class="weather-section-title">5-Day Outlook <span class="weather-tap-hint">tap for detail</span></h4>
     <div id="weather-daily-strip">
   `;
 
   const dailyMap = {};
   forecast.list.forEach(entry => {
     const dateKey = new Date(entry.dt * 1000).toLocaleDateString('en-AU');
-    if (!dailyMap[dateKey]) dailyMap[dateKey] = { temps: [], icons: [], dt: entry.dt };
+    if (!dailyMap[dateKey]) dailyMap[dateKey] = { temps: [], icons: [], dt: entry.dt, entries: [] };
     dailyMap[dateKey].temps.push(entry.main.temp);
     dailyMap[dateKey].icons.push(entry.weather[0].icon);
+    dailyMap[dateKey].entries.push(entry);
   });
 
-  Object.values(dailyMap).slice(0, 5).forEach(day => {
+  const dailyKeys = Object.keys(dailyMap).slice(0, 5);
+  dailyKeys.forEach((dateKey, index) => {
+    const day = dailyMap[dateKey];
     const dayName = new Date(day.dt * 1000).toLocaleDateString('en-AU', { weekday: 'short' });
     const high = Math.round(Math.max(...day.temps));
     const low = Math.round(Math.min(...day.temps));
     const dIcon = weatherIconEmoji(day.icons[Math.floor(day.icons.length / 2)]);
     html += `
-      <div class="weather-day-col">
+      <div class="weather-day-col" onclick="openDayDetail(${index})">
         <div class="weather-day-name">${dayName}</div>
         <div class="weather-day-icon">${dIcon}</div>
         <div class="weather-day-temps"><strong>${high}°</strong> <span>${low}°</span></div>
@@ -143,4 +154,58 @@ function renderWeatherDashboard(current, forecast) {
   `;
 
   container.innerHTML = html;
+  window.currentDailyMap = dailyMap;
+  window.currentDailyKeys = dailyKeys;
+}
+
+// ===== Day detail modal =====
+function openDayDetail(index) {
+  const dateKey = window.currentDailyKeys[index];
+  const day = window.currentDailyMap[dateKey];
+  if (!day) return;
+
+  const dayName = new Date(day.dt * 1000).toLocaleDateString('en-AU', { weekday: 'long', day: 'numeric', month: 'long' });
+  const high = Math.round(Math.max(...day.temps));
+  const low = Math.round(Math.min(...day.temps));
+
+  let rows = "";
+  day.entries.forEach(entry => {
+    const time = new Date(entry.dt * 1000).toLocaleTimeString('en-AU', { hour: 'numeric', hour12: true });
+    const icon = weatherIconEmoji(entry.weather[0].icon);
+    const temp = Math.round(entry.main.temp);
+    const desc = entry.weather[0].description;
+    const windKnots = msToKnots(entry.wind.speed);
+    const windDir = degToCompassShort(entry.wind.deg);
+    rows += `
+      <div class="day-detail-row">
+        <span class="day-detail-time">${time}</span>
+        <span class="day-detail-icon">${icon}</span>
+        <span class="day-detail-temp">${temp}°</span>
+        <span class="day-detail-desc">${desc}</span>
+        <span class="day-detail-wind"><span style="display:inline-block; transform: rotate(${entry.wind.deg}deg)">↑</span> ${windKnots}kn ${windDir}</span>
+      </div>
+    `;
+  });
+
+  document.getElementById("weather-day-modal-content").innerHTML = `
+    <h3>${dayName}</h3>
+    <p class="day-detail-highlow"><strong>${high}°</strong> <span>${low}°</span></p>
+    <div class="day-detail-list">${rows}</div>
+  `;
+  document.getElementById("weather-day-modal").classList.add("open");
+}
+
+function closeDayDetail() {
+  document.getElementById("weather-day-modal").classList.remove("open");
+}
+
+// ===== Links to the existing official BOM tabs already in the main Menu =====
+function openOfficialWeatherTab(zone) {
+  // Close whichever weather view is currently open (dashboard could be in the
+  // crosshair viewer or reached some other way), then open the official tab viewer.
+  const crosshairViewer = document.getElementById("crosshair-weather-viewer");
+  if (crosshairViewer) crosshairViewer.classList.remove("open");
+
+  openWeatherPage();
+  switchWeatherZone(zone);
 }
