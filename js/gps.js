@@ -1,4 +1,4 @@
-// ===== GPS tracking: follow mode, heading line, speed/direction readout =====
+// ===== GPS tracking: follow mode, heading line, live stats, zone alerts =====
 let userMarker = null;
 let userCircle = null;
 let hasCenteredOnUser = false;
@@ -14,15 +14,20 @@ let headingArrow = null;
 let currentHeading = null;
 let lastPosition = null;
 
-const LOCATION_COLOR = "#ff6600"; // orange - used for "you are here" dot and breadcrumb trail
-const HEADING_LINE_COLOR = "#000000"; // black - direction of travel line
+let trackStartTime = null;
+let trackTotalDistanceKm = 0;
+let trackSpeedSamples = [];
+let durationInterval = null;
+
+const LOCATION_COLOR = "#ff6600";
+const HEADING_LINE_COLOR = "#000000";
 
 // ===== Geometry helpers =====
 function toRad(deg) { return deg * Math.PI / 180; }
 function toDeg(rad) { return rad * 180 / Math.PI; }
 
 function haversineDistance(lat1, lon1, lat2, lon2) {
-  const R = 6371000;
+  const R = 6371;
   const dLat = toRad(lat2 - lat1);
   const dLon = toRad(lon2 - lon1);
   const a = Math.sin(dLat/2)**2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon/2)**2;
@@ -68,21 +73,48 @@ function toggleTrackRoute() {
   trackingRoute = !trackingRoute;
   document.getElementById("track-btn").classList.toggle("active", trackingRoute);
 
-  if (!trackingRoute) {
+  if (trackingRoute) {
+    trackStartTime = Date.now();
+    trackTotalDistanceKm = 0;
+    trackSpeedSamples = [];
+    document.getElementById("app-banner").classList.add("tracking");
+    durationInterval = setInterval(updateDurationDisplay, 1000);
+  } else {
     const pointsBeforeClear = breadcrumbPoints.slice();
+    const avgSpeed = trackTotalDistanceKm > 0 && trackStartTime
+      ? (trackTotalDistanceKm / ((Date.now() - trackStartTime) / 3600000)).toFixed(1)
+      : "0.0";
+    const topSpeed = trackSpeedSamples.length > 0
+      ? Math.max(...trackSpeedSamples).toFixed(1)
+      : "0.0";
+    const durationSeconds = trackStartTime ? Math.round((Date.now() - trackStartTime) / 1000) : 0;
 
     if (breadcrumbTrail) { map.removeLayer(breadcrumbTrail); breadcrumbTrail = null; breadcrumbPoints = []; }
     if (headingLine) { map.removeLayer(headingLine); headingLine = null; }
     if (headingArrow) { map.removeLayer(headingArrow); headingArrow = null; }
-    const badge = document.getElementById("speed-direction-badge");
-    if (badge) badge.style.display = "none";
+    document.getElementById("app-banner").classList.remove("tracking");
+    document.getElementById("zone-signs-container").innerHTML = "";
+    clearInterval(durationInterval);
 
-    maybeSaveTrack(pointsBeforeClear);
+    maybeSaveTrack(pointsBeforeClear, {
+      distanceKm: trackTotalDistanceKm.toFixed(2),
+      avgSpeedKn: (avgSpeed * 0.539957).toFixed(1),
+      topSpeedKn: (topSpeed * 0.539957).toFixed(1),
+      durationSeconds: durationSeconds
+    });
   }
 
   ensureWatchRunning();
 }
 
+function updateDurationDisplay() {
+  if (!trackStartTime) return;
+  const seconds = Math.floor((Date.now() - trackStartTime) / 1000);
+  const mins = Math.floor(seconds / 60).toString().padStart(2, "0");
+  const secs = (seconds % 60).toString().padStart(2, "0");
+  const el = document.getElementById("stat-duration");
+  if (el) el.textContent = `${mins}:${secs}`;
+}
 
 function ensureWatchRunning() {
   if ((showingLocation || trackingRoute) && watchId === null) {
@@ -104,11 +136,10 @@ function ensureWatchRunning() {
   }
 }
 
-// ===== Direction-of-travel line + arrowhead =====
 function updateHeadingLine(lat, lng) {
   if (currentHeading === null) return;
 
-  const dest = destinationPoint(lat, lng, currentHeading, 300); // longer projection
+  const dest = destinationPoint(lat, lng, currentHeading, 300);
 
   if (!headingLine) {
     headingLine = L.polyline([[lat, lng], dest], {
@@ -140,17 +171,23 @@ function handlePosition(position) {
   let heading = position.coords.heading;
   const speedMs = position.coords.speed;
 
-  // Fallback: calculate heading from movement if device doesn't report it
   if ((heading === null || isNaN(heading)) && lastPosition) {
-    const dist = haversineDistance(lastPosition.lat, lastPosition.lng, lat, lng);
-    if (dist > 3) {
+    const distKm = haversineDistance(lastPosition.lat, lastPosition.lng, lat, lng);
+    if (distKm > 0.003) {
       heading = calcBearing(lastPosition.lat, lastPosition.lng, lat, lng);
     }
   }
   if (heading !== null && !isNaN(heading)) currentHeading = heading;
 
-  // ===== Breadcrumb trail (unchanged - orange dashed) =====
   if (trackingRoute) {
+    if (lastPosition) {
+      const segmentKm = haversineDistance(lastPosition.lat, lastPosition.lng, lat, lng);
+      trackTotalDistanceKm += segmentKm;
+    }
+
+    const knots = (speedMs !== null && !isNaN(speedMs)) ? (speedMs * 1.94384) : 0;
+    if (knots > 0) trackSpeedSamples.push(knots);
+
     breadcrumbPoints.push([lat, lng]);
     if (!breadcrumbTrail) {
       breadcrumbTrail = L.polyline(breadcrumbPoints, {
@@ -162,17 +199,17 @@ function handlePosition(position) {
 
     updateHeadingLine(lat, lng);
 
-    // Speed / direction readout
-    const badge = document.getElementById("speed-direction-badge");
-    if (badge) {
-      const knots = (speedMs !== null && !isNaN(speedMs)) ? (speedMs * 1.94384).toFixed(1) : "--";
-      const dirText = currentHeading !== null ? degToCompass(currentHeading) : "--";
-      badge.textContent = `${knots} kn  ${dirText}`;
-      badge.style.display = "block";
-    }
+    const dirText = currentHeading !== null ? degToCompass(currentHeading) : "--";
+    const speedEl = document.getElementById("stat-speed");
+    const dirEl = document.getElementById("stat-direction");
+    const distEl = document.getElementById("stat-distance");
+    if (speedEl) speedEl.textContent = knots.toFixed(1);
+    if (dirEl) dirEl.textContent = dirText;
+    if (distEl) distEl.textContent = trackTotalDistanceKm.toFixed(1);
+
+    checkZoneAlerts(lat, lng);
   }
 
-  // ===== "You are here" marker + follow mode =====
   if (showingLocation) {
     if (!userMarker) {
       userMarker = L.circleMarker([lat, lng], {
@@ -197,6 +234,60 @@ function handlePosition(position) {
   }
 
   lastPosition = { lat, lng };
+}
+
+// ===== Zone crossing detection =====
+function pointInPolygon(lat, lng, geoJsonGeometry) {
+  // Simple point-in-polygon check (ray casting), works for Polygon/MultiPolygon
+  function inRing(lat, lng, ring) {
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const xi = ring[i][0], yi = ring[i][1];
+      const xj = ring[j][0], yj = ring[j][1];
+      const intersect = ((yi > lat) !== (yj > lat)) &&
+        (lng < (xj - xi) * (lat - yi) / (yj - yi) + xi);
+      if (intersect) inside = !inside;
+    }
+    return inside;
+  }
+
+  const coords = geoJsonGeometry.coordinates;
+  if (geoJsonGeometry.type === "Polygon") {
+    return inRing(lat, lng, coords[0]);
+  } else if (geoJsonGeometry.type === "MultiPolygon") {
+    return coords.some(poly => inRing(lat, lng, poly[0]));
+  }
+  return false;
+}
+
+function checkZoneAlerts(lat, lng) {
+  const container = document.getElementById("zone-signs-container");
+  let signsHtml = "";
+
+  // Speed zones - show the actual limit for whichever zone you're in
+  if (typeof speedZoneData !== "undefined") {
+    const match = speedZoneData.features.find(f => pointInPolygon(lat, lng, f.geometry));
+    if (match && match.properties.SPEED_LIMIT_KNOTS) {
+      signsHtml += `<div class="zone-sign"><div class="zone-sign-number">${match.properties.SPEED_LIMIT_KNOTS}</div><div class="zone-sign-small">KNOTS</div></div>`;
+    }
+  }
+
+  // No wash zones
+  if (typeof washRestrictionData !== "undefined") {
+    const inWash = washRestrictionData.features.some(f => pointInPolygon(lat, lng, f.geometry));
+    if (inWash) {
+      signsHtml += `<div class="zone-sign"><div class="zone-sign-small">NO<br>WASH</div></div>`;
+    }
+  }
+// Shallow water
+  if (typeof shallowWaterData !== "undefined") {
+    const inShallow = shallowWaterData.features.some(f => pointInPolygon(lat, lng, f.geometry));
+    if (inShallow) {
+      signsHtml += `<div class="zone-sign"><div class="zone-sign-icon">〰️</div><div class="zone-sign-small">SHALLOW</div></div>`;
+    }
+  }
+
+  container.innerHTML = signsHtml;
 }
 
 // ===== Friendly, actionable error messages =====

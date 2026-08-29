@@ -161,20 +161,90 @@ html, body {
   background: radial-gradient(circle at 35% 25%, #ffb199, #c0281a 65%, #8f1a10 100%);
 }
 
-#speed-direction-badge {
+/* ===== Header: normal vs tracking-stats mode ===== */
+#banner-normal {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  gap: 10px;
+  height: 72px;
+  width: 100%;
+}
+#banner-tracking-stats {
   display: none;
-  position: fixed;
-  bottom: 90px;
-  left: 20px;
-  background: #ff6600;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 14px;
+  height: 72px;
+  align-items: center;
+  padding: 0 14px;
+  width: 100%;
+}
+
+#app-banner.tracking #banner-normal {
+  display: none;
+}
+#app-banner.tracking #banner-tracking-stats {
+  display: flex;
+}
+.track-stat {
+  flex: 1;
+  text-align: center;
+}
+.track-stat:not(:last-child) {
+  border-right: 1px solid rgba(255,255,255,0.25);
+}
+.track-stat-value {
+  font-size: 26px;
   font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  color: white;
+}
+.track-stat-label {
+  font-size: 10px;
+  opacity: 0.75;
+  color: white;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+
+
+/* ===== Zone warning signs ===== */
+#zone-signs-container {
+  position: fixed;
+  top: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
   z-index: 1100;
 }
+.zone-sign {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  border: 4px solid #cc0000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.zone-sign-number {
+  font-size: 19px;
+  font-weight: bold;
+  color: #111;
+  line-height: 1;
+}
+.zone-sign-small {
+  font-size: 7px;
+  font-weight: bold;
+  color: #111;
+  line-height: 1.1;
+  text-align: center;
+}
+.zone-sign-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
 
 #layers-sheet {
   position: fixed;
@@ -1143,4 +1213,125 @@ html, body {
   flex-direction: column;
   flex: 1;
   min-height: 0;
+}
+/* ===== Boating Guide page ===== */
+#boating-guide-viewer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #f4f9fc;
+  z-index: 1500;
+  overflow-y: auto;
+}
+#boating-guide-viewer.open { display: block; }
+#boating-guide-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  z-index: 1600;
+  padding: 8px 14px;
+  background-color: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+#boating-guide-header {
+  background: linear-gradient(160deg, #0a3d63, #1a6fa8);
+  padding: 60px 20px 20px 20px;
+  color: white;
+}
+#boating-guide-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+#boating-guide-subtitle {
+  font-size: 12px;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+#boating-guide-list {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.guide-card {
+  border: 1px solid #e0e8f0;
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.guide-card-special {
+  border: 2px solid #e05a3a;
+  background: #fff6f3;
+}
+.guide-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.guide-card-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.guide-card-header-left i {
+  color: #0a3d63;
+  font-size: 20px;
+}
+.guide-card-special .guide-card-header-left i {
+  color: #a3341d;
+}
+.guide-card-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0a3d63;
+}
+.guide-card-special .guide-card-title {
+  color: #a3341d;
+}
+.guide-card-subtitle {
+  font-size: 11px;
+  color: #888;
+}
+.guide-card-special .guide-card-subtitle {
+  color: #a3341d;
+}
+.guide-chevron {
+  color: #0a3d63;
+  transition: transform 0.2s ease;
+}
+.guide-card-special .guide-chevron {
+  color: #a3341d;
+}
+.guide-chevron.open {
+  transform: rotate(90deg);
+}
+.guide-card-body {
+  display: none;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #444;
+  line-height: 1.5;
+}
+.guide-card-body.open {
+  display: block;
+}
+.guide-card-body p {
+  margin: 8px 0;
+}
+.guide-diagram-wrap {
+  background: #f4f9fc;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.boating-guide-attribution {
+  text-align: center;
+  font-size: 10px;
+  color: #aaa;
+  padding: 0 16px 30px 16px;
+  max-width: 500px;
+  margin: 0 auto;
 }
