@@ -28,8 +28,9 @@ function weatherIconEmoji(iconCode) {
   return map[iconCode] || "🌡️";
 }
 
-async function loadWeatherDashboardAt(lat, lon) {
-  const container = document.getElementById("weather-dashboard");
+async function loadWeatherDashboardAt(lat, lon, containerId) {
+  containerId = containerId || "weather-dashboard";
+  const container = document.getElementById(containerId);
   container.innerHTML = "<p class='weather-loading'>Loading current conditions...</p>";
 
   try {
@@ -46,14 +47,15 @@ async function loadWeatherDashboardAt(lat, lon) {
     }
 
     lastForecastData = forecast;
-    renderWeatherDashboard(current, forecast);
+    renderWeatherDashboard(current, forecast, containerId);
   } catch (err) {
     container.innerHTML = `<p class='weather-error'>Couldn't load weather right now. Check your connection and try again.</p>`;
   }
 }
 
-function renderWeatherDashboard(current, forecast) {
-  const container = document.getElementById("weather-dashboard");
+function renderWeatherDashboard(current, forecast, containerId) {
+  containerId = containerId || "weather-dashboard";
+  const container = document.getElementById(containerId);
   const moon = getMoonPhase(new Date());
 
 

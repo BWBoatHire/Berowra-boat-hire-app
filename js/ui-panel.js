@@ -91,17 +91,43 @@ function openWeatherPage() {
   toggleMenu();
 }
 
+
 function closeWeatherPage() {
   document.getElementById("weather-viewer").classList.remove("open");
   document.getElementById("weather-frame").src = "";
 }
+  alert("switchWeatherZone called with zone=" + zone);
+  alert("dashboardEl found: " + (dashboardEl !== null) + ", bomEl found: " + (bomEl !== null));
+
 
 function switchWeatherZone(zone) {
-  document.getElementById("weather-frame").src = weatherUrls[zone];
+  const dashboardEl = document.getElementById("weather-dashboard-general");
+  const bomEl = document.getElementById("weather-bom-embed");
+
+  if (zone === "general") {
+    dashboardEl.style.display = "block";
+    bomEl.style.display = "none";
+    document.getElementById("weather-frame").src = "";
+    loadGeneralWeatherDashboard();
+  } else {
+    dashboardEl.style.display = "none";
+    bomEl.style.display = "flex";
+    document.getElementById("weather-frame").src = weatherUrls[zone];
+  }
+
+
+
   ["general", "sheltered", "open"].forEach(z => {
     document.getElementById("weather-tab-" + z).classList.toggle("active", z === zone);
   });
 }
+
+function loadGeneralWeatherDashboard() {
+  const container = document.getElementById("weather-dashboard-general");
+  container.innerHTML = '<div id="weather-dashboard-general-inner"></div>';
+  loadWeatherDashboardAt(-33.5988, 151.1207, "weather-dashboard-general-inner");
+}
+
 
 // ===== Disclaimer & Terms =====
 function openDisclaimerPage() {
