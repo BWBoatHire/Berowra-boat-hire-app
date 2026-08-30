@@ -1562,3 +1562,103 @@ html, body {
   object-fit: cover;
   flex-shrink: 0;
 }
+/* ===== Boat Hire page ===== */
+#boat-hire-viewer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #f4f9fc;
+  z-index: 1500;
+  overflow-y: auto;
+}
+#boat-hire-viewer.open { display: block; }
+#boat-hire-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  z-index: 1600;
+  padding: 8px 14px;
+  background-color: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+#boat-hire-header {
+  background: linear-gradient(160deg, #0a3d63, #1a6fa8);
+  padding: 60px 20px 20px 20px;
+  color: white;
+}
+#boat-hire-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+#boat-hire-subtitle {
+  font-size: 12px;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+#boat-hire-list {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.boat-card-row {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.boat-card-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.boat-card-thumb-fallback {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background: #e8eef3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.boat-card-thumb-fallback i {
+  color: #0a3d63;
+  font-size: 24px;
+}
+.boat-card-info {
+  flex: 1;
+  min-width: 0;
+}
+.boat-card-header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.boat-price-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.boat-price-badge {
+  background: #e8eef3;
+  color: #0a3d63;
+  font-size: 9px;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+.boat-price-pending {
+  background: #fff6f3;
+  color: #a3341d;
+}
+.boat-hire-note {
+  text-align: center;
+  font-size: 10px;
+  color: #aaa;
+  padding: 0 20px 30px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}

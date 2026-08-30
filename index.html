@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=26">
+  <link rel="stylesheet" href="style.css?v=27">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -162,11 +162,11 @@
 
   <p class="tile-row-label">Marina</p>
   <div class="tile-row">
-    <div class="menu-tile tile-disabled">
-      <i class="ti ti-anchor"></i>
-      <div class="tile-label">Boat Hire</div>
-      <div class="tile-soon">Coming soon</div>
-    </div>
+<div class="menu-tile tile-active" onclick="openBoatHirePage()">
+  <i class="ti ti-anchor"></i>
+  <div class="tile-label">Boat Hire</div>
+</div>
+
 <div class="menu-tile tile-active" onclick="openMarinaShopPage()">
   <i class="ti ti-shopping-bag"></i>
   <div class="tile-label">Marina Shop</div>
@@ -366,6 +366,16 @@
   </div>
   <div id="marina-shop-list"></div>
 </div>
+<!-- Boat Hire viewer -->
+<div id="boat-hire-viewer">
+  <button id="boat-hire-close" onclick="closeBoatHirePage()">✕ Close</button>
+  <div id="boat-hire-header">
+    <div id="boat-hire-title">Boat Hire</div>
+    <div id="boat-hire-subtitle">No licence needed for most of our fleet</div>
+  </div>
+  <div id="boat-hire-list"></div>
+  <p class="boat-hire-note">All hires include full safety gear and a boat briefing. Public holiday surcharges apply (kayaks exempt) — see full pricing at the marina.</p>
+</div>
 
   <!-- My Tracks viewer -->
 <div id="my-tracks-viewer">
@@ -417,6 +427,7 @@
   <script src="js/my-tracks.js?v=4"></script>
   <script src="js/boating-guide.js?v=3"></script>
   <script src="js/marina-shop.js?v=2"></script>
+  <script src="js/boat-hire.js?v=1"></script>
   <script src="js/ui-panel.js?v=20"></script>
 </body>
 </html>
