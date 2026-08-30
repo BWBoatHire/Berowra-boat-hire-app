@@ -10,7 +10,7 @@ const boatingGuideSections = [
     icon: "ti-anchor",
     title: "Conditions of Hire",
     subtitle: "Return time & hire area limits",
-    special: true, // flags this as business-specific, not NSW law - styled differently
+    special: true,
     // PLACEHOLDER WORDING - confirm exact time and rules with business owner before publishing
     html: `
       <p><strong>All hire boats must be back at the marina by 4:00pm.</strong></p>
@@ -20,7 +20,7 @@ const boatingGuideSections = [
       <p style="color:#a3341d; font-size:12px;"><em>This section needs confirmation from the marina team before your trip. Please check with staff if you're unsure of your hire area or return time.</em></p>
     `
   },
-    {
+  {
     id: "markers",
     icon: "ti-anchor",
     title: "Reading the Markers",
@@ -28,29 +28,43 @@ const boatingGuideSections = [
     special: false,
     html: `
       <div class="guide-diagram-wrap">
-        <svg width="100%" height="130" viewBox="0 0 300 130">
-          <rect x="60" y="0" width="90" height="130" fill="#8fc1e8"></rect>
-          <text x="10" y="20" font-size="9" fill="#666">towards the sea</text>
-          <text x="185" y="20" font-size="9" fill="#666">towards the marina</text>
-          <line x1="105" y1="10" x2="105" y2="120" stroke="#666" stroke-width="1" stroke-dasharray="3,3"></line>
-          <rect x="70" y="35" width="16" height="16" fill="#cc0000"></rect>
-          <text x="60" y="65" font-size="8" fill="#111">Red mark</text>
-          <polygon points="130,35 122,55 138,55" fill="#2e8b2e"></polygon>
-          <text x="115" y="65" font-size="8" fill="#111">Green mark</text>
-          <path d="M50 100 L 160 100" stroke="#111" stroke-width="2" marker-end="url(#arrow)"></path>
-          <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#111"></path></marker></defs>
-          <text x="60" y="118" font-size="8" fill="#111">Heading out: red on your right</text>
+        <svg width="100%" height="290" viewBox="0 0 300 290">
+          <text x="150" y="18" font-size="7.5" fill="#0a3d63" text-anchor="middle">(back to Berowra Waters Marina)</text>
+          <polygon points="150,30 225,65 185,65 185,205 225,205 150,240 75,205 115,205 115,65 75,65"
+            fill="#8fc1e8" stroke="#5a9bc4" stroke-width="1.5"></polygon>
+          <text x="150" y="56" font-size="11" font-weight="bold" fill="#0a3d63" text-anchor="middle">UPSTREAM</text>
+          <polygon points="215,72 207,86 223,86" fill="#2e8b2e"></polygon>
+          <text x="215" y="100" font-size="7" fill="#111" text-anchor="middle">Green to Green</text>
+          <text x="215" y="112" font-size="7" fill="#111" text-anchor="middle">Upstream</text>
+          <rect x="167" y="87" width="16" height="24" fill="white" stroke="#999" stroke-width="0.5"></rect>
+          <polygon points="167,87 175,75 175,87" fill="#cc0000"></polygon>
+          <polygon points="183,87 175,75 175,87" fill="#2e8b2e"></polygon>
+          <text x="150" y="132" font-size="7" font-weight="bold" fill="#0a3d63" text-anchor="middle" transform="rotate(90 150 132)">Keep to right in a channel</text>
+          <rect x="117" y="156" width="16" height="24" fill="white" stroke="#999" stroke-width="0.5"></rect>
+          <polygon points="117,180 125,192 125,180" fill="#2e8b2e"></polygon>
+          <polygon points="133,180 125,192 125,180" fill="#cc0000"></polygon>
+          <text x="85" y="164" font-size="7" fill="#111" text-anchor="middle">Red to Green</text>
+          <text x="85" y="176" font-size="7" fill="#111" text-anchor="middle">Downstream</text>
+          <rect x="76" y="182" width="18" height="18" fill="#cc0000"></rect>
+          <text x="150" y="220" font-size="11" font-weight="bold" fill="#0a3d63" text-anchor="middle">DOWNSTREAM</text>
+          <text x="150" y="258" font-size="7.5" fill="#0a3d63" text-anchor="middle">(away from Berowra Waters Marina)</text>
         </svg>
       </div>
+
       <p>Navigation marks (also called buoys) show you the edges of the safe
       channel. Each has a colour, shape and position that tells you which
       side to pass it on.</p>
-      <p><strong>Leaving the marina (heading toward the sea):</strong><br>
+      <p>When you sit in the boat facing forward, your <strong>right</strong>
+      side is <strong>starboard</strong>, and your <strong>left</strong>
+      side is <strong>port</strong>. Red marks are port, green marks are
+      starboard.</p>
+      <p><strong>Heading downstream, away from the marina:</strong><br>
       Keep red marks on your right, and green marks on your left.</p>
-      <p><strong>Returning to the marina (heading back upstream):</strong><br>
+      <p><strong>Heading upstream, back to the marina:</strong><br>
       It flips — keep red marks on your left, and green marks on your right.</p>
       <p>If you see a pair of marks close together — one red, one green — the
       safe path is to travel between them.</p>
+
       <p>You may also see <strong>cardinal marks</strong> — black and yellow
       striped buoys used to mark a specific hazard, like a rock or shallow
       patch. They tell you which side of the hazard is safe: for example, an
@@ -119,8 +133,8 @@ const boatingGuideSections = [
       <p>Speed on the water is measured in <strong>knots</strong>, not km/h.
       As a rough guide: 4 knots is about a fast walking pace, 8 knots is
       about a jogging pace.</p>
-      <p><strong>The speed zone</strong> in Berowra Creek from the Marina through to Calabash Bay is 4
-      knots and is strictly enforced (fines apply) by both NSW Maritime Compliancce Officers and NSW Maritime Police — check for the sign, or use the Map Layers panel to see the zone
+      <p><strong>Speed zones</strong> in Berowra Creek are usually 4 or 8
+      knots — check the sign, or use the Map Layers panel to see the zone
       boundaries on the map.</p>
       <p><strong>Even without a sign, you must always travel at a safe
       speed</strong> — one that gives you enough time to stop or turn to
@@ -133,9 +147,39 @@ const boatingGuideSections = [
       you're creating, and slow down if it looks like it could disturb
       others.</p>
     `
+  },
+  {
+    id: "mapkey",
+    icon: "ti-map-2",
+    title: "Map Key",
+    subtitle: "What the map symbols mean",
+    special: false,
+    html: `
+      <p class="guide-legend-heading">Navigation Marks</p>
+      <div class="guide-legend-row"><span class="guide-legend-dot" style="background:#cc0000"></span>Port-hand marker</div>
+      <div class="guide-legend-row"><span class="guide-legend-dot" style="background:#2e8b2e"></span>Starboard-hand marker</div>
+      <div class="guide-legend-row"><span class="guide-legend-dot" style="background:#e6c200"></span>Water quality buoy</div>
+      <div class="guide-legend-row"><span class="guide-legend-cardinal" style="background:linear-gradient(to bottom,black 33%,#f2d600 33%,#f2d600 66%,black 66%)"></span>East cardinal <em class="guide-verified">✓ verified locally</em></div>
+      <div class="guide-legend-row"><span class="guide-legend-cardinal" style="background:linear-gradient(to bottom,black 50%,#f2d600 50%)"></span><span class="guide-legend-muted">North cardinal</span></div>
+      <div class="guide-legend-row"><span class="guide-legend-cardinal" style="background:linear-gradient(to bottom,#f2d600 50%,black 50%)"></span><span class="guide-legend-muted">South cardinal</span></div>
+      <div class="guide-legend-row"><span class="guide-legend-cardinal" style="background:linear-gradient(to bottom,#f2d600 25%,black 25%,black 75%,#f2d600 75%)"></span><span class="guide-legend-muted">West cardinal</span></div>
+
+      <p class="guide-legend-heading">Buoys</p>
+      <div class="guide-legend-row"><span class="guide-legend-buoy" style="color:#ff69b4"></span>Public buoy <em class="guide-verified">✓ official data</em></div>
+      <div class="guide-legend-row"><span class="guide-legend-buoy" style="color:#4169e1"></span>Emergency buoy (Police/Maritime) <em class="guide-verified">✓ official data</em></div>
+      <div class="guide-legend-row"><span class="guide-legend-buoy" style="color:#e6c200"></span>Private buoy <em class="guide-pending">pending confirmation</em></div>
+      <div class="guide-legend-row"><span class="guide-legend-buoy" style="color:#cc0000"></span>Commercial buoy <em class="guide-pending">pending confirmation</em></div>
+
+      <p class="guide-legend-heading">Map Layers / Zones</p>
+      <div class="guide-legend-row"><span class="guide-legend-zone guide-zone-shallow"></span>Shallow water</div>
+      <div class="guide-legend-row"><span class="guide-legend-zone" style="background:#ff8c00; opacity:0.5"></span>Speed zone</div>
+      <div class="guide-legend-row"><span class="guide-legend-zone" style="background:#9932cc; opacity:0.5"></span>No wash zone</div>
+      <div class="guide-legend-row"><span class="guide-legend-zone" style="background:#dc143c; opacity:0.5"></span>No towing zone</div>
+
+      <p class="guide-legend-note">Cardinal and buoy colours marked "pending confirmation" are based on local knowledge and not yet cross-checked against official sources.</p>
+    `
   }
 ];
-
 
 function openBoatingGuidePage() {
   renderBoatingGuideList();
