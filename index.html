@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=23">
+  <link rel="stylesheet" href="style.css?v=24">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -276,12 +276,19 @@
 <!-- Full-screen Marine Weather viewer -->
 <div id="weather-viewer">
   <button id="weather-viewer-close" onclick="closeWeatherPage()">✕ Close</button>
-  <div id="weather-tabs">
-    <button id="weather-tab-general" class="weather-tab active" onclick="switchWeatherZone('general')">General Weather</button>
-    <button id="weather-tab-sheltered" class="weather-tab" onclick="switchWeatherZone('sheltered')">Sheltered Waters</button>
-    <button id="weather-tab-open" class="weather-tab" onclick="switchWeatherZone('open')">Open Water</button>
+  <button id="weather-back-btn" onclick="switchWeatherZone('general')">‹ Back</button>
+
+  <div id="weather-dashboard-general">
+    <div id="weather-location-search">
+      <span id="weather-location-name">Berowra Waters</span>
+      <button id="weather-search-toggle" onclick="toggleLocationSearch()"><i class="ti ti-search"></i></button>
+    </div>
+    <div id="weather-search-box">
+      <input type="text" id="weather-search-input" placeholder="Search a location...">
+      <button onclick="searchWeatherLocation()">Go</button>
+    </div>
   </div>
-  <div id="weather-dashboard-general"></div>
+
   <div id="weather-bom-embed">
     <p class="weather-note">Live forecast from the Australian Bureau of Meteorology.</p>
     <iframe id="weather-frame" src=""></iframe>
@@ -394,12 +401,12 @@
   <script src="js/tide-data.js?v=2"></script>
   <script src="js/tide-page.js?v=1"></script>
   <script src="js/gps.js?v=6"></script>
-  <script src="js/weather-page.js?v=3"></script>
+  <script src="js/weather-page.js?v=4"></script>
   <script src="js/map.js?v=10"></script>
   <script src="js/crosshair.js?v=1"></script>
   <script src="js/my-tracks.js?v=4"></script>
   <script src="js/boating-guide.js?v=1"></script>
-  <script src="js/ui-panel.js?v=19"></script>
+  <script src="js/ui-panel.js?v=20"></script>
 </body>
 </html>
 

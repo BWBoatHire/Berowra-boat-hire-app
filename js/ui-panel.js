@@ -99,35 +99,24 @@ function closeWeatherPage() {
   alert("switchWeatherZone called with zone=" + zone);
   alert("dashboardEl found: " + (dashboardEl !== null) + ", bomEl found: " + (bomEl !== null));
 
-
 function switchWeatherZone(zone) {
   const dashboardEl = document.getElementById("weather-dashboard-general");
   const bomEl = document.getElementById("weather-bom-embed");
+  const backBtn = document.getElementById("weather-back-btn");
 
   if (zone === "general") {
     dashboardEl.style.display = "block";
     bomEl.style.display = "none";
+    backBtn.style.display = "none";
     document.getElementById("weather-frame").src = "";
-    loadGeneralWeatherDashboard();
+    loadWeatherDashboardAt(-33.5988, 151.1207, "weather-dashboard-general", "Berowra Waters");
   } else {
     dashboardEl.style.display = "none";
     bomEl.style.display = "flex";
+    backBtn.style.display = "block";
     document.getElementById("weather-frame").src = weatherUrls[zone];
   }
-
-
-
-  ["general", "sheltered", "open"].forEach(z => {
-    document.getElementById("weather-tab-" + z).classList.toggle("active", z === zone);
-  });
 }
-
-function loadGeneralWeatherDashboard() {
-  const container = document.getElementById("weather-dashboard-general");
-  container.innerHTML = '<div id="weather-dashboard-general-inner"></div>';
-  loadWeatherDashboardAt(-33.5988, 151.1207, "weather-dashboard-general-inner");
-}
-
 
 // ===== Disclaimer & Terms =====
 function openDisclaimerPage() {

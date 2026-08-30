@@ -28,10 +28,18 @@ function weatherIconEmoji(iconCode) {
   return map[iconCode] || "🌡️";
 }
 
-async function loadWeatherDashboardAt(lat, lon, containerId) {
+async function loadWeatherDashboardAt(lat, lon, containerId, locationLabel) {
   containerId = containerId || "weather-dashboard";
   const container = document.getElementById(containerId);
-  container.innerHTML = "<p class='weather-loading'>Loading current conditions...</p>";
+  const isGeneralTab = containerId === "weather-dashboard-general";
+
+  // Preserve the search bar (only exists on the General tab) while loading
+  const preserveHtml = isGeneralTab ? document.getElementById("weather-location-search").outerHTML + document.getElementById("weather-search-box").outerHTML : "";
+  container.innerHTML = preserveHtml + "<p class='weather-loading'>Loading current conditions...</p>";
+  if (isGeneralTab && locationLabel) {
+    document.getElementById("weather-location-name").textContent = locationLabel;
+  }
+
 
   try {
     const currentUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${OWM_API_KEY}`;
@@ -56,7 +64,10 @@ async function loadWeatherDashboardAt(lat, lon, containerId) {
 function renderWeatherDashboard(current, forecast, containerId) {
   containerId = containerId || "weather-dashboard";
   const container = document.getElementById(containerId);
+  const isGeneralTab = containerId === "weather-dashboard-general";
+  const preserveHtml = isGeneralTab ? document.getElementById("weather-location-search").outerHTML + document.getElementById("weather-search-box").outerHTML : "";
   const moon = getMoonPhase(new Date());
+
 
 
   const icon = weatherIconEmoji(current.weather[0].icon);
@@ -155,10 +166,37 @@ function renderWeatherDashboard(current, forecast, containerId) {
     <p class="weather-attribution">Weather data by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a></p>
   `;
 
-  container.innerHTML = html;
+  container.innerHTML = preserveHtml + html;
   window.currentDailyMap = dailyMap;
   window.currentDailyKeys = dailyKeys;
 }
+
+// ===== Location search (General Weather tab only) =====
+function toggleLocationSearch() {
+  document.getElementById("weather-search-box").classList.toggle("open");
+}
+
+async function searchWeatherLocation() {
+  const query = document.getElementById("weather-search-input").value.trim();
+  if (!query) return;
+
+  try {
+    const res = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1&countrycodes=au`);
+    const results = await res.json();
+    if (results.length === 0) {
+      alert("Couldn't find that location. Try a different search.");
+      return;
+    }
+    const place = results[0];
+    const shortName = place.display_name.split(",")[0];
+    loadWeatherDashboardAt(parseFloat(place.lat), parseFloat(place.lon), "weather-dashboard-general", shortName);
+    document.getElementById("weather-search-box").classList.remove("open");
+    document.getElementById("weather-search-input").value = "";
+  } catch (err) {
+    alert("Couldn't search right now. Check your connection and try again.");
+  }
+}
+
 
 // ===== Day detail modal =====
 function openDayDetail(index) {
