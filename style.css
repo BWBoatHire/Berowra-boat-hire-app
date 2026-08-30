@@ -1515,3 +1515,50 @@ html, body {
   color: #aaa;
   margin-top: 12px;
 }
+/* ===== Marina Shop page ===== */
+#marina-shop-viewer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #f4f9fc;
+  z-index: 1500;
+  overflow-y: auto;
+}
+#marina-shop-viewer.open { display: block; }
+#marina-shop-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  z-index: 1600;
+  padding: 8px 14px;
+  background-color: #0b5394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+#marina-shop-header {
+  background: linear-gradient(160deg, #0a3d63, #1a6fa8);
+  padding: 60px 20px 20px 20px;
+  color: white;
+}
+#marina-shop-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+#marina-shop-subtitle {
+  font-size: 12px;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+#marina-shop-list {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.shop-card-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}

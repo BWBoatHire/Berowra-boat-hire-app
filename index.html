@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=25">
+  <link rel="stylesheet" href="style.css?v=26">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -167,11 +167,12 @@
       <div class="tile-label">Boat Hire</div>
       <div class="tile-soon">Coming soon</div>
     </div>
-    <div class="menu-tile tile-disabled">
-      <i class="ti ti-shopping-bag"></i>
-      <div class="tile-label">Shop</div>
-      <div class="tile-soon">Coming soon</div>
-    </div>
+<div class="menu-tile tile-active" onclick="openMarinaShopPage()">
+  <i class="ti ti-shopping-bag"></i>
+  <div class="tile-label">Marina Shop</div>
+</div>
+
+
     <div class="menu-tile tile-disabled">
       <i class="ti ti-fish"></i>
       <div class="tile-label">Fishing</div>
@@ -356,6 +357,15 @@
   <div id="boating-guide-list"></div>
   <p class="boating-guide-attribution">Summarised from the NSW Boating Handbook (Transport for NSW). For full detail, refer to the official handbook.</p>
 </div>
+<!-- Marina Shop viewer -->
+<div id="marina-shop-viewer">
+  <button id="marina-shop-close" onclick="closeMarinaShopPage()">✕ Close</button>
+  <div id="marina-shop-header">
+    <div id="marina-shop-title">Marina Shop</div>
+    <div id="marina-shop-subtitle">Open 7 days, 8am–5pm (closed Christmas Day)</div>
+  </div>
+  <div id="marina-shop-list"></div>
+</div>
 
   <!-- My Tracks viewer -->
 <div id="my-tracks-viewer">
@@ -406,6 +416,7 @@
   <script src="js/crosshair.js?v=1"></script>
   <script src="js/my-tracks.js?v=4"></script>
   <script src="js/boating-guide.js?v=3"></script>
+  <script src="js/marina-shop.js?v=2"></script>
   <script src="js/ui-panel.js?v=20"></script>
 </body>
 </html>
