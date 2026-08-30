@@ -40,10 +40,12 @@ function dropPin() {
     iconSize: [22, 22],
     iconAnchor: [11, 22]
   });
+  const timeLabel = new Date().toLocaleString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
   L.marker([lastPosition.lat, lastPosition.lng], { icon: icon })
     .addTo(map)
-    .bindPopup(`<strong>${label}</strong>`);
+    .bindPopup(`<strong>${label}</strong><br><span style="color:#888; font-size:11px;">${timeLabel}</span>`);
 }
+
 
 function maybeSaveTrack(points, stats) {
   if (!points || points.length < 2) {
@@ -147,10 +149,12 @@ function viewSavedTrack(id) {
       iconSize: [22, 22],
       iconAnchor: [11, 22]
     });
+    const pinTimeLabel = pin.time ? new Date(pin.time).toLocaleString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : "";
     L.marker([pin.lat, pin.lng], { icon: icon })
       .addTo(savedPinsDisplayLayer)
-      .bindPopup(`<strong>${pin.label}</strong>`);
+      .bindPopup(`<strong>${pin.label}</strong><br><span style="color:#888; font-size:11px;">${pinTimeLabel}</span>`);
   });
+
   savedPinsDisplayLayer.addTo(map);
 
   map.fitBounds(savedTrackDisplayLayer.getBounds(), { padding: [30, 30] });
