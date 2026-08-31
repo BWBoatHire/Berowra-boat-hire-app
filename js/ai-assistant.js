@@ -52,6 +52,16 @@ function sendNaviSuggestion(text) {
 }
 
 // Pulls together today's real tide and weather data already loaded in the app
+
+function getBoatFleetSummary() {
+  if (typeof boatHireSections === "undefined") return "Boat fleet data not available.";
+
+  return boatHireSections.map(b =>
+    `${b.title} (${b.group}): ${b.specs}. Pricing: ${b.prices.join(", ")}.`
+  ).join(" | ");
+}
+
+
 async function getLiveConditionsSummary() {
   let summary = "";
 
@@ -85,9 +95,13 @@ async function sendNaviMessage() {
   const text = inputEl.value.trim();
   if (!text) return;
 
-  // Detect concierge-style questions that need live data
-  const conciergeKeywords = ["today", "conditions", "weather", "tide", "good day", "go out", "go boating"];
-  const needsLiveData = conciergeKeywords.some(k => text.toLowerCase().includes(k));
+ // Detect concierge-style questions that need live data
+const conciergeKeywords = ["today", "conditions", "weather", "tide", "good day", "go out", "go boating"];
+const needsLiveData = conciergeKeywords.some(k => text.toLowerCase().includes(k));
+
+// Detect boat recommendation questions
+const boatKeywords = ["recommend", "which boat", "what boat", "boat for", "people", "suit", "hire a boat", "best boat"];
+const needsBoatData = boatKeywords.some(k => text.toLowerCase().includes(k));
 
 
   const messagesEl = document.getElementById("navi-chat-messages");
@@ -111,7 +125,11 @@ async function sendNaviMessage() {
     if (liveData) {
       messageToSend = `[Live data for context - use this to answer naturally, don't just repeat the raw numbers: ${liveData}]\n\nCustomer question: ${text}`;
     }
+  } else if (needsBoatData) {
+    const boatSummary = getBoatFleetSummary();
+    messageToSend = `[Our real boat fleet, for you to recommend from - only recommend boats listed here, never invent details: ${boatSummary}]\n\nCustomer question: ${text}`;
   }
+
 
   naviConversationHistory.push({ role: "user", parts: [{ text: messageToSend }] });
 
