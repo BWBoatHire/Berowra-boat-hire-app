@@ -53,6 +53,30 @@ function sendNaviSuggestion(text) {
 
 // Pulls together today's real tide and weather data already loaded in the app
 
+// Simple on-device keyword search across the full handbook - finds the
+// most relevant section(s) so we only send Gemini what's actually needed.
+function searchHandbook(query) {
+  const queryWords = query.toLowerCase().split(/\W+/).filter(w => w.length > 2);
+  const scored = handbookSections.map(section => {
+    const sectionTextLower = (section.title + " " + section.text).toLowerCase();
+    let score = 0;
+    queryWords.forEach(word => {
+      const matches = sectionTextLower.split(word).length - 1;
+      score += matches;
+      if (section.title.toLowerCase().includes(word)) score += 5; // title matches weigh more
+    });
+    return { section, score };
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+  const topMatches = scored.filter(s => s.score > 0).slice(0, 2);
+
+  if (topMatches.length === 0) return null;
+
+  return topMatches.map(m => `--- ${m.section.title} ---\n${m.section.text.substring(0, 2500)}`).join("\n\n");
+}
+
+
 function getBoatFleetSummary() {
   if (typeof boatHireSections === "undefined") return "Boat fleet data not available.";
 
@@ -128,7 +152,13 @@ const needsBoatData = boatKeywords.some(k => text.toLowerCase().includes(k));
   } else if (needsBoatData) {
     const boatSummary = getBoatFleetSummary();
     messageToSend = `[Our real boat fleet, for you to recommend from - only recommend boats listed here, never invent details: ${boatSummary}]\n\nCustomer question: ${text}`;
+  } else {
+    const handbookMatch = searchHandbook(text);
+    if (handbookMatch) {
+      messageToSend = `[Relevant sections from the official NSW Boating Handbook - answer using only this content, paraphrased in plain English, and mention it's from the handbook if relevant: ${handbookMatch}]\n\nCustomer question: ${text}`;
+    }
   }
+
 
 
   naviConversationHistory.push({ role: "user", parts: [{ text: messageToSend }] });
