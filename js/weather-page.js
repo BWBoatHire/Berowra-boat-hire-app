@@ -28,18 +28,13 @@ function weatherIconEmoji(iconCode) {
   return map[iconCode] || "🌡️";
 }
 
+
+
 async function loadWeatherDashboardAt(lat, lon, containerId, locationLabel) {
   containerId = containerId || "weather-dashboard";
   const container = document.getElementById(containerId);
-  const isGeneralTab = containerId === "weather-dashboard-general";
-
-  // Preserve the search bar (only exists on the General tab) while loading
-  const preserveHtml = isGeneralTab ? document.getElementById("weather-location-search").outerHTML + document.getElementById("weather-search-box").outerHTML : "";
-  container.innerHTML = preserveHtml + "<p class='weather-loading'>Loading current conditions...</p>";
-  if (isGeneralTab && locationLabel) {
-    document.getElementById("weather-location-name").textContent = locationLabel;
-  }
-
+  container.innerHTML = "<p class='weather-loading'>Loading current conditions...</p>";
+  window.currentLocationLabel = locationLabel || "Berowra Waters";
 
   try {
     const currentUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${OWM_API_KEY}`;
@@ -65,10 +60,8 @@ function renderWeatherDashboard(current, forecast, containerId) {
   containerId = containerId || "weather-dashboard";
   const container = document.getElementById(containerId);
   const isGeneralTab = containerId === "weather-dashboard-general";
-  const preserveHtml = isGeneralTab ? document.getElementById("weather-location-search").outerHTML + document.getElementById("weather-search-box").outerHTML : "";
+  const locationLabel = window.currentLocationLabel || "Berowra Waters";
   const moon = getMoonPhase(new Date());
-
-
 
   const icon = weatherIconEmoji(current.weather[0].icon);
   const desc = current.weather[0].description;
@@ -83,17 +76,44 @@ function renderWeatherDashboard(current, forecast, containerId) {
   const sunrise = new Date(current.sys.sunrise * 1000).toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
   const sunset = new Date(current.sys.sunset * 1000).toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' });
 
+  const feelsLike = Math.round(current.main.feels_like);
+  const moonShadowSide = moon.icon === "🌑" || moon.icon.includes("🌘") || moon.icon.includes("🌗") || moon.icon.includes("🌖") ? "left: 0; border-radius: 0 32px 32px 0;" : "right: 0; border-radius: 32px 0 0 32px;";
+  const moonNameParts = moon.name.split(" ");
+  const searchIconHtml = isGeneralTab ? `<div id="weather-search-icon-btn" onclick="toggleLocationSearch()"><i class="ti ti-search"></i></div>` : "";
+
   let html = `
     <div id="weather-hero">
+      <div id="weather-hero-header">
+        <div id="weather-location-line"><i class="ti ti-map-pin"></i><span>${locationLabel}</span></div>
+        ${searchIconHtml}
+      </div>
+
       <div id="weather-hero-top">
+        <div>
+          <div id="weather-desc">${descCapitalized}</div>
+          <div id="weather-temp-big">${temp}°</div>
+          <div id="weather-feels-like">Feels like ${feelsLike}°</div>
+        </div>
         <div id="weather-icon-big">${icon}</div>
-        <div id="weather-desc">${descCapitalized}</div>
-        <div id="weather-temp-big">${temp}°</div>
       </div>
-      <div id="weather-wind-pill">
-        <span style="display:inline-block; transform: rotate(${current.wind.deg}deg)">↑</span>
-        <span>${windKnots} kts ${windDir}</span>
+
+      <div id="weather-compass-row">
+        <div class="weather-mini-card">
+          <div class="wind-compass">
+            <span class="compass-n">N</span><span class="compass-s">S</span>
+            <span class="compass-w">W</span><span class="compass-e">E</span>
+            <div class="compass-needle" style="transform: translate(-50%,-100%) rotate(${current.wind.deg}deg)"></div>
+          </div>
+          <div class="mini-card-value">${windKnots} kts</div>
+          <div class="mini-card-label">${windDir}</div>
+        </div>
+        <div class="weather-mini-card">
+          <div class="moon-graphic"><div class="moon-shadow" style="${moonShadowSide}"></div></div>
+          <div class="mini-card-value">${moonNameParts[0]}</div>
+          <div class="mini-card-label">${moonNameParts.slice(1).join(" ")}</div>
+        </div>
       </div>
+
       <div id="weather-hero-stats">
         <div class="weather-stat"><span class="weather-stat-label">Pressure</span><span class="weather-stat-value">${pressure} <small>mBar</small></span></div>
         <div class="weather-stat"><span class="weather-stat-label">Visibility</span><span class="weather-stat-value">${visibilityNm} <small>NM</small></span></div>
@@ -108,13 +128,13 @@ function renderWeatherDashboard(current, forecast, containerId) {
 
     <div id="weather-sun-row">
       <div class="weather-sun-item"><span>☀️</span><div><div>${sunrise}</div><div class="weather-sun-label">Sunrise</div></div></div>
-      <div class="weather-sun-item"><span>${moon.icon}</span><div><div>${moon.name}</div><div class="weather-sun-label">Moon phase</div></div></div>
       <div class="weather-sun-item"><span>🌇</span><div><div>${sunset}</div><div class="weather-sun-label">Sunset</div></div></div>
     </div>
 
     <h4 class="weather-section-title">Next 24 Hours</h4>
     <div id="weather-hourly-strip">
   `;
+
 
   forecast.list.slice(0, 8).forEach(entry => {
     const time = new Date(entry.dt * 1000).toLocaleTimeString('en-AU', { hour: 'numeric', hour12: true });
@@ -166,7 +186,7 @@ function renderWeatherDashboard(current, forecast, containerId) {
     <p class="weather-attribution">Weather data by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a></p>
   `;
 
-  container.innerHTML = preserveHtml + html;
+  container.innerHTML = html;
   window.currentDailyMap = dailyMap;
   window.currentDailyKeys = dailyKeys;
 }
@@ -196,6 +216,7 @@ async function searchWeatherLocation() {
     alert("Couldn't search right now. Check your connection and try again.");
   }
 }
+
 
 
 // ===== Day detail modal =====

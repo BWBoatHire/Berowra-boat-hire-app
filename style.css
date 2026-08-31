@@ -849,26 +849,32 @@ html, body {
 #weather-dashboard {
   padding: 0;
 }
-#weather-location-search {
+#weather-hero-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-#weather-location-name {
-  font-size: 16px;
+#weather-location-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 17px;
   font-weight: bold;
-  color: #0a3d63;
 }
-#weather-search-toggle {
-  width: 30px;
-  height: 30px;
+#weather-location-line i { font-size: 14px; opacity: 0.85; }
+#weather-search-icon-btn {
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  border: none;
-  background: #e8eef3;
-  color: #0a3d63;
-  font-size: 14px;
+  background: rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+#weather-search-icon-btn i { color: white; font-size: 13px; }
+
 #weather-search-box {
   display: none;
   gap: 8px;
@@ -922,24 +928,12 @@ html, body {
 #weather-hero-top {
   text-align: center;
 }
-#weather-wind-pill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  margin-top: 6px;
-  background: rgba(10,61,99,0.35);
-  border-radius: 20px;
-  padding: 4px 12px;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 11px;
-}
 
-#weather-icon-big { font-size: 26px; }
-#weather-desc { font-size: 12px; margin-top: 2px; }
-#weather-temp-big { font-size: 30px; font-weight: bold; }
+#weather-icon-big { font-size: 44px; }
+#weather-desc { font-size: 13px; opacity: 0.9; }
+#weather-temp-big { font-size: 38px; font-weight: bold; }
+#weather-feels-like { font-size: 11px; opacity: 0.8; }
+
 
 #weather-hero-stats {
   display: flex;
@@ -1676,5 +1670,71 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
+}
+#weather-hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#weather-compass-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+.weather-mini-card {
+  flex: 1;
+  background: rgba(10,61,99,0.3);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+}
+.mini-card-value { font-size: 13px; font-weight: bold; margin-top: 6px; }
+.mini-card-label { font-size: 9px; opacity: 0.8; }
+
+.wind-compass {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.4);
+  position: relative;
+}
+.wind-compass span {
+  position: absolute;
+  font-size: 8px;
+  opacity: 0.7;
+}
+.compass-n { top: 2px; left: 50%; transform: translateX(-50%); }
+.compass-s { bottom: 2px; left: 50%; transform: translateX(-50%); }
+.compass-w { left: 2px; top: 50%; transform: translateY(-50%); }
+.compass-e { right: 2px; top: 50%; transform: translateY(-50%); }
+.compass-needle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 22px solid #ffb199;
+  transform-origin: bottom center;
+}
+
+.moon-graphic {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #f4e8c8;
+  position: relative;
+  overflow: hidden;
+}
+.moon-shadow {
+  position: absolute;
+  top: 0;
+  width: 44px;
+  height: 64px;
+  background: #2a3a4a;
 }
 
