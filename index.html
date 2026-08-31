@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=31">
+  <link rel="stylesheet" href="style.css?v=33">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -175,8 +175,19 @@
     </div>
   </div>
 
+<div class="menu-tile tile-active" onclick="testGeminiConnection()">
+  <i class="ti ti-flask"></i>
+  <div class="tile-label">Test AI</div>
+</div>
+
   <p class="tile-row-label">Support</p>
   <div class="tile-row">
+    
+    <div class="menu-tile tile-active" onclick="openNaviChat()">
+  <i class="ti ti-anchor"></i>
+  <div class="tile-label">Ask Navi</div>
+</div>
+
     <div class="menu-tile tile-help" onclick="openHelpModal()">
       <i class="ti ti-phone"></i>
       <div class="tile-label">Get Help</div>
@@ -364,6 +375,28 @@
   <p class="boat-hire-note">All hires include full safety gear and a boat briefing. Public holiday surcharges apply (kayaks exempt) — see full pricing at the marina.</p>
 </div>
 
+<!-- Navi AI Assistant viewer -->
+<div id="navi-chat-viewer">
+  <div id="navi-chat-header">
+    <div style="display:flex; align-items:center; gap:8px;">
+      <i class="ti ti-anchor" style="font-size:18px;"></i>
+      <div>
+        <div id="navi-chat-title">NaviGuide Assistant</div>
+        <div id="navi-chat-subtitle">Needs an internet connection</div>
+      </div>
+    </div>
+    <button id="navi-chat-close" onclick="closeNaviChat()">✕</button>
+  </div>
+
+  <div id="navi-chat-messages"></div>
+
+  <div id="navi-chat-input-row">
+    <input type="text" id="navi-chat-input" placeholder="Ask a question..." onkeypress="if(event.key==='Enter') sendNaviMessage()">
+    <button id="navi-chat-send" onclick="sendNaviMessage()"><i class="ti ti-send"></i></button>
+  </div>
+</div>
+
+
   <!-- My Tracks viewer -->
 <div id="my-tracks-viewer">
   <button id="my-tracks-close" onclick="closeMyTracksPage()">✕ Close</button>
@@ -413,8 +446,9 @@
   <script src="js/map.js?v=12"></script>
   <script src="js/crosshair.js?v=1"></script>
   <script src="js/my-tracks.js?v=5"></script>
-  <script src="js/boating-guide.js?v=3"></script>
+  <script src="js/boating-guide.js?v=4"></script>
   <script src="js/marina-shop.js?v=2"></script>
+  <script src="js/ai-assistant.js?v=5"></script>
   <script src="js/boat-hire.js?v=1"></script>
   <script src="js/ui-panel.js?v=22"></script>
 </body>

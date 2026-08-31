@@ -5,21 +5,53 @@
 // time of hire.
 
 const boatingGuideSections = [
-  {
+   {
     id: "conditions",
     icon: "ti-anchor",
     title: "Conditions of Hire",
-    subtitle: "Return time & hire area limits",
+    subtitle: "Please read before you head out",
     special: true,
-    // PLACEHOLDER WORDING - confirm exact time and rules with business owner before publishing
     html: `
-      <p><strong>All hire boats must be back at the marina by 4:00pm.</strong></p>
-      <p>Your hire boat must not travel past the Berowra Waters ferry crossing.
-      As you leave the marina, keep left (downstream, toward the sea) — do not
-      turn right across the ferry line toward Silverwater.</p>
-      <p style="color:#a3341d; font-size:12px;"><em>This section needs confirmation from the marina team before your trip. Please check with staff if you're unsure of your hire area or return time.</em></p>
+      <p><strong>With the exception of Kayaks, hire boats must not travel past the Berowra Waters ferry
+      crossing.</strong> As you leave the marina, keep left (downstream,
+      toward the sea) — do not turn right across the ferry line toward
+      Silverwater. Please confirm your return time with staff when you
+      collect your boat.</p>
+
+      <p class="guide-sub-heading">General Conditions</p>
+      <p>Boats are hired at the hirer's risk — the hirer is wholly
+      responsible for any loss or damage to the boat or equipment, plus
+      damage to other vessels. Hirers must listen to the boating brief from
+      staff and ensure all conditions are met, and are responsible for all
+      passengers' behaviour.</p>
+      <p><strong>Warning:</strong> if a boat is beached due to user
+      negligence, a minimum $200 call-out fee applies; a call-out due to
+      user error incurs a $75 fee. Boats returned past the agreed finish
+      time incur a late fee of $75 per hour (or part thereof). Boats must
+      be returned clean and presentable — a cleaning fee may apply (dog
+      hair incurs a $50 cleaning fee).</p>
+      <p><strong>Important:</strong> stay away from the shoreline, rocks,
+      swimmers, other vessels, and any moorings — you're responsible for
+      any damage caused by not doing so. Never start a motor when swimmers
+      are in the water.</p>
+
+      <p class="guide-sub-heading">Kayak Conditions</p>
+      <p>Follow all instructions from staff (a map is provided), and only
+      paddle to the areas you've been told to. If something goes wrong,
+      don't panic — stay with the kayak, and paddle to shore if you can.
+      Staff will come to get you. Stay well clear of moving vessels at all
+      times.</p>
+      <p><strong>Important:</strong> you must stop and obey the ferry
+      driver's instructions when crossing the cables, and keep your life
+      jacket on at all stages.</p>
+
+      <p class="guide-sub-heading">Warning of Risk</p>
+      <p>You are not covered by the owner/operator's insurance for injury
+      or loss arising from the hire, or from occupant negligence. Hires are
+      never permitted for customers under the effect of drugs or alcohol.</p>
     `
   },
+ 
   {
     id: "markers",
     icon: "ti-anchor",

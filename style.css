@@ -1737,4 +1737,121 @@ html, body {
   height: 64px;
   background: #2a3a4a;
 }
-
+.guide-sub-heading {
+  font-weight: bold;
+  color: #a3341d;
+  font-size: 12px;
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+/* ===== Navi AI Assistant chat ===== */
+#navi-chat-viewer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: white;
+  z-index: 1500;
+  flex-direction: column;
+}
+#navi-chat-viewer.open { display: flex; }
+#navi-chat-header {
+  background: linear-gradient(160deg, #0a3d63, #1a6fa8);
+  padding: 16px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+#navi-chat-title { font-size: 15px; font-weight: bold; }
+#navi-chat-subtitle { font-size: 10px; opacity: 0.8; margin-top: 2px; }
+#navi-chat-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+#navi-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  background: #f4f9fc;
+}
+.navi-msg-bot {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 12px;
+  max-width: 85%;
+}
+.navi-msg-user {
+  background: #0a3d63;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  max-width: 75%;
+  margin-left: auto;
+}
+.navi-suggestion-heading {
+  font-size: 10px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 6px 2px;
+}
+.navi-suggestion-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.navi-suggestion-chip {
+  background: white;
+  border: 1px solid #d8e4ee;
+  border-radius: 16px;
+  padding: 6px 12px;
+  font-size: 11px;
+  color: #0a3d63;
+  cursor: pointer;
+}
+.navi-typing {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 12px;
+  max-width: 60%;
+  font-style: italic;
+}
+#navi-chat-input-row {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  background: white;
+  flex-shrink: 0;
+}
+#navi-chat-input {
+  flex: 1;
+  border: 1px solid #d8e4ee;
+  border-radius: 20px;
+padding: 8px 14px;
+  font-size: 12px;
+}
+#navi-chat-send {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0a3d63;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
