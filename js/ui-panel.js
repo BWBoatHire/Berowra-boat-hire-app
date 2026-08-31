@@ -115,8 +115,6 @@ function closeWeatherPage() {
   document.getElementById("weather-viewer").classList.remove("open");
   document.getElementById("weather-frame").src = "";
 }
-  alert("switchWeatherZone called with zone=" + zone);
-  alert("dashboardEl found: " + (dashboardEl !== null) + ", bomEl found: " + (bomEl !== null));
 
 function switchWeatherZone(zone) {
   const dashboardEl = document.getElementById("weather-dashboard-general");
