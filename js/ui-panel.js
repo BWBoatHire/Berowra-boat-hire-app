@@ -170,17 +170,15 @@ function closeNaviNudge() {
 }
 
 function checkNaviNudge() {
-  // Show the Navi nudge only after the disclaimer has been accepted,
-  // and only if it hasn't been shown before on this device.
-if (localStorage.getItem("disclaimerAccepted") && !localStorage.getItem("naviNudgeShown")) {
+  if (localStorage.getItem("disclaimerAccepted") && !localStorage.getItem("naviNudgeShown")) {
     setTimeout(function() {
       document.getElementById("navi-nudge").classList.add("open");
     }, 800);
   }
 }
 
+
 checkNaviNudge();
-alert("Reached the end of ui-panel.js successfully");
 
 
 // ===== Get Help (call / text location to marina) =====
