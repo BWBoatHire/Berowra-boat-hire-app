@@ -170,12 +170,14 @@ function closeNaviNudge() {
 }
 
 function checkNaviNudge() {
+  alert("disclaimerAccepted: " + localStorage.getItem("disclaimerAccepted") + " | naviNudgeShown: " + localStorage.getItem("naviNudgeShown"));
   if (localStorage.getItem("disclaimerAccepted") && !localStorage.getItem("naviNudgeShown")) {
     setTimeout(function() {
       document.getElementById("navi-nudge").classList.add("open");
-    }, 800);
+    }, 5000);
   }
 }
+
 
 
 checkNaviNudge();
