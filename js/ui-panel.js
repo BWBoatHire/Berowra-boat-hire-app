@@ -38,9 +38,28 @@ function toggleSeaMarksLayer() {
   if (checkbox.checked) { seaMarks.addTo(map); } else { map.removeLayer(seaMarks); }
 }
 
-function toggleMooringsLayer() {
-  const checkbox = document.getElementById("layer-moorings");
-  if (checkbox.checked) { publicMooringsLayer.addTo(map); } else { map.removeLayer(publicMooringsLayer); }
+function toggleBuoysMooringsLayer() {
+  const checkbox = document.getElementById("layer-buoys-moorings");
+  if (checkbox.checked) {
+    publicMooringsLayer.addTo(map);
+    localBuoysLayer.addTo(map);
+  } else {
+    map.removeLayer(publicMooringsLayer);
+    map.removeLayer(localBuoysLayer);
+  }
+}
+
+function toggleWharvesRampsLayer() {
+  const checkbox = document.getElementById("layer-wharves-ramps");
+  if (checkbox.checked) {
+    wharfRampLayer.addTo(map);
+    nswWharvesLayer.addTo(map);
+    nswBoatRampsLayer.addTo(map);
+  } else {
+    map.removeLayer(wharfRampLayer);
+    map.removeLayer(nswWharvesLayer);
+    map.removeLayer(nswBoatRampsLayer);
+  }
 }
 
 function toggleNswWharvesLayer() {

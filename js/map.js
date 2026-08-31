@@ -78,6 +78,21 @@ function setMapType(type) {
     if (map.hasLayer(fishingSpotsLayer)) map.removeLayer(fishingSpotsLayer);
   }
 }
+// ===== Dynamic marker sizing based on zoom level =====
+function updateMarkerZoomClass() {
+  const z = map.getZoom();
+
+  const mapEl = document.getElementById("map");
+  mapEl.classList.remove("zoom-far", "zoom-mid");
+  if (z <= 13) {
+    mapEl.classList.add("zoom-far");
+  } else if (z <= 15) {
+    mapEl.classList.add("zoom-mid");
+  }
+}
+
+map.on('zoomend', updateMarkerZoomClass);
+map.whenReady(updateMarkerZoomClass);
 
 // ===== Legend placeholder (rebuilt properly when Map Key feature is added) =====
 const legend = document.getElementById("legend");

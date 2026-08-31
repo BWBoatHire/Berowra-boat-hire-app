@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=27">
+  <link rel="stylesheet" href="style.css?v=29">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -96,31 +96,24 @@
       <input type="radio" name="mapType" value="fishing" onchange="setMapType('fishing')">
     </label>
 
-    <h4>Map Details</h4>
+ <h4>Map Details</h4>
     <label class="menu-row menu-row-checkbox">
       <span class="row-label">Navigation Markers (port/starboard/cardinal)</span>
       <input type="checkbox" id="layer-nsw-nav" checked onchange="toggleNswNavLayer()">
     </label>
-    <label class="menu-row menu-row-checkbox">
-      <span class="row-label">Wharves & Boat Ramps (local)</span>
-      <input type="checkbox" id="layer-wharf-ramp" onchange="toggleWharfRampLayer()">
+
+      <label class="menu-row menu-row-checkbox">
+      <span class="row-label">Buoys & Moorings</span>
+      <input type="checkbox" id="layer-buoys-moorings" onchange="toggleBuoysMooringsLayer()">
     </label>
     <label class="menu-row menu-row-checkbox">
-      <span class="row-label">OpenSeaMap Reference Layer (optional)</span>
-      <input type="checkbox" id="layer-seamarks" onchange="toggleSeaMarksLayer()">
+      <span class="row-label">Wharves & Boat Ramps</span>
+      <input type="checkbox" id="layer-wharves-ramps" onchange="toggleWharvesRampsLayer()">
     </label>
-    <label class="menu-row menu-row-checkbox">
-      <span class="row-label">Public Moorings (NSW wide)</span>
-      <input type="checkbox" id="layer-moorings" onchange="toggleMooringsLayer()">
-    </label>
-    <label class="menu-row menu-row-checkbox">
-      <span class="row-label">Public Wharves (NSW wide)</span>
-      <input type="checkbox" id="layer-nsw-wharves" onchange="toggleNswWharvesLayer()">
-    </label>
-    <label class="menu-row menu-row-checkbox">
-      <span class="row-label">Boat Ramps (NSW wide)</span>
-      <input type="checkbox" id="layer-nsw-ramps" onchange="toggleNswRampsLayer()">
-    </label>
+
+    <p class="tile-row-label" style="margin-top:14px;">Zones & Restricted Areas</p>
+
+    
     <label class="menu-row menu-row-checkbox">
       <span class="row-label">Shallow Water Areas (Hawkesbury region)</span>
       <input type="checkbox" id="layer-shallow" onchange="toggleShallowLayer()">
@@ -138,6 +131,7 @@
       <input type="checkbox" id="layer-towing" onchange="toggleTowingLayer()">
     </label>
   </div>
+
 
 <div id="bottom-sheet">
   <div id="bottom-sheet-handle"></div>
@@ -408,9 +402,10 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-  <script src="js/local-markers.js?v=2"></script>
+  <script src="js/local-markers.js?v=3"></script>
+  <script src="js/local-buoys.js?v=1"></script>
   <script src="js/wharves-ramps.js?v=1"></script>
-  <script src="js/nsw-nav-markers.js?v=2"></script>
+  <script src="js/nsw-nav-markers.js?v=4"></script>
   <script src="js/public-moorings.js?v=1"></script>
   <script src="js/nsw-wharves.js?v=1"></script>
   <script src="js/nsw-boat-ramps.js?v=1"></script>
@@ -422,13 +417,13 @@
   <script src="js/tide-page.js?v=1"></script>
   <script src="js/gps.js?v=6"></script>
   <script src="js/weather-page.js?v=4"></script>
-  <script src="js/map.js?v=10"></script>
+  <script src="js/map.js?v=12"></script>
   <script src="js/crosshair.js?v=1"></script>
   <script src="js/my-tracks.js?v=5"></script>
   <script src="js/boating-guide.js?v=3"></script>
   <script src="js/marina-shop.js?v=2"></script>
   <script src="js/boat-hire.js?v=1"></script>
-  <script src="js/ui-panel.js?v=20"></script>
+  <script src="js/ui-panel.js?v=22"></script>
 </body>
 </html>
 

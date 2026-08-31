@@ -1662,3 +1662,13 @@ html, body {
   max-width: 500px;
   margin: 0 auto;
 }
+/* ===== Dynamic marker sizing based on zoom level ===== */
+#map.zoom-far .custom-marker div,
+#map.zoom-far .trip-pin-marker {
+  transform: scale(0.3);
+}
+#map.zoom-mid .custom-marker div,
+#map.zoom-mid .trip-pin-marker {
+  transform: scale(0.55);
+}
+
