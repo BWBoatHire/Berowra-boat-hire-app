@@ -165,6 +165,23 @@ function checkDisclaimerAccepted() {
 }
 
 document.addEventListener("DOMContentLoaded", checkDisclaimerAccepted);
+function closeNaviNudge() {
+  document.getElementById("navi-nudge").classList.remove("open");
+  localStorage.setItem("naviNudgeShown", "true");
+}
+
+function checkNaviNudge() {
+  // Show the Navi nudge only after the disclaimer has been accepted,
+  // and only if it hasn't been shown before on this device.
+  if (localStorage.getItem("disclaimerAccepted") && !localStorage.getItem("naviNudgeShown")) {
+    setTimeout(function() {
+      document.getElementById("navi-nudge").classList.add("open");
+    }, 800);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", checkNaviNudge);
+
 
 // ===== Get Help (call / text location to marina) =====
 const MARINA_MOBILE = "+61408197558"; // PLACEHOLDER - replace with real marina mobile once confirmed

@@ -1855,3 +1855,79 @@ padding: 8px 14px;
   justify-content: center;
   flex-shrink: 0;
 }
+/* ===== Navi header badge ===== */
+#navi-header-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  padding: 2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+  display: block;
+}
+
+#navi-header-badge-wrap {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+}
+#navi-online-dot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background: #4ade80;
+  border-radius: 50%;
+  border: 2px solid #0a3d63;
+}
+/* ===== Navi first-visit nudge ===== */
+#navi-nudge {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+#navi-nudge.open {
+  display: flex;
+}
+#navi-nudge-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+#navi-nudge-photo {
+  width: 160px;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+#navi-nudge-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0a3d63;
+  margin-bottom: 8px;
+}
+#navi-nudge-text {
+  font-size: 13px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+#navi-nudge-close {
+  background: #0a3d63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+

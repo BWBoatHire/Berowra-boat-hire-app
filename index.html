@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berowra Waters Boat Hire</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css?v=33">
+  <link rel="stylesheet" href="style.css?v=36">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -19,7 +19,11 @@
       <div id="banner-title">Berowra Waters Boat Hire</div>
       <div id="banner-subtitle">NaviGuide</div>
     </div>
-    <span id="beta-badge">BETA</span>
+ <div id="navi-header-badge-wrap" onclick="openNaviChat()">
+  <img src="navi-badge.png" id="navi-header-badge" alt="Ask Navi">
+  <div id="navi-online-dot"></div>
+</div>
+
   </div>
   <div id="banner-tracking-stats">
     <div class="track-stat"><div class="track-stat-value" id="stat-speed">0.0</div><div class="track-stat-label">KNOTS</div></div>
@@ -179,10 +183,6 @@
   <p class="tile-row-label">Support</p>
   <div class="tile-row">
     
-    <div class="menu-tile tile-active" onclick="openNaviChat()">
-  <i class="ti ti-anchor"></i>
-  <div class="tile-label">Ask Navi</div>
-</div>
 
     <div class="menu-tile tile-help" onclick="openHelpModal()">
       <i class="ti ti-phone"></i>
@@ -448,7 +448,7 @@
   <script src="js/ai-assistant.js?v=2"></script> 
   <script src="js/ai-assistant.js?v=19"></script>
   <script src="js/boat-hire.js?v=1"></script>
-  <script src="js/ui-panel.js?v=22"></script>
+  <script src="js/ui-panel.js?v=23"></script>
 </body>
 </html>
 
