@@ -1,6 +1,7 @@
 // ===== AI Assistant (Navi) - powered by Google Gemini free tier =====
 
-const GEMINI_API_KEY = "AQ.Ab8RN6LkrJuaI-mFlFiWvR534DfOsFSQxE7VpreYYoc9Zu9gxA";
+const GEMINI_API_KEY = "AQ.Ab8RN6K4gMNFWc83KXmy8JHj1ER2ZwVyNfRT_K5oQEyr2vZQtA";
+
 const GEMINI_MODEL = "gemini-3.1-flash-lite";
 
 let naviConversationHistory = [];
@@ -46,10 +47,44 @@ function sendNaviSuggestion(text) {
   sendNaviMessage();
 }
 
+// Pulls together today's real tide and weather data already loaded in the app
+async function getLiveConditionsSummary() {
+  let summary = "";
+
+  // Today's tide data (from tideData, already loaded via tide-data.js)
+  try {
+    const today = new Date();
+    const dateKey = today.getFullYear() + "-" + String(today.getMonth()+1).padStart(2,"0") + "-" + String(today.getDate()).padStart(2,"0");
+    const todayTides = tideData[dateKey];
+    if (todayTides) {
+      summary += "Today's tide times at Dangar Island (nearest reference point): ";
+      summary += todayTides.map(t => `${t.type} ${t.time} (${t.height}m)`).join(", ") + ". ";
+    }
+  } catch (e) {}
+
+  // Live weather for Berowra Waters marina
+  try {
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=-33.5988&lon=151.1207&units=metric&appid=${OWM_API_KEY}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    if (data.main) {
+      const windKnots = (data.wind.speed * 1.94384).toFixed(1);
+      summary += `Current weather: ${data.weather[0].description}, ${Math.round(data.main.temp)}°C, wind ${windKnots} knots, rain chance not available in current data. `;
+    }
+  } catch (e) {}
+
+  return summary;
+}
+
 async function sendNaviMessage() {
   const inputEl = document.getElementById("navi-chat-input");
   const text = inputEl.value.trim();
   if (!text) return;
+
+  // Detect concierge-style questions that need live data
+  const conciergeKeywords = ["today", "conditions", "weather", "tide", "good day", "go out", "go boating"];
+  const needsLiveData = conciergeKeywords.some(k => text.toLowerCase().includes(k));
+
 
   const messagesEl = document.getElementById("navi-chat-messages");
 
@@ -66,7 +101,15 @@ async function sendNaviMessage() {
   messagesEl.appendChild(typingEl);
   messagesEl.scrollTop = messagesEl.scrollHeight;
 
-  naviConversationHistory.push({ role: "user", parts: [{ text: text }] });
+  let messageToSend = text;
+  if (needsLiveData) {
+    const liveData = await getLiveConditionsSummary();
+    if (liveData) {
+      messageToSend = `[Live data for context - use this to answer naturally, don't just repeat the raw numbers: ${liveData}]\n\nCustomer question: ${text}`;
+    }
+  }
+
+  naviConversationHistory.push({ role: "user", parts: [{ text: messageToSend }] });
 
   try {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
@@ -93,12 +136,15 @@ async function sendNaviMessage() {
       botBubble.className = "navi-msg-bot";
       botBubble.textContent = replyText;
       messagesEl.appendChild(botBubble);
+
     } else {
       const errBubble = document.createElement("div");
       errBubble.className = "navi-msg-bot";
-      errBubble.textContent = "Sorry, I couldn't get an answer just then. Please try again, or ask marina staff.";
+      const realError = data.error ? data.error.message : "Something went wrong";
+      errBubble.textContent = "Sorry, I couldn't get an answer just then (" + realError + "). Please try again, or ask marina staff.";
       messagesEl.appendChild(errBubble);
     }
+
   } catch (err) {
     typingEl.remove();
     const errBubble = document.createElement("div");
