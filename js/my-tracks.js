@@ -41,11 +41,11 @@ function dropPin() {
     iconAnchor: [11, 22]
   });
   const timeLabel = new Date().toLocaleString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+  const coordsLabel = `${lastPosition.lat.toFixed(6)}, ${lastPosition.lng.toFixed(6)}`;
   L.marker([lastPosition.lat, lastPosition.lng], { icon: icon })
     .addTo(map)
-    .bindPopup(`<strong>${label}</strong><br><span style="color:#888; font-size:11px;">${timeLabel}</span>`);
+    .bindPopup(`<strong>${label}</strong><br><span style="color:#888; font-size:11px;">${timeLabel}</span><br><span style="color:#0a3d63; font-size:11px; font-family:monospace;">${coordsLabel}</span>`);
 }
-
 
 function maybeSaveTrack(points, stats) {
   if (!points || points.length < 2) {
@@ -150,10 +150,12 @@ function viewSavedTrack(id) {
       iconAnchor: [11, 22]
     });
     const pinTimeLabel = pin.time ? new Date(pin.time).toLocaleString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : "";
+    const pinCoordsLabel = `${pin.lat.toFixed(6)}, ${pin.lng.toFixed(6)}`;
     L.marker([pin.lat, pin.lng], { icon: icon })
       .addTo(savedPinsDisplayLayer)
-      .bindPopup(`<strong>${pin.label}</strong><br><span style="color:#888; font-size:11px;">${pinTimeLabel}</span>`);
-  });
+      .bindPopup(`<strong>${pin.label}</strong><br><span style="color:#888; font-size:11px;">${pinTimeLabel}</span><br><span style="color:#0a3d63; font-size:11px; font-family:monospace;">${pinCoordsLabel}</span>`);
+
+    });
 
   savedPinsDisplayLayer.addTo(map);
 
