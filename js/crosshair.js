@@ -95,32 +95,31 @@ function closeCrosshairInfo() {
 }
 
 // ===== Weather button =====
-function openCrosshairWeather() {
+async function openCrosshairWeather() {
   const latLng = crosshairCurrentLatLng || map.getCenter();
   document.getElementById("crosshair-weather-viewer").classList.add("open");
-  document.getElementById("crosshair-weather-location").textContent = "Loading location...";
-  loadLocationName(latLng.lat, latLng.lng);
-  loadWeatherDashboardAt(latLng.lat, latLng.lng);
+  const locationName = await getLocationName(latLng.lat, latLng.lng);
+  loadWeatherDashboardAt(latLng.lat, latLng.lng, "weather-dashboard", locationName);
 }
+
 
 function closeCrosshairWeather() {
   document.getElementById("crosshair-weather-viewer").classList.remove("open");
 }
 
-async function loadLocationName(lat, lng) {
-  const labelEl = document.getElementById("crosshair-weather-location");
+async function getLocationName(lat, lng) {
   try {
     const res = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=14`);
     const data = await res.json();
-    const name = data.address ?
+    return data.address ?
       (data.address.suburb || data.address.village || data.address.town || data.address.hamlet ||
        data.address.locality || data.name || "This location")
       : "This location";
-    labelEl.textContent = name;
   } catch (err) {
-    labelEl.textContent = "This location";
+    return "This location";
   }
 }
+
 
 // ===== Hook into map drag events =====
 map.on('movestart', function () {
