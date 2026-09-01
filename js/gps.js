@@ -92,6 +92,8 @@ function toggleTrackRoute() {
     if (breadcrumbTrail) { map.removeLayer(breadcrumbTrail); breadcrumbTrail = null; breadcrumbPoints = []; }
     if (headingLine) { map.removeLayer(headingLine); headingLine = null; }
     if (headingArrow) { map.removeLayer(headingArrow); headingArrow = null; }
+    if (map.hasLayer(livePinsLayer)) { map.removeLayer(livePinsLayer); }
+    livePinsLayer = L.layerGroup();
     document.getElementById("app-banner").classList.remove("tracking");
     document.getElementById("zone-signs-container").innerHTML = "";
     clearInterval(durationInterval);

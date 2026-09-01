@@ -4,6 +4,8 @@ const TRACKS_STORAGE_KEY = "savedTracks";
 let savedTrackDisplayLayer = null;
 let savedPinsDisplayLayer = null;
 let currentTripPins = [];
+let livePinsLayer = L.layerGroup();
+
 
 function getSavedTracks() {
   try {
@@ -43,9 +45,14 @@ function dropPin() {
   const timeLabel = new Date().toLocaleString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
   const coordsLabel = `${lastPosition.lat.toFixed(6)}, ${lastPosition.lng.toFixed(6)}`;
   L.marker([lastPosition.lat, lastPosition.lng], { icon: icon })
-    .addTo(map)
+    .addTo(livePinsLayer)
     .bindPopup(`<strong>${label}</strong><br><span style="color:#888; font-size:11px;">${timeLabel}</span><br><span style="color:#0a3d63; font-size:11px; font-family:monospace;">${coordsLabel}</span>`);
+
+  if (!map.hasLayer(livePinsLayer)) {
+    livePinsLayer.addTo(map);
+  }
 }
+
 
 function maybeSaveTrack(points, stats) {
   if (!points || points.length < 2) {
