@@ -26,11 +26,12 @@ const appKnowledgeContent = "NAVIGUIDE APP FEATURES: " +
 
 function openNaviChat() {
   document.getElementById("navi-chat-viewer").classList.add("open");
-  toggleMenu();
+  document.getElementById("bottom-sheet").classList.remove("open");
   if (naviConversationHistory.length === 0) {
     renderNaviWelcome();
   }
 }
+
 
 function closeNaviChat() {
   document.getElementById("navi-chat-viewer").classList.remove("open");
