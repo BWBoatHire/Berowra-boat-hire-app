@@ -154,7 +154,9 @@ function updateAcceptButton() {
 function acceptDisclaimer() {
   localStorage.setItem("disclaimerAccepted", "true");
   document.getElementById("disclaimer-modal").classList.remove("open");
+  checkNaviNudge();
 }
+
 
 function checkDisclaimerAccepted() {
   if (!localStorage.getItem("disclaimerAccepted")) {
