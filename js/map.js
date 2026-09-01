@@ -23,8 +23,14 @@ const seaMarks = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.p
   maxZoom: 19
 });
 
-// Navigation markers layer is ON by default - core safety information
+// These layers are ON by default - core safety information
 nswNavMarkersLayer.addTo(map);
+publicMooringsLayer.addTo(map);
+localBuoysLayer.addTo(map);
+wharfRampLayer.addTo(map);
+nswWharvesLayer.addTo(map);
+nswBoatRampsLayer.addTo(map);
+
 
 // Reusable function to create the shallow water hatch pattern once needed
 function ensureShallowHatchPattern() {
