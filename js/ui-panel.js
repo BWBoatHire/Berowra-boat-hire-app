@@ -172,18 +172,12 @@ function closeNaviNudge() {
 }
 
 function checkNaviNudge() {
-  alert("disclaimerAccepted: " + localStorage.getItem("disclaimerAccepted") + " | naviNudgeShown: " + localStorage.getItem("naviNudgeShown"));
   if (localStorage.getItem("disclaimerAccepted") && !localStorage.getItem("naviNudgeShown")) {
     setTimeout(function() {
-      const nudgeEl = document.getElementById("navi-nudge");
-      alert("Timer fired. Element found: " + (nudgeEl !== null));
-      nudgeEl.classList.add("open");
-    }, 5000);
-
+      document.getElementById("navi-nudge").classList.add("open");
+    }, 40000);
   }
 }
-
-
 
 checkNaviNudge();
 
