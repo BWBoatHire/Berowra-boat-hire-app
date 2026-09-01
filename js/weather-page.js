@@ -83,10 +83,16 @@ function renderWeatherDashboard(current, forecast, containerId) {
 
   let html = `
     <div id="weather-hero">
-      <div id="weather-hero-header">
+            <div id="weather-hero-header">
         <div id="weather-location-line"><i class="ti ti-map-pin"></i><span>${locationLabel}</span></div>
         ${searchIconHtml}
       </div>
+
+      <div id="weather-search-box">
+        <input type="text" id="weather-search-input" placeholder="Search a location...">
+        <button onclick="searchWeatherLocation()">Go</button>
+      </div>
+
 
       <div id="weather-hero-top">
         <div>
@@ -126,10 +132,11 @@ function renderWeatherDashboard(current, forecast, containerId) {
       <button onclick="openOfficialWeatherTab('open')">Open Waters</button>
     </div>
 
-    <div id="weather-sun-row">
+       <div id="weather-sun-row">
       <div class="weather-sun-item"><span>☀️</span><div><div>${sunrise}</div><div class="weather-sun-label">Sunrise</div></div></div>
       <div class="weather-sun-item"><span>🌇</span><div><div>${sunset}</div><div class="weather-sun-label">Sunset</div></div></div>
     </div>
+ 
 
     <h4 class="weather-section-title">Next 24 Hours</h4>
     <div id="weather-hourly-strip">
@@ -210,13 +217,10 @@ async function searchWeatherLocation() {
     const place = results[0];
     const shortName = place.display_name.split(",")[0];
     loadWeatherDashboardAt(parseFloat(place.lat), parseFloat(place.lon), "weather-dashboard-general", shortName);
-    document.getElementById("weather-search-box").classList.remove("open");
-    document.getElementById("weather-search-input").value = "";
   } catch (err) {
     alert("Couldn't search right now. Check your connection and try again.");
   }
 }
-
 
 
 // ===== Day detail modal =====
